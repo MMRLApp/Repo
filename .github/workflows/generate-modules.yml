@@ -7,7 +7,7 @@ on:
   push:
     paths:
       - "scripts/generate-modules-json.mjs"
-      - "repo.meta.json"
+      - "json/config.json"
       - ".github/workflows/generate-modules.yml"
 
 permissions:
@@ -33,8 +33,8 @@ jobs:
         env:
           MMRL_API_BASE_URL: ${{ secrets.MMRL_API_BASE_URL }}
           MMRL_API_KEY: ${{ secrets.MMRL_API_KEY }}
-          MMRL_OUTPUT_PATH: modules.json
-          MMRL_META_PATH: repo.meta.json
+          MMRL_OUTPUT_PATH: json/modules.json
+          MMRL_META_PATH: json/config.json
         run: node scripts/generate-modules-json.mjs
 
       - name: Commit and push if changed
