@@ -244,7 +244,7 @@ async function main() {
   const output = {
     ...repoMeta,
     metadata: {
-      version: previousVersion + 1,
+      version: 1,
       timestamp: Date.now() / 1000,
     },
     modules,
