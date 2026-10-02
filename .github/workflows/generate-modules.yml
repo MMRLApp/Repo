@@ -39,12 +39,12 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          #if git diff --quiet -- modules.json; then
-          #  echo "No changes to modules.json"
-          #  exit 0
-          #fi
+          if git diff --quiet -- json/modules.json; then
+            echo "No changes to modules.json"
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add modules.json
+          git add json/modules.json
           git commit -m "chore: regenerate modules.json [skip ci]"
           git push
