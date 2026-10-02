@@ -179,7 +179,7 @@ function adaptModule(module, releases) {
     track: {
       type: "ONLINE_JSON",
       added: sortedReleases[0] ? toEpochSeconds(sortedReleases[0].createdAt) : null,
-      source: module.sourceUrl || null,
+      source: module.sourceUrl || "",
       antifeatures: module.isOpenSource ? null : ["ClosedSource"],
       build_metadata: null,
     },
