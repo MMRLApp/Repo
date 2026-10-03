@@ -33,6 +33,7 @@ jobs:
         env:
           MMRL_API_BASE_URL: ${{ secrets.MMRL_API_BASE_URL }}
           MMRL_API_KEY: ${{ secrets.MMRL_API_KEY }}
+          MMRL_RAW_BASE_URL: https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/
           MMRL_OUTPUT_PATH: json/modules.json
           MMRL_META_PATH: json/config.json
         run: node scripts/generate-modules-json.mjs
@@ -45,6 +46,6 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add json/modules.json
+          git add .
           git commit -m "chore: regenerate modules.json [skip ci]"
           git push
