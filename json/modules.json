@@ -9,7 +9,7 @@
   "description": "A collection of handy tools and tweaks for your Magisk-enabled Android device. If you're into customizing your phone, GMR makes it easy to find, download, and install Magisk modules that can enhance your device's functionality or add cool features.",
   "metadata": {
     "version": 1,
-    "timestamp": 1790995049.842
+    "timestamp": 1791024270.989
   },
   "modules": [
     {
@@ -552,7 +552,7 @@
       "timestamp": 1790899200,
       "permissions": [],
       "features": {},
-      "stars": 1,
+      "stars": 3,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1790193106.726,
@@ -2321,8 +2321,8 @@
     {
       "id": "xcsucIQLQeQR",
       "name": "System App Nuker",
-      "version": "2.2.5",
-      "versionCode": 225,
+      "version": "2.2.6",
+      "versionCode": 226,
       "author": "ChiseWaguri",
       "description": "## Why SAN?\n\nReally, why not? Maybe for the sense of control over evil OEM ^^\n\n[Download the latest release](https://github.com/chisewaguri/systemapp_nuker/releases/latest) · [Changelog](CHANGELOG.md) · [Telegram](https://t.me/systemapp_nuker) · [Report a bug](https://github.com/chisewaguri/systemapp_nuker/issues)\n\n## What it does\n\n- Lists installed system apps in a WebUI.\n- Groups known packages by how bad an idea removing them might be.\n- Hides selected apps with overlay whiteouts after a reboot.\n- Restores apps by removing their whiteouts.\n- Imports and exports nuke lists as JSON.\n- Backs up its lists and disables itself if it detects a bootloop.\n\nThe category labels are advice, so do use your brain a little.\n\n## Install\n\n1. Download the module ZIP from the [latest release](https://github.com/chisewaguri/systemapp_nuker/releases/latest).\n2. Install it through Magisk, KernelSU, or APatch.\n3. Reboot. Yes, really.\n4. Open the module WebUI.\n\nKernelSU and APatch can open the WebUI from the module page. On Magisk, press the module action button. It opens KSUWebUIStandalone or WebUI X if either app is installed. If neither exists, it downloads and installs [KSUWebUIStandalone](https://github.com/KOWX712/KsuWebUIStandalone).\n\nThe installer figures out the available mount method. Newer KernelSU builds need a working metamodule such as [Mountify](https://github.com/backslashxx/mountify), or an environment where the bundled Mountify script can do its thing. If the installer complains about mounting, believe it. Optimism is not a mount method.\n\n## Nuke an app\n\n1. Open **Home**.\n2. Pick your victims.\n3. Press the nuke button.\n4. Reboot when prompted.\n\nSelected apps move to **Restore** immediately and stay marked as pending until reboot. The whiteouts become active during boot, so staring harder at the icon will not make it disappear sooner. I tried.\n\n## Restore an app\n\nChanged your mind? Fair enough.\n\n1. Open **Restore**.\n2. Select the apps you want back.\n3. Press the restore button.\n4. Reboot when prompted.\n\nThe module removes those apps from the next nuke list. Android sees them again after the new module state is mounted.\n\n## How it works\n\nThe default mode creates overlay whiteouts at the directories that contain the selected APKs. Magisk, KernelSU, APatch, or Mountify mounts the module over the system partitions. Android then sees those directories as missing.\n\nThe APKs are still sitting safely on the original partitions. \"Nuke\" is branding. We are not drilling holes into `/product`, sadly.\n\nSystem App Nuker saves each package's APK path before the whiteout hides it. That saved path lets module updates rebuild the same whiteouts even when `pm path` can no longer see the package.\n\nIf **Uninstall Only Mode** is enabled, the module skips whiteouts and runs `pm uninstall --user 0` instead.\n\n## Settings worth knowing\n\n- **Uninstall Only Mode** uses Android's per-user uninstall instead of whiteouts.\n- **Mounting Mode** selects manager mounting, the bundled Mountify script, or an external metamodule. The installer picks this automatically. If you do not know what is mounting what, leave the poor setting alone.\n- **Import Config** loads a saved package list.\n- **Export Config** writes the current list to `/sdcard/Download/`.\n- **Use whiteout feature** shows the raw whiteout page. Raw paths can hide almost anything under the system partitions, including things your phone was rather attached to.\n\n## If something goes wrong\n\nThe bootloop guard watches whether Android reaches the module service after boot. If two early boots happen without that service, the module disables itself, removes its whiteouts, backs up the nuke lists, and reboots.\n\nAfter the phone boots, re-enable the module and use the WebUI backup prompt to restore the saved lists. If Android cannot boot far enough for the guard to run, use your root manager's safe mode or recovery tools.\n\nThe guard is a seat belt, not a challenge. Nuking SystemUI to see what happens still counts as finding out. Please do not make me add another warning.\n\n## Credits\n\n- [@backslashxx](https://github.com/backslashxx) for [Mountify](https://github.com/backslashxx/mountify), its mounting scripts, and the whiteout work this module builds on.\n- [@KOWX712](https://github.com/KOWX712) for the WebUI and [Tricky Addon Update Target List](https://github.com/KOWX712/Tricky-Addon-Update-Target-List), which inspired parts of the package-list handling.\n- [@j-hc](https://github.com/j-hc) for [zygisk-detach](https://github.com/j-hc/zygisk-detach), which helped shape earlier app-list handling.\n- Everyone who sent code, logs, bug reports, or one of those deeply suspicious \"small suggestions.\"\n\n## Contributing\n\nBuild commands and the other serious developer stuff live in [CONTRIBUTING.md](CONTRIBUTING.md). Bug reports, weird OEM behavior, and sane pull requests are welcome.",
       "license": "GPL-3.0",
@@ -2426,6 +2426,13 @@
           "versionCode": 225,
           "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.5/SAN_v2.2.5.zip",
           "changelog": "> Adds app descriptions and removal levels from UAD-ng (#60).\n\n#### WebUI\n- show what each app is and how risky it is to remove, from a UAD-ng list bundled with every release\n- update that list from Settings. Nothing is downloaded unless you tap it\n- filter apps by removal level from a button in the search bar\n- keep icons for nuked apps on the Restore page\n- add a Credits dialog under About\n\n#### Workflows\n- bundle the latest UAD-ng list into each build"
+        },
+        {
+          "timestamp": 1791010356.577,
+          "version": "2.2.6",
+          "versionCode": 226,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.6/SAN_v2.2.6.zip",
+          "changelog": "> You no longer need to reboot before opening the WebUI. Installing or updating the module refreshes the WebUI right away, and nuked apps still disappear after the next reboot.\n\n#### Scripts\n- install the new WebUI and scripts into the running module, and leave its whiteouts for the reboot\n- keep the running module as it was if that copy fails\n- remove the update flag after an install or a nuke, so KernelSU opens the WebUI before the reboot\n\n#### WebUI\n- soft reboot when KernelSU was loaded after boot, so root survives the reboot\n"
         }
       ]
     },
