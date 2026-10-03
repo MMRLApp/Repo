@@ -6,9 +6,14 @@
  * the flat "modules.json" repo format that MMRL/Magisk module managers expect
  * (id, name, version, versionCode, permissions, track, versions[], ...).
  *
+ * Each module's full `description` is saved to modules/<id>/README.md and the
+ * raw link to that file is used for the `readme` prop.
+ *
  * Required env vars:
  *   MMRL_API_BASE_URL   e.g. https://mmrl.dergoogler.com/api
  *   MMRL_API_KEY        API key with "read" scope (sent as X-API-Key header)
+ *   MMRL_RAW_BASE_URL   raw base of the repo + branch the output is pushed to,
+ *                        e.g. https://raw.githubusercontent.com/<owner>/<repo>/main
  *
  * Optional env vars:
  *   MMRL_OUTPUT_PATH    where to write the result (default: ./modules.json)
@@ -16,27 +21,31 @@
  *                        (default: ./repo.meta.json)
  *   MMRL_CONCURRENCY    how many modules to fetch in parallel (default: 8)
  *
- * Usage:
+ * Usage (run from the repo root so modules/<id>/README.md lands in the repo):
  *   MMRL_API_BASE_URL=https://example.com/api \
  *   MMRL_API_KEY=xxxx \
+ *   MMRL_RAW_BASE_URL=https://raw.githubusercontent.com/you/repo/main \
  *   node scripts/generate-modules-json.mjs
  * ---------------------------------------------------------------------------
  * NOTE ON FIELD MAPPING
  * The public API's ModuleResponseSchema / ReleaseResponseSchema do not carry
  * every field the legacy modules.json format has (versionCode, permissions,
- * "features" as capability flags, "stars", "note", "readme", etc. are not
- * part of the API response). Those fields are marked below with a comment;
- * adjust the mapping functions once you know exactly which of your real API
- * fields should feed them (or extend the API to return them).
+ * "features" as capability flags, "stars", "note", etc. are not part of the
+ * API response). Those fields are marked below with a comment; adjust the
+ * mapping functions once you know exactly which of your real API fields
+ * should feed them (or extend the API to return them).
  * ---------------------------------------------------------------------------
  */
 
 import { readFile, writeFile, mkdir } from "node:fs/promises";
-import { dirname } from "node:path";
+import { dirname, join } from "node:path";
 
 const API_BASE_URL = requireEnv("MMRL_API_BASE_URL");
 const API_KEY = requireEnv("MMRL_API_KEY");
+// Base for raw links, e.g. https://raw.githubusercontent.com/<owner>/<repo>/<branch>
+const RAW_BASE_URL = requireEnv("MMRL_RAW_BASE_URL").replace(/\/$/, "");
 const OUTPUT_PATH = process.env.MMRL_OUTPUT_PATH || "./modules.json";
+const MODULES_PATH = "modules";
 const META_PATH = process.env.MMRL_META_PATH || "./repo.meta.json";
 const CONCURRENCY = Number(process.env.MMRL_CONCURRENCY || 8);
 
@@ -128,6 +137,29 @@ function normalizeSize(size) {
   return Number.isFinite(numeric) ? numeric : undefined;
 }
 
+/** Only allow ids that can't escape modules/ (no slashes, no ".."). */
+function assertSafeId(id) {
+  if (!/^[A-Za-z0-9._-]+$/.test(id) || id === "." || id === "..") {
+    throw new Error(`Unsafe module id "${id}"`);
+  }
+}
+
+/**
+ * Saves module.description to modules/<id>/README.md and returns the raw URL,
+ * or undefined if the module has no description.
+ */
+async function writeModuleReadme(module) {
+  const description = module.description?.trim();
+  if (!description) return undefined;
+
+  assertSafeId(module.id);
+  const dir = join(MODULES_PATH, module.id);
+  await mkdir(dir, { recursive: true });
+  await writeFile(join(dir, "README.md"), description + "\n", "utf8");
+
+  return `${RAW_BASE_URL}/${MODULES_PATH}/${encodeURIComponent(module.id)}/README.md`;
+}
+
 /** Maps one release (ReleaseResponseSchema) to the legacy `versions[]` entry shape. */
 function adaptRelease(release, fallbackIndex) {
   return {
@@ -141,7 +173,7 @@ function adaptRelease(release, fallbackIndex) {
 }
 
 /** Maps one module + its releases (ModuleResponseSchema + ReleaseResponseSchema[]) to a legacy module entry. */
-function adaptModule(module, releases) {
+function adaptModule(module, releases, readmeUrl) {
   const sortedReleases = [...releases].sort(
     (a, b) => toEpochSeconds(a.createdAt) - toEpochSeconds(b.createdAt)
   );
@@ -161,9 +193,12 @@ function adaptModule(module, releases) {
       ? deriveVersionCode(latest.version, versions.length)
       : 0,
     author: module.author,
-    description: module.description || module.shortDescription || "",
+    // The full text now lives in the README, so keep description short here.
+    description:
+      module.shortDescription || module.description?.split("\n")[0] || "",
+    readme: readmeUrl,
     support: module.communityUrl || undefined,
-    // `donate`, `readme`, `note` have no API equivalent yet — omit rather than fabricate.
+    // `donate`, `note` have no API equivalent yet — omit rather than fabricate.
     license: module.license || undefined,
     categories: module.category ? [module.category] : undefined,
     verified: Boolean(module.isFeatured || module.isRecommended),
@@ -229,7 +264,8 @@ async function main() {
   const detailed = await mapWithConcurrency(summaries, CONCURRENCY, async (summary) => {
     try {
       const { module, releases } = await fetchModuleWithReleases(summary.id);
-      return adaptModule(module, releases);
+      const readmeUrl = await writeModuleReadme(module);
+      return adaptModule(module, releases, readmeUrl);
     } catch (err) {
       console.error(`  ! Skipping module "${summary.id}": ${err.message}`);
       return null;
