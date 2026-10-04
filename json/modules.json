@@ -9,7 +9,7 @@
   "description": "A collection of handy tools and tweaks for your Magisk-enabled Android device. If you're into customizing your phone, GMR makes it easy to find, download, and install Magisk modules that can enhance your device's functionality or add cool features.",
   "metadata": {
     "version": 1,
-    "timestamp": 1791058652.795
+    "timestamp": 1791083299.694
   },
   "modules": [
     {
@@ -114,8 +114,8 @@
     {
       "id": "1ieoQEbZFJj4",
       "name": "WebUI X",
-      "version": "573",
-      "versionCode": 573,
+      "version": "608",
+      "versionCode": 608,
       "author": "Der_Googler",
       "description": "WebUI X from MMRL but portable!",
       "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/1ieoQEbZFJj4/README.md",
@@ -126,10 +126,10 @@
       ],
       "verified": true,
       "added": 1773524551.091,
-      "timestamp": 1790640000,
+      "timestamp": 1791072000,
       "permissions": [],
       "features": {},
-      "stars": 644,
+      "stars": 645,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1773524551.091,
@@ -256,6 +256,13 @@
           "versionCode": 573,
           "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v573/WebUI-X-v573-release-official.apk",
           "changelog": "## What's new?\n\nNo commits found since the latest tag.\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/36551305059)"
+        },
+        {
+          "timestamp": 1791075173.094,
+          "version": "608",
+          "versionCode": 608,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v608/WebUI-X-v608-release-official.apk",
+          "changelog": "This release brings a complete UI overhaul powered by the MMRL X design system, substantial performance and architecture refactors, upgraded developer tools, and an enhanced WebUI runtime.\r\n\r\n---\r\n\r\n## Highlights & New Features\r\n\r\n### Dashboard & Analytics\r\n\r\n- **Home Dashboard**: A new central Home screen features system status cards (root vs. non-root), hardware device details, storage usage metrics, and a support action center.\r\n- **Module Analytics**: Built-in analytics now automatically calculate module totals, state breakdowns, and storage consumption.\r\n\r\n### File Explorer & Editor Upgrades\r\n\r\n- **Standalone File Explorer**: Integrated a dedicated file explorer with its own navigation flow, adaptive app icons, and safe path scoping.\r\n- **TextMate Syntax Highlighting**: Added syntax highlighting to the code editor powered by TextMate language scopes and themes resolved via ADB paths.\r\n- **Material File Icons**: Centralized file and folder icon resolution using MMRLX Material icon mapping.\r\n\r\n### WebUI & WebUI Engine Enhancements\r\n\r\n- **Unified Engine (MX Only)**: Standardized all module launches and shortcuts to use the native MX engine for better security, performance, and plugin support. Legacy engine configurations have been deprecated and auto-migrated.\r\n- **Custom Context Menus**: Introduced a native web context menu for handling navigation, links, images, email addresses, map locations, and phone numbers directly.\r\n- **Dialog Overlays**: Replaced native dialog prompts with Material Design 3 and MMRLX themed prompt, confirm, and exit overlays.\r\n- **SVG Vector Support**: Integrated SVG decoding support via Coil 3 for module icons and covers.\r\n\r\n### Customization & Seasonal Visuals\r\n\r\n- **Seasonal Event Overlays**: Added optional animated seasonal visuals, including Halloween blood drips (October) and winter snowfall effects (December/January).\r\n- **App Event Opt-Out**: Provided a user preference setting to toggle seasonal event overlays on or off.\r\n- **Custom ADB Paths**: Users can now specify a custom ADB path for non-root setups via app preferences.\r\n- **Module Shortcuts**: Added an option to generate pinned home screen shortcuts for individual modules.\r\n\r\n---\r\n\r\n## Developer Experience & Tooling\r\n\r\n- **Expanded KernelSU & System APIs**: Exposed expanded package management APIs, file system streams (`ksu.io`), and module metadata direct to JavaScript interfaces.\r\n- **DevTools Integration**: Upgraded internal WebUI inspection tools with improved DOM parsing (powered by Jsoup), network tracking, console logging options, and customizable console event payload logging.\r\n- **Custom Tabs Browser Integration**: Added a centralized URL handler to open external links inside themed Custom Tabs.\r\n- **Crash & Recovery Guidance**: Upgraded crash screens with structured recovery guidance, markdown support, and direct issue routing based on build origin."
         }
       ]
     },
@@ -2580,7 +2587,7 @@
       "timestamp": 1788480000,
       "permissions": [],
       "features": {},
-      "stars": 203,
+      "stars": 204,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1773659774.307,
