@@ -186,7 +186,7 @@ function adaptModule(module, releases, readmeUrl) {
   );
 
   const adapted = {
-    id: module.id,
+    id: module.moduleId ?? module.id,
     name: module.name,
     version: latest?.version ?? "unknown",
     versionCode: latest
