@@ -9,7 +9,7 @@
   "description": "A collection of handy tools and tweaks for your Magisk-enabled Android device. If you're into customizing your phone, GMR makes it easy to find, download, and install Magisk modules that can enhance your device's functionality or add cool features.",
   "metadata": {
     "version": 1,
-    "timestamp": 1791631760.205
+    "timestamp": 1791647384.054
   },
   "modules": [
     {
@@ -108,161 +108,6 @@
           "versionCode": 112,
           "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.1.2/microg_installer_revived_again-v1.1.2.zip",
           "changelog": "## What's New\n- Maintenance release: dependency updates\n\n## Requirements\n* Magisk or KernelSU\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\n* Signature spoofing support\n\n## Install\n1. Flash this module and Reboot.\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\n5. Reboot to apply.\n\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\n\n---\nBased on nift4's microG Installer Revived\n"
-        }
-      ]
-    },
-    {
-      "id": "1ieoQEbZFJj4",
-      "name": "WebUI X",
-      "version": "608",
-      "versionCode": 608,
-      "author": "Der_Googler",
-      "description": "WebUI X from MMRL but portable!",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/1ieoQEbZFJj4/README.md",
-      "support": "https://t.me/MMRLGroup",
-      "license": "GPL-3.0",
-      "categories": [
-        "development"
-      ],
-      "verified": true,
-      "added": 1773524551.091,
-      "timestamp": 1791072000,
-      "permissions": [],
-      "features": {},
-      "stars": 667,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1773524551.091,
-        "source": "https://github.com/MMRLApp/WebUI-X-Portable",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1773524551.091,
-          "version": "407",
-          "versionCode": 407,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v407/WebUI-X-v407-release-official.apk",
-          "changelog": "## What's new?\n\n- Add structured/rich console logging and override JS\n- Add DevTools preference and UI integration\n- Localize ViewTab titles and add enableDevTools\n- Add in-app DevTools UI and draggable FAB\n- Translated using Weblate (German)\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v399...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/22922571603)"
-        },
-        {
-          "timestamp": 1773524571.396,
-          "version": "399",
-          "versionCode": 399,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v399/WebUI-X-v399-release-official.apk",
-          "changelog": "## What's new?\n\n- Disable dependencies info in APK and bundle\n- Use CSS/native mapping for keyboard height\n- Update HybridWebUI.kt\n- Catch errors when managing web listeners\n- Add allowedOriginRules param to addEventListener\n- Remove JS package listing/info interfaces\n- [wip]\n- Add file chooser and save request\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v391...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/22830837325)"
-        },
-        {
-          "timestamp": 1773524571.414,
-          "version": "391",
-          "versionCode": 391,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v391/WebUI-X-v391-release-official.apk",
-          "changelog": "## What's new?\n\n- [WIP] Add Lua IO helpers and WebView bindings\n- Integrate LuaEngine into WebUI and add view IDs\n- Translated using Weblate (Russian)\n- Deleted translation using Weblate (Thai)\n- Added translation using Weblate (Dutch)\n- Translated using Weblate (Vietnamese)\n- Handle LuaException when running LuaEngine\n- Add overridable error handler for interception\n- Catch WebMessage errors and simplify Lua bindings\n- Add Lua engine and Lua webview assets\n- Refactor WebUI init, HybridWebUI insets & APIs\n- Add hwui and lua modules; integrate into app/webui\n- Translated using Weblate (Persian)\n- Translated using Weblate (Vietnamese)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Translated using Weblate (Indonesian)\n- Translated using Weblate (Japanese)\n- Translated using Weblate (Polish)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (Spanish)\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v363...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/22519908167)"
-        },
-        {
-          "timestamp": 1773524571.425,
-          "version": "363",
-          "versionCode": 363,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v363/WebUI-X-v363-release-official.apk",
-          "changelog": "## What's new?\n\n- Restore moduleInfo and add package info methods\n- Add global setting to disable WebUI exit confirmation\n- Add defensive checks to WebUIView lifecycle methods\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v360...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/20007014185)"
-        },
-        {
-          "timestamp": 1773524571.428,
-          "version": "360",
-          "versionCode": 360,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v360/WebUI-X-v360-release-official.apk",
-          "changelog": "## What's new?\n\n- Simplify getLocalAllAsFlow to return sourceFlow directly\n- Fix sorting not reacting to menu changes\n- Ensure loading state is properly cleared when list is empty\n- Fix module disappearing issue - restore early return in dataObserver\n- Revert comparator changes - original logic was intentional\n- Fix module loading issues - remove early return and eager start flow\n- Fix sorting bug: Correct UpdatedTime and Size comparators\n- Initial analysis: Identified sorting bug in ModulesViewModel\n- Initial plan\n- Initial plan\n- Translated using Weblate (French)\n- Add ModConf shortcut creation support\n- Translated using Weblate (Russian)\n- Translated using Weblate (Persian)\n- Translated using Weblate (Persian)\n- Handle SSL errors based on debug mode in WXClient\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Japanese)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (Polish)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (German)\n- Translated using Weblate (Chinese (Traditional Han script))\n- Translated using Weblate (German)\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v325...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/19995662266)"
-        },
-        {
-          "timestamp": 1773524571.441,
-          "version": "325",
-          "versionCode": 325,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v325/WebUI-X-v325-release-official.apk",
-          "changelog": "## What's new?\n\n- Add keyboard height to WXKeyboardEventData and event handling\n- Add DEX signature verification and public key utility\n- Translated using Weblate (Polish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Japanese)\n- Add dexlib2 dependency and block certain DEX imports\n- Add allowed URL filtering to WXClient requests\n- Add permission and console message handling to WXChromeClient\n- Add typeface support to CodeEditorScreen\n- Update mmrl version in libs.versions.toml\n- Fix validation logic and update dialog text\n- Add long-press navigation to File Explorer in ModuleItem\n- Refactor toolbar and breadcrumb in FileExplorerScreen\n- Refactor SuFile utilities and update mmrl version\n- Add multi-file import/export and selection to explorer\n- Move file editor and explorer screens to editor package\n- Enhance FileEditorScreen with custom editor color scheme\n- Add file editing and saving to FileEditorScreen\n- Add file explorer and code editor screens\n- Refactor Release CI workflow for official flavors\n- Refactor Release CI workflow for clarity and structure\n- Update process name in AndroidManifest.xml\n- Add Pull-to-Refresh Helper for WebUI\n- fix webui engine key typo\n- Translated using Weblate (Polish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Add ModConfLauncher for launching ModConfActivity\n- Remove mapping file upload from build-apk action\n- Refactor CI workflows and add build-apk action\n- Add module config editing and engine selection\n- Refactor ModConfConfig to use ConfigFile base class\n- Add registerSharedObjects flag to Dex config\n- Refactor shared object handling in JavaScriptInterface\n- Refactor config and JSON model to platform module\n- Refactor WebUILauncher constructor and constants\n- Remove mapping path from APK output in workflow\n- Comment out mapping artifact upload in build workflow\n- Translated using Weblate (Polish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Translated using Weblate (Japanese)\n- Refactor CI workflows for modular release process\n- Include flavor name in APK output filename\n- Refactor plugin config updates and add mutable config helpers\n- Refactor config management and update module loading\n- Update Kontext.kt\n- Refactor resource loading and config in Kontext\n- Add custom resource loading to Kontext and update context providers\n- Update ModConf permission label text\n- Remove unused JNA Native import and unregister method\n- Refactor ModConf to support target packages and error handling\n- Add support for ModConfActivity in module UI\n- Update WebUI activity to ModConfActivity\n- Refactor permission strings and add ModConf support\n- Change asWebUIConfigFlow to MutableStateFlow\n- Add additional config editor and JSONCollection utilities\n- Add spoofed build type with random package name\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Polish)\n- Added translation using Weblate (English (Middle))\n- Translated using Weblate (Polish)\n- Translated using Weblate (Japanese)\n- Simplify SSL error handling in WXClient\n- Update build configs for JNA and WebUI modules\n- Update Java compatibility to version 21\n- Add publishing configuration for release variant\n- Update build.gradle.kts\n- Migrate JNA module to Kotlin DSL and update native libs\n- Enable shared object loading only if plugins are enabled\n- Add pluginsEnabled option to WebUI configuration\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v243...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/17531638567)"
-        },
-        {
-          "timestamp": 1773524571.445,
-          "version": "243",
-          "versionCode": 243,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v243/normal.apk",
-          "changelog": "## What's new?\n\n- Migrate navigation to Compose Destinations\n- Add force kill option for WebUI process\n- Refactor WebUI activity lifecycle and initialization\n- Refactor NavButton to use generic implementation\n- Refactor navigation to use sealed route classes\n- Add build info section to DeveloperScreen\n- Move developer settings to separate screen\n- Add build config fields for SDK and commit info\n- Centralize SDK config and suppress unused warnings\n- Deleted translation using Weblate (Filipino)\n- Deleted translation using Weblate (Filipino)\n- Deleted translation using Weblate (Asu)\n- Deleted translation using Weblate (Asu)\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Translated using Weblate (Japanese)\n- Translated using Weblate (Polish)\n- Append modId to native library registration names\n- Update mmrl version in libs.versions.toml\n- Add support for custom asset handlers in WebUI\n- Relax type constraints for library registration methods\n- Refactor WXLibrary load and unregister methods\n- Add WXNativeLong and WXPointerByReference interfaces\n- Add WXCallback interface and enhance WXLibrary\n- Add JNA wrapper interfaces and classes\n- Add isLibraryRegistered method to WXInterface\n- Add JNA library registration methods to WXInterface\n- Add extra field to WebUIConfig data class\n- Refactor shared object loading for JavaScript interfaces\n- Add JNA integration and shared object support\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v212...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/17080189020)"
-        },
-        {
-          "timestamp": 1773524571.456,
-          "version": "212",
-          "versionCode": 212,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v212/normal.apk",
-          "changelog": "## What's new?\n\n- Refactor loading renderer to accept color scheme\n- Update commits.sh\n- Update commits.sh\n- Add licenses screen and related models\n- Add Licensee plugin for license management\n- Translated using Weblate (Chinese (Simplified Han script))\n- Added translation using Weblate (Asu)\n- Translated using Weblate (French)\n- Translated using Weblate (Japanese)\n- Refactor module extraction and base dir handling\n- Fix escape character in Italian shortcut icon error string\n- Use putPlatform and string ModId in intent creation\n- Update strings_webui.xml\n- Add input validation for cachingMaxAge field\n- Refactor config file reading logic\n- Translated using Weblate (Polish)\n- Disable exit confirm switch when JS back interceptor is used\n- Replace finish() with handleNativeBack() on back press\n- Add SuFile text read/write extensions and JSONCollection types\n- Add WebUI config options for CSP and caching\n- Refactor FeaturedManager to use WorkingMode and add SukiSU\n- Switch module storage to internal app filesDir\n- Add composable error screens for WebView errors\n- Refactor WebView initialization and add debug helpers\n- Refactor script injection and cleanup unused variables\n- Prevent handling of data: URLs in WXClient\n- Refactor WebUI clients and split Chrome/RenderProcess logic\n- Refactor JavaScript interface removal in WebUIView\n- Translated using Weblate (Polish)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Refactor cleanup logic and add @CallSuper annotations\n- Refactor contentSecurityPolicy to non-nullable String\n- Add WebView render process client for unresponsive handling\n- Localize error messages in WebUIClient\n- Add CSP and caching options to WebUI config and handler\n- Add auto-open Eruda console option to WebUI\n- Refactor DataStore to local module and add auto-open Eruda\n- Fix cleanup method to properly remove WXView from parent\n- Add modular error page system for WebUI\n- Add webuix-demo2.zip asset and extraction logic\n- Add non-root module removal and refactor file usage\n- Pass baseDir to toModId for module lookup\n- Remove unused import from WebColors.kt\n- Add tonalSurface CSS variable to WebColors\n- Move require.js to assets and update injection logic\n- Refactor web color CSS generation to WebColors class\n- Translated using Weblate (Portuguese)\n- Translated using Weblate (Russian)\n- Translated using Weblate (Japanese)\n- Add permission constants and annotations to WebUILauncher\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v142...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/16841367646)"
-        },
-        {
-          "timestamp": 1773524571.459,
-          "version": "142",
-          "versionCode": 142,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v142/normal.apk",
-          "changelog": "**WebUI X: Portable**\n#ci_142\n\nBuild on 2025-07-04 23:07:20.\n\n## What's new?\n\n- Handle null modules in navigation graphs\r\n- Move setForeground call to onStartCommand\r\n- Refactor modId property initialization in WXActivity\r\n- Remove redundant file creation in config setup\r\n- Make modId property private and initialize in onCreate\n\nType: Release\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/16081997776)"
-        },
-        {
-          "timestamp": 1773524571.462,
-          "version": "131",
-          "versionCode": 131,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v131/normal.apk",
-          "changelog": "**WebUI X: Portable**\n#ci_131\n\nBuild on 2025-06-29 22:20:41.\n\n## What's new?\n\n- Ensure module config directory exists before file creation\r\n- Wrapped Intent.getPlatform() with a try catch\n\nType: Release\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/15959938525)"
-        },
-        {
-          "timestamp": 1773530469.191,
-          "version": "423",
-          "versionCode": 423,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v423/WebUI-X-v423-release-official.apk",
-          "changelog": "## What's new?\n\n- Initialize ViewModel store on attach; add onReady\n- fix loading modules when reopening the app\n- Simplify WebUI launcher and remove engine options\n- Add force-kill WebUI process preference\n- Introduce HybridWebUI store & refactor console/network\n- Introduce WXContentResolver and update usage\n- Add global crash handler and crash UI\n- Refine DevTools bottom sheet layout and styling\n- Use RichLogEntry list for console logs\n- Translated using Weblate (Polish)\n- Translated using Weblate (Indonesian)\n- Implement clearState method in WXView\n- Refactor onDestroy method in WXActivity\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v407...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/23097123267)"
-        },
-        {
-          "timestamp": 1775703818.377,
-          "version": "433",
-          "versionCode": 433,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v433/WebUI-X-v433-release-official.apk",
-          "changelog": "## What's new?\n\n- Update AndroidManifest.xml with new permissions\n- Translated using Weblate (Italian)\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Polish)\n- Scope fs constants and stream input reads\n- Switch to hybridwebui.iife; add save-file stream\n- Add filesystem JS interfaces and console flow\n- Refactor JS interfaces and add file chooser\n- Add JS interface system and refactor WebUI\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v423...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/24164765069)"
-        },
-        {
-          "timestamp": 1778455815.072,
-          "version": "438",
-          "versionCode": 438,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v438/WebUI-X-v438-release-official.apk",
-          "changelog": "## What's new?\n\n- Fix #79\n- Translated using Weblate (Japanese)\n- Translated using Weblate (Arabic)\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v433...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/25636825642)"
-        },
-        {
-          "timestamp": 1790116875.154,
-          "version": "549",
-          "versionCode": 549,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v549/WebUI-X-v549-release-official.apk",
-          "changelog": "> [!WARNING]\r\n> The WX Engine have been dropped in this release. Please migrate to newer APIs if you haven't.\r\n> - https://docs.mmrl.dev/modules/MX_Engine.html\r\n> - https://kernelsu.org"
-        },
-        {
-          "timestamp": 1790181679.548,
-          "version": "555",
-          "versionCode": 555,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v555/WebUI-X-v555-release-official.apk",
-          "changelog": "## What's new?\n\nNo commits found since the latest tag.\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/35870952801)"
-        },
-        {
-          "timestamp": 1790383951.201,
-          "version": "571",
-          "versionCode": 571,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v571/WebUI-X-v571-release-official.apk",
-          "changelog": "## What's new?\r\n\r\n### New Features\r\n\r\n* **WebUI & Dex Plugins:** Added support for WebUI `dex` plugin loading (`webui.dex` dependency, `WebUIDexFile` model, and `dexPlugin()` setup during screen init).\r\n* **Native Context Menu:** Added a configurable native context menu for WebUI supporting navigation, link/image actions, phone numbers, map locations, and email addresses.\r\n* **Markdown Renderer:** Built-in WebUI markdown renderer (`MarkdownView`/`MarkdownPathHandler`) supporting custom CSS, window insets, and browser forwarding for external links.\r\n* **Enhanced Crash Recovery:** Introduced `BrickException`/`HelpMessage` carrying markdown help in a bottom sheet with direct issue reporting via origin URL.\r\n* **CSP Builder Integration:** Added clickable CSP Builder docs link inside the config editor dialog.\r\n* **Rich Config Alerts:** Config documentation alerts now support rich composable text and styled links.\r\n\r\n### UI & UX Improvements\r\n\r\n* **Modernized Cards:** Migrated crash screen, home, file explorer, and theme settings to MMRLX 1.0.192 `card` and `outlinedCard` modifiers.\r\n* **Refined Status Cards:** Softened home screen root/non-root status card backgrounds with 50% alpha transparency.\r\n* **Unified Link Handling:** Centralized external links via `BrowserUriHandler` using Custom Tabs with standard `ACTION_VIEW` fallback.\r\n\r\n### Core & Maintenance\r\n\r\n* **Eruda Cleanup:** Removed Eruda console integration and injection in favor of DevTools (deprecated existing preference fields for backward compatibility).\r\n* **CSP Opt-out:** Blank or `*` values for `contentSecurityPolicy` now act as an explicit opt-out, bypassing header injection.\r\n\r\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/36183227392)"
-        },
-        {
-          "timestamp": 1790686374.371,
-          "version": "573",
-          "versionCode": 573,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v573/WebUI-X-v573-release-official.apk",
-          "changelog": "## What's new?\n\nNo commits found since the latest tag.\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/36551305059)"
-        },
-        {
-          "timestamp": 1791075173.094,
-          "version": "608",
-          "versionCode": 608,
-          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v608/WebUI-X-v608-release-official.apk",
-          "changelog": "This release brings a complete UI overhaul powered by the MMRL X design system, substantial performance and architecture refactors, upgraded developer tools, and an enhanced WebUI runtime.\r\n\r\n---\r\n\r\n## Highlights & New Features\r\n\r\n### Dashboard & Analytics\r\n\r\n- **Home Dashboard**: A new central Home screen features system status cards (root vs. non-root), hardware device details, storage usage metrics, and a support action center.\r\n- **Module Analytics**: Built-in analytics now automatically calculate module totals, state breakdowns, and storage consumption.\r\n\r\n### File Explorer & Editor Upgrades\r\n\r\n- **Standalone File Explorer**: Integrated a dedicated file explorer with its own navigation flow, adaptive app icons, and safe path scoping.\r\n- **TextMate Syntax Highlighting**: Added syntax highlighting to the code editor powered by TextMate language scopes and themes resolved via ADB paths.\r\n- **Material File Icons**: Centralized file and folder icon resolution using MMRLX Material icon mapping.\r\n\r\n### WebUI & WebUI Engine Enhancements\r\n\r\n- **Unified Engine (MX Only)**: Standardized all module launches and shortcuts to use the native MX engine for better security, performance, and plugin support. Legacy engine configurations have been deprecated and auto-migrated.\r\n- **Custom Context Menus**: Introduced a native web context menu for handling navigation, links, images, email addresses, map locations, and phone numbers directly.\r\n- **Dialog Overlays**: Replaced native dialog prompts with Material Design 3 and MMRLX themed prompt, confirm, and exit overlays.\r\n- **SVG Vector Support**: Integrated SVG decoding support via Coil 3 for module icons and covers.\r\n\r\n### Customization & Seasonal Visuals\r\n\r\n- **Seasonal Event Overlays**: Added optional animated seasonal visuals, including Halloween blood drips (October) and winter snowfall effects (December/January).\r\n- **App Event Opt-Out**: Provided a user preference setting to toggle seasonal event overlays on or off.\r\n- **Custom ADB Paths**: Users can now specify a custom ADB path for non-root setups via app preferences.\r\n- **Module Shortcuts**: Added an option to generate pinned home screen shortcuts for individual modules.\r\n\r\n---\r\n\r\n## Developer Experience & Tooling\r\n\r\n- **Expanded KernelSU & System APIs**: Exposed expanded package management APIs, file system streams (`ksu.io`), and module metadata direct to JavaScript interfaces.\r\n- **DevTools Integration**: Upgraded internal WebUI inspection tools with improved DOM parsing (powered by Jsoup), network tracking, console logging options, and customizable console event payload logging.\r\n- **Custom Tabs Browser Integration**: Added a centralized URL handler to open external links inside themed Custom Tabs.\r\n- **Crash & Recovery Guidance**: Upgraded crash screens with structured recovery guidance, markdown support, and direct issue routing based on build origin."
         }
       ]
     },
@@ -547,7 +392,323 @@
       ]
     },
     {
-      "id": "5D-pHr7UP3tn",
+      "id": "bdJJPDbVGjKU",
+      "name": "shizuku auto starter",
+      "version": "1.0",
+      "versionCode": 10,
+      "author": "merbah3266",
+      "description": "Magisk module activates Shizuku during boot",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/bdJJPDbVGjKU/README.md",
+      "license": "MIT",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1771134983.104,
+      "timestamp": 1771113600,
+      "permissions": [],
+      "features": {},
+      "stars": 137,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1771134983.104,
+        "source": "https://github.com/merbah3266/shizuku-auto-starter",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1771134983.104,
+          "version": "1.0",
+          "versionCode": 10,
+          "zipUrl": "https://github.com/merbah3266/shizuku-auto-starter/releases/download/v1.0/Shizuku_Auto_Starter_1.0_1.zip",
+          "changelog": "## Shizuku Auto Starter - First Release\r\n\r\nThis is the first release of the module.\r\n\r\nIt automatically runs Shizuku at boot by executing `libshizuku.so`.  \r\nTested on a Magisk-rooted device. Other environments are not guaranteed.\r\n\r\nSimple and minimal."
+        }
+      ]
+    },
+    {
+      "id": "bindhosts",
+      "name": "Bindhosts",
+      "version": "2.1.5",
+      "versionCode": 215,
+      "author": "xx and KOWX712",
+      "description": "Systemless hosts for APatch, KernelSU and Magisk",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/Ji-RMqoX8hTP/README.md",
+      "license": "WTFPL",
+      "categories": [
+        "system"
+      ],
+      "verified": true,
+      "added": 1771846972.662,
+      "timestamp": 1787529600,
+      "permissions": [],
+      "features": {},
+      "stars": 631,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1771846972.662,
+        "source": "https://github.com/bindhosts/bindhosts",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1771846972.662,
+          "version": "2.1.1",
+          "versionCode": 211,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.1/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.1\n- scripts/post-fs-data: reorder rules for ksun ksuv3 migration\n- scripts/bindhosts: ignore comments inline after entry\n- scripts/post-fs-data: move metamodule-capable APatch to mode 2\n- webui/home: setup link only when file not found\n- scripts/service: pre-calc module.prop values\n- webui/locales: updates"
+        },
+        {
+          "timestamp": 1771847040.416,
+          "version": "2.1.0",
+          "versionCode": 210,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.0/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.0\n- module: remove skip_mount content\n- webui/js: Use WebUI X API for Intent (#158)\n- scripts/bindhosts: force kill old bindhosts instance\n- webui: append mode options dynamically\n- Documentation: update ZygiskNext information"
+        },
+        {
+          "timestamp": 1771847040.434,
+          "version": "2.0.9",
+          "versionCode": 209,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.9/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.0.9\n- webui/js: fix mirror link not loading\n- scripts/bindhosts: update translation bundle when installing canary\n- webui: rework prompt message\n- webui/js: use crowdin branch for documentation\n- webui/js: fix multiple event listener\n- scripts: add mode 10 to support for KernelSU v2.1.2+"
+        },
+        {
+          "timestamp": 1771847040.446,
+          "version": "2.0.8",
+          "versionCode": 208,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.8/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.0.8\n- scripts/post-fs-data: add ZN 1.3.0 mode 2 support\n- webui: various changes for rtl languages\n- webui: add kernelsu-alt to dependency\n- scripts/post-fs-data: add NeoZygisk into denylist_handlers\n- scripts/post-fs-data: add mode 10001\n- webui: fix abnormal color and content height\n- webui: fix restore json config"
+        },
+        {
+          "timestamp": 1771847040.45,
+          "version": "2.0.7",
+          "versionCode": 207,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.7/bindhosts.zip",
+          "changelog": "## bindhosts\r\nSystemless hosts for APatch, KernelSU and Magisk.\r\n\r\n---\r\n\r\n# Changelog:\r\n### 2.0.7\r\n- webui: adapted WebUI-X back gesture interceptor\r\n- webui: fix favicon not loading in WebUI-X\r\n- webui: add support for right-to-left language\r\n- webui: new color scheme, refactored ui\r\n- webui: new button to update to latest canary version in 'more' page\r\n- webui: better custom background support. custom.css will not be updated if you're upgrading from an older version, please extract from zip and replace manually if needed. [detail](https://github.com/bindhosts/bindhosts/blob/master/Documentation/customize.md)\r\n- scripts: custom.txt now support 'disable|' prefix to disable specific host. This feature is also available in webui.\r\n- translation: use Crowdin for translation service. [detail](https://github.com/bindhosts/bindhosts/blob/master/Documentation/localize.md)\r\n- translation: new language: French, Portuguese (Brazilian). [contributor](https://github.com/bindhosts/bindhosts/blob/master/module/webroot/locales/CONTRIBUTOR.md)"
+        },
+        {
+          "timestamp": 1771847040.462,
+          "version": "2.0.6",
+          "versionCode": 206,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.6/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.0.6\n- webui/js: remove unnecessary line when no custom hosts\n- webui/css: update WebUI-X css import address\n- webui/locales: add Polish translation\n- webui: drop homescreen shortcut button\n- scripts/post-fs-data: various mode probing hardening"
+        },
+        {
+          "timestamp": 1771847040.467,
+          "version": "2.0.5",
+          "versionCode": 205,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.5/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.0.5\n- action: remove MMRL from action redirect WebUI\n- webui: fix some false error log\n- scripts: probe ReZygisk for mode 2\n- scripts: properly detect susfs enabled_features"
+        },
+        {
+          "timestamp": 1771847040.48,
+          "version": "2.0.4",
+          "versionCode": 204,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.4/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk\n\n---\n\n# Changelog\n### 2.0.4\n- scripts: pull shamiko out of mode 2"
+        },
+        {
+          "timestamp": 1771847040.483,
+          "version": "2.0.3",
+          "versionCode": 203,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.3/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk\n\n---\n\n# Changelog\n### 2.0.3\n- webui: ksu.spawn on update\n- webui: ksu.spawn on tcpdump\n- webui: WebUI X support and fixes\n- webui/locales: JP and CN\n- scripts: --install-canary\n- scripts: whitelist wildcarding support"
+        },
+        {
+          "timestamp": 1771847040.494,
+          "version": "2.0.2",
+          "versionCode": 202,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.2/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk\n\n---\n\n# Changelog\n### 2.0.2\n- webui: Add support to create home screen shortcut in WebUI X\n- webui: optimize animation\n- webui: fix input box text not centered issue, better input box experience\n- webui: drop support to old version of MMRL\n- webui: add favicon to hosts link\n- scripts: Fix webui crash when using AdAway\n- webui: add Swedish translation (#103, @Sopor)"
+        },
+        {
+          "timestamp": 1775012588.261,
+          "version": "2.1.2",
+          "versionCode": 212,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.2/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.2\n- webui/locales: new translations\n- webui: other small fixes\n- scripts: hot install support\n- webui: new list active styling, clean up close button\n- webui/hosts: add rename dialog\n- webui/hosts: support disable source\n- webui: migrate to material web component\n- webui: add formatting support to translation strings\n- webui: refactor routing, file selector"
+        },
+        {
+          "timestamp": 1777894223.079,
+          "version": "2.1.3",
+          "versionCode": 213,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.3/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.3\n- scripts/post-fs-data: update ksu_susfs_open_redirect routine\n- webui: add scroll into view on input focus\n- scripts/service: rework module.prop description update\n- scripts: actually use boot-completed.sh"
+        },
+        {
+          "timestamp": 1782365602.218,
+          "version": "2.1.4",
+          "versionCode": 214,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.4/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.4\n- scripts/service: fix module.prop edit\n- scripts/bindhosts: handle bad curl env\n- webui: multiple host render on show (#206)\n- scripts/bindhosts: drop curl -Z usage\n- webui/locales: updates"
+        },
+        {
+          "timestamp": 1787546451.022,
+          "version": "2.1.5",
+          "versionCode": 215,
+          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.5/bindhosts.zip",
+          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.5\n- webui: use codemirror editor\n- scripts: support KSU late load\n- scripts/post-fs-data: add nomount metamodule support"
+        }
+      ]
+    },
+    {
+      "id": "com.dergoogler.mmrl.wx",
+      "name": "WebUI X",
+      "version": "608",
+      "versionCode": 608,
+      "author": "Der_Googler",
+      "description": "WebUI X from MMRL but portable!",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/1ieoQEbZFJj4/README.md",
+      "support": "https://t.me/MMRLGroup",
+      "license": "GPL-3.0",
+      "categories": [
+        "development"
+      ],
+      "verified": true,
+      "added": 1773524551.091,
+      "timestamp": 1791072000,
+      "permissions": [],
+      "features": {},
+      "stars": 667,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1773524551.091,
+        "source": "https://github.com/MMRLApp/WebUI-X-Portable",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1773524551.091,
+          "version": "407",
+          "versionCode": 407,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v407/WebUI-X-v407-release-official.apk",
+          "changelog": "## What's new?\n\n- Add structured/rich console logging and override JS\n- Add DevTools preference and UI integration\n- Localize ViewTab titles and add enableDevTools\n- Add in-app DevTools UI and draggable FAB\n- Translated using Weblate (German)\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v399...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/22922571603)"
+        },
+        {
+          "timestamp": 1773524571.396,
+          "version": "399",
+          "versionCode": 399,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v399/WebUI-X-v399-release-official.apk",
+          "changelog": "## What's new?\n\n- Disable dependencies info in APK and bundle\n- Use CSS/native mapping for keyboard height\n- Update HybridWebUI.kt\n- Catch errors when managing web listeners\n- Add allowedOriginRules param to addEventListener\n- Remove JS package listing/info interfaces\n- [wip]\n- Add file chooser and save request\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v391...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/22830837325)"
+        },
+        {
+          "timestamp": 1773524571.414,
+          "version": "391",
+          "versionCode": 391,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v391/WebUI-X-v391-release-official.apk",
+          "changelog": "## What's new?\n\n- [WIP] Add Lua IO helpers and WebView bindings\n- Integrate LuaEngine into WebUI and add view IDs\n- Translated using Weblate (Russian)\n- Deleted translation using Weblate (Thai)\n- Added translation using Weblate (Dutch)\n- Translated using Weblate (Vietnamese)\n- Handle LuaException when running LuaEngine\n- Add overridable error handler for interception\n- Catch WebMessage errors and simplify Lua bindings\n- Add Lua engine and Lua webview assets\n- Refactor WebUI init, HybridWebUI insets & APIs\n- Add hwui and lua modules; integrate into app/webui\n- Translated using Weblate (Persian)\n- Translated using Weblate (Vietnamese)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Translated using Weblate (Indonesian)\n- Translated using Weblate (Japanese)\n- Translated using Weblate (Polish)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (Spanish)\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v363...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/22519908167)"
+        },
+        {
+          "timestamp": 1773524571.425,
+          "version": "363",
+          "versionCode": 363,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v363/WebUI-X-v363-release-official.apk",
+          "changelog": "## What's new?\n\n- Restore moduleInfo and add package info methods\n- Add global setting to disable WebUI exit confirmation\n- Add defensive checks to WebUIView lifecycle methods\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v360...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/20007014185)"
+        },
+        {
+          "timestamp": 1773524571.428,
+          "version": "360",
+          "versionCode": 360,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v360/WebUI-X-v360-release-official.apk",
+          "changelog": "## What's new?\n\n- Simplify getLocalAllAsFlow to return sourceFlow directly\n- Fix sorting not reacting to menu changes\n- Ensure loading state is properly cleared when list is empty\n- Fix module disappearing issue - restore early return in dataObserver\n- Revert comparator changes - original logic was intentional\n- Fix module loading issues - remove early return and eager start flow\n- Fix sorting bug: Correct UpdatedTime and Size comparators\n- Initial analysis: Identified sorting bug in ModulesViewModel\n- Initial plan\n- Initial plan\n- Translated using Weblate (French)\n- Add ModConf shortcut creation support\n- Translated using Weblate (Russian)\n- Translated using Weblate (Persian)\n- Translated using Weblate (Persian)\n- Handle SSL errors based on debug mode in WXClient\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Japanese)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (Polish)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (German)\n- Translated using Weblate (Chinese (Traditional Han script))\n- Translated using Weblate (German)\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v325...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/19995662266)"
+        },
+        {
+          "timestamp": 1773524571.441,
+          "version": "325",
+          "versionCode": 325,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v325/WebUI-X-v325-release-official.apk",
+          "changelog": "## What's new?\n\n- Add keyboard height to WXKeyboardEventData and event handling\n- Add DEX signature verification and public key utility\n- Translated using Weblate (Polish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Japanese)\n- Add dexlib2 dependency and block certain DEX imports\n- Add allowed URL filtering to WXClient requests\n- Add permission and console message handling to WXChromeClient\n- Add typeface support to CodeEditorScreen\n- Update mmrl version in libs.versions.toml\n- Fix validation logic and update dialog text\n- Add long-press navigation to File Explorer in ModuleItem\n- Refactor toolbar and breadcrumb in FileExplorerScreen\n- Refactor SuFile utilities and update mmrl version\n- Add multi-file import/export and selection to explorer\n- Move file editor and explorer screens to editor package\n- Enhance FileEditorScreen with custom editor color scheme\n- Add file editing and saving to FileEditorScreen\n- Add file explorer and code editor screens\n- Refactor Release CI workflow for official flavors\n- Refactor Release CI workflow for clarity and structure\n- Update process name in AndroidManifest.xml\n- Add Pull-to-Refresh Helper for WebUI\n- fix webui engine key typo\n- Translated using Weblate (Polish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Add ModConfLauncher for launching ModConfActivity\n- Remove mapping file upload from build-apk action\n- Refactor CI workflows and add build-apk action\n- Add module config editing and engine selection\n- Refactor ModConfConfig to use ConfigFile base class\n- Add registerSharedObjects flag to Dex config\n- Refactor shared object handling in JavaScriptInterface\n- Refactor config and JSON model to platform module\n- Refactor WebUILauncher constructor and constants\n- Remove mapping path from APK output in workflow\n- Comment out mapping artifact upload in build workflow\n- Translated using Weblate (Polish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Translated using Weblate (Japanese)\n- Refactor CI workflows for modular release process\n- Include flavor name in APK output filename\n- Refactor plugin config updates and add mutable config helpers\n- Refactor config management and update module loading\n- Update Kontext.kt\n- Refactor resource loading and config in Kontext\n- Add custom resource loading to Kontext and update context providers\n- Update ModConf permission label text\n- Remove unused JNA Native import and unregister method\n- Refactor ModConf to support target packages and error handling\n- Add support for ModConfActivity in module UI\n- Update WebUI activity to ModConfActivity\n- Refactor permission strings and add ModConf support\n- Change asWebUIConfigFlow to MutableStateFlow\n- Add additional config editor and JSONCollection utilities\n- Add spoofed build type with random package name\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Polish)\n- Added translation using Weblate (English (Middle))\n- Translated using Weblate (Polish)\n- Translated using Weblate (Japanese)\n- Simplify SSL error handling in WXClient\n- Update build configs for JNA and WebUI modules\n- Update Java compatibility to version 21\n- Add publishing configuration for release variant\n- Update build.gradle.kts\n- Migrate JNA module to Kotlin DSL and update native libs\n- Enable shared object loading only if plugins are enabled\n- Add pluginsEnabled option to WebUI configuration\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v243...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/17531638567)"
+        },
+        {
+          "timestamp": 1773524571.445,
+          "version": "243",
+          "versionCode": 243,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v243/normal.apk",
+          "changelog": "## What's new?\n\n- Migrate navigation to Compose Destinations\n- Add force kill option for WebUI process\n- Refactor WebUI activity lifecycle and initialization\n- Refactor NavButton to use generic implementation\n- Refactor navigation to use sealed route classes\n- Add build info section to DeveloperScreen\n- Move developer settings to separate screen\n- Add build config fields for SDK and commit info\n- Centralize SDK config and suppress unused warnings\n- Deleted translation using Weblate (Filipino)\n- Deleted translation using Weblate (Filipino)\n- Deleted translation using Weblate (Asu)\n- Deleted translation using Weblate (Asu)\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Translated using Weblate (Japanese)\n- Translated using Weblate (Polish)\n- Append modId to native library registration names\n- Update mmrl version in libs.versions.toml\n- Add support for custom asset handlers in WebUI\n- Relax type constraints for library registration methods\n- Refactor WXLibrary load and unregister methods\n- Add WXNativeLong and WXPointerByReference interfaces\n- Add WXCallback interface and enhance WXLibrary\n- Add JNA wrapper interfaces and classes\n- Add isLibraryRegistered method to WXInterface\n- Add JNA library registration methods to WXInterface\n- Add extra field to WebUIConfig data class\n- Refactor shared object loading for JavaScript interfaces\n- Add JNA integration and shared object support\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v212...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/17080189020)"
+        },
+        {
+          "timestamp": 1773524571.456,
+          "version": "212",
+          "versionCode": 212,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v212/normal.apk",
+          "changelog": "## What's new?\n\n- Refactor loading renderer to accept color scheme\n- Update commits.sh\n- Update commits.sh\n- Add licenses screen and related models\n- Add Licensee plugin for license management\n- Translated using Weblate (Chinese (Simplified Han script))\n- Added translation using Weblate (Asu)\n- Translated using Weblate (French)\n- Translated using Weblate (Japanese)\n- Refactor module extraction and base dir handling\n- Fix escape character in Italian shortcut icon error string\n- Use putPlatform and string ModId in intent creation\n- Update strings_webui.xml\n- Add input validation for cachingMaxAge field\n- Refactor config file reading logic\n- Translated using Weblate (Polish)\n- Disable exit confirm switch when JS back interceptor is used\n- Replace finish() with handleNativeBack() on back press\n- Add SuFile text read/write extensions and JSONCollection types\n- Add WebUI config options for CSP and caching\n- Refactor FeaturedManager to use WorkingMode and add SukiSU\n- Switch module storage to internal app filesDir\n- Add composable error screens for WebView errors\n- Refactor WebView initialization and add debug helpers\n- Refactor script injection and cleanup unused variables\n- Prevent handling of data: URLs in WXClient\n- Refactor WebUI clients and split Chrome/RenderProcess logic\n- Refactor JavaScript interface removal in WebUIView\n- Translated using Weblate (Polish)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (Turkish)\n- Translated using Weblate (Chinese (Simplified Han script))\n- Refactor cleanup logic and add @CallSuper annotations\n- Refactor contentSecurityPolicy to non-nullable String\n- Add WebView render process client for unresponsive handling\n- Localize error messages in WebUIClient\n- Add CSP and caching options to WebUI config and handler\n- Add auto-open Eruda console option to WebUI\n- Refactor DataStore to local module and add auto-open Eruda\n- Fix cleanup method to properly remove WXView from parent\n- Add modular error page system for WebUI\n- Add webuix-demo2.zip asset and extraction logic\n- Add non-root module removal and refactor file usage\n- Pass baseDir to toModId for module lookup\n- Remove unused import from WebColors.kt\n- Add tonalSurface CSS variable to WebColors\n- Move require.js to assets and update injection logic\n- Refactor web color CSS generation to WebColors class\n- Translated using Weblate (Portuguese)\n- Translated using Weblate (Russian)\n- Translated using Weblate (Japanese)\n- Add permission constants and annotations to WebUILauncher\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v142...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/16841367646)"
+        },
+        {
+          "timestamp": 1773524571.459,
+          "version": "142",
+          "versionCode": 142,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v142/normal.apk",
+          "changelog": "**WebUI X: Portable**\n#ci_142\n\nBuild on 2025-07-04 23:07:20.\n\n## What's new?\n\n- Handle null modules in navigation graphs\r\n- Move setForeground call to onStartCommand\r\n- Refactor modId property initialization in WXActivity\r\n- Remove redundant file creation in config setup\r\n- Make modId property private and initialize in onCreate\n\nType: Release\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/16081997776)"
+        },
+        {
+          "timestamp": 1773524571.462,
+          "version": "131",
+          "versionCode": 131,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v131/normal.apk",
+          "changelog": "**WebUI X: Portable**\n#ci_131\n\nBuild on 2025-06-29 22:20:41.\n\n## What's new?\n\n- Ensure module config directory exists before file creation\r\n- Wrapped Intent.getPlatform() with a try catch\n\nType: Release\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/15959938525)"
+        },
+        {
+          "timestamp": 1773530469.191,
+          "version": "423",
+          "versionCode": 423,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v423/WebUI-X-v423-release-official.apk",
+          "changelog": "## What's new?\n\n- Initialize ViewModel store on attach; add onReady\n- fix loading modules when reopening the app\n- Simplify WebUI launcher and remove engine options\n- Add force-kill WebUI process preference\n- Introduce HybridWebUI store & refactor console/network\n- Introduce WXContentResolver and update usage\n- Add global crash handler and crash UI\n- Refine DevTools bottom sheet layout and styling\n- Use RichLogEntry list for console logs\n- Translated using Weblate (Polish)\n- Translated using Weblate (Indonesian)\n- Implement clearState method in WXView\n- Refactor onDestroy method in WXActivity\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v407...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/23097123267)"
+        },
+        {
+          "timestamp": 1775703818.377,
+          "version": "433",
+          "versionCode": 433,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v433/WebUI-X-v433-release-official.apk",
+          "changelog": "## What's new?\n\n- Update AndroidManifest.xml with new permissions\n- Translated using Weblate (Italian)\n- Translated using Weblate (Spanish)\n- Translated using Weblate (Polish)\n- Scope fs constants and stream input reads\n- Switch to hybridwebui.iife; add save-file stream\n- Add filesystem JS interfaces and console flow\n- Refactor JS interfaces and add file chooser\n- Add JS interface system and refactor WebUI\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v423...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/24164765069)"
+        },
+        {
+          "timestamp": 1778455815.072,
+          "version": "438",
+          "versionCode": 438,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v438/WebUI-X-v438-release-official.apk",
+          "changelog": "## What's new?\n\n- Fix #79\n- Translated using Weblate (Japanese)\n- Translated using Weblate (Arabic)\n\n[See all changes here](https://github.com/MMRLApp/WebUI-X-Portable/compare/v433...master)\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/25636825642)"
+        },
+        {
+          "timestamp": 1790116875.154,
+          "version": "549",
+          "versionCode": 549,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v549/WebUI-X-v549-release-official.apk",
+          "changelog": "> [!WARNING]\r\n> The WX Engine have been dropped in this release. Please migrate to newer APIs if you haven't.\r\n> - https://docs.mmrl.dev/modules/MX_Engine.html\r\n> - https://kernelsu.org"
+        },
+        {
+          "timestamp": 1790181679.548,
+          "version": "555",
+          "versionCode": 555,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v555/WebUI-X-v555-release-official.apk",
+          "changelog": "## What's new?\n\nNo commits found since the latest tag.\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/35870952801)"
+        },
+        {
+          "timestamp": 1790383951.201,
+          "version": "571",
+          "versionCode": 571,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v571/WebUI-X-v571-release-official.apk",
+          "changelog": "## What's new?\r\n\r\n### New Features\r\n\r\n* **WebUI & Dex Plugins:** Added support for WebUI `dex` plugin loading (`webui.dex` dependency, `WebUIDexFile` model, and `dexPlugin()` setup during screen init).\r\n* **Native Context Menu:** Added a configurable native context menu for WebUI supporting navigation, link/image actions, phone numbers, map locations, and email addresses.\r\n* **Markdown Renderer:** Built-in WebUI markdown renderer (`MarkdownView`/`MarkdownPathHandler`) supporting custom CSS, window insets, and browser forwarding for external links.\r\n* **Enhanced Crash Recovery:** Introduced `BrickException`/`HelpMessage` carrying markdown help in a bottom sheet with direct issue reporting via origin URL.\r\n* **CSP Builder Integration:** Added clickable CSP Builder docs link inside the config editor dialog.\r\n* **Rich Config Alerts:** Config documentation alerts now support rich composable text and styled links.\r\n\r\n### UI & UX Improvements\r\n\r\n* **Modernized Cards:** Migrated crash screen, home, file explorer, and theme settings to MMRLX 1.0.192 `card` and `outlinedCard` modifiers.\r\n* **Refined Status Cards:** Softened home screen root/non-root status card backgrounds with 50% alpha transparency.\r\n* **Unified Link Handling:** Centralized external links via `BrowserUriHandler` using Custom Tabs with standard `ACTION_VIEW` fallback.\r\n\r\n### Core & Maintenance\r\n\r\n* **Eruda Cleanup:** Removed Eruda console integration and injection in favor of DevTools (deprecated existing preference fields for backward compatibility).\r\n* **CSP Opt-out:** Blank or `*` values for `contentSecurityPolicy` now act as an explicit opt-out, bypassing header injection.\r\n\r\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/36183227392)"
+        },
+        {
+          "timestamp": 1790686374.371,
+          "version": "573",
+          "versionCode": 573,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v573/WebUI-X-v573-release-official.apk",
+          "changelog": "## What's new?\n\nNo commits found since the latest tag.\n\n[Workflow run](https://github.com/MMRLApp/WebUI-X-Portable/actions/runs/36551305059)"
+        },
+        {
+          "timestamp": 1791075173.094,
+          "version": "608",
+          "versionCode": 608,
+          "zipUrl": "https://github.com/MMRLApp/WebUI-X-Portable/releases/download/v608/WebUI-X-v608-release-official.apk",
+          "changelog": "This release brings a complete UI overhaul powered by the MMRL X design system, substantial performance and architecture refactors, upgraded developer tools, and an enhanced WebUI runtime.\r\n\r\n---\r\n\r\n## Highlights & New Features\r\n\r\n### Dashboard & Analytics\r\n\r\n- **Home Dashboard**: A new central Home screen features system status cards (root vs. non-root), hardware device details, storage usage metrics, and a support action center.\r\n- **Module Analytics**: Built-in analytics now automatically calculate module totals, state breakdowns, and storage consumption.\r\n\r\n### File Explorer & Editor Upgrades\r\n\r\n- **Standalone File Explorer**: Integrated a dedicated file explorer with its own navigation flow, adaptive app icons, and safe path scoping.\r\n- **TextMate Syntax Highlighting**: Added syntax highlighting to the code editor powered by TextMate language scopes and themes resolved via ADB paths.\r\n- **Material File Icons**: Centralized file and folder icon resolution using MMRLX Material icon mapping.\r\n\r\n### WebUI & WebUI Engine Enhancements\r\n\r\n- **Unified Engine (MX Only)**: Standardized all module launches and shortcuts to use the native MX engine for better security, performance, and plugin support. Legacy engine configurations have been deprecated and auto-migrated.\r\n- **Custom Context Menus**: Introduced a native web context menu for handling navigation, links, images, email addresses, map locations, and phone numbers directly.\r\n- **Dialog Overlays**: Replaced native dialog prompts with Material Design 3 and MMRLX themed prompt, confirm, and exit overlays.\r\n- **SVG Vector Support**: Integrated SVG decoding support via Coil 3 for module icons and covers.\r\n\r\n### Customization & Seasonal Visuals\r\n\r\n- **Seasonal Event Overlays**: Added optional animated seasonal visuals, including Halloween blood drips (October) and winter snowfall effects (December/January).\r\n- **App Event Opt-Out**: Provided a user preference setting to toggle seasonal event overlays on or off.\r\n- **Custom ADB Paths**: Users can now specify a custom ADB path for non-root setups via app preferences.\r\n- **Module Shortcuts**: Added an option to generate pinned home screen shortcuts for individual modules.\r\n\r\n---\r\n\r\n## Developer Experience & Tooling\r\n\r\n- **Expanded KernelSU & System APIs**: Exposed expanded package management APIs, file system streams (`ksu.io`), and module metadata direct to JavaScript interfaces.\r\n- **DevTools Integration**: Upgraded internal WebUI inspection tools with improved DOM parsing (powered by Jsoup), network tracking, console logging options, and customizable console event payload logging.\r\n- **Custom Tabs Browser Integration**: Added a centralized URL handler to open external links inside themed Custom Tabs.\r\n- **Crash & Recovery Guidance**: Upgraded crash screens with structured recovery guidance, markdown support, and direct issue routing based on build origin."
+        }
+      ]
+    },
+    {
+      "id": "COPG",
       "name": "COPG SPOOF",
       "version": "7.3.0",
       "versionCode": 730,
@@ -653,163 +814,140 @@
       ]
     },
     {
-      "id": "9SEMfT4HLm2Z",
-      "name": "META OverlayFS",
-      "version": "1207-stable",
-      "versionCode": 1207,
-      "author": "KernelSU Developers",
-      "description": "A reference implementation of the overlayfs mount handler for KernelSU metamodules",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/9SEMfT4HLm2Z/README.md",
+      "id": "CUVsU3qWDft4",
+      "name": "Tricky Addon - Update Target List",
+      "version": "5.0-beta.4",
+      "versionCode": 504,
+      "author": "KOWX712",
+      "description": "A WebUI to conifgure tricky store target.txt",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/CUVsU3qWDft4/README.md",
       "license": "GPL-3.0",
       "categories": [
-        "system"
+        "miscellaneous"
       ],
       "verified": false,
-      "added": 1771490922.196,
-      "timestamp": 1771459200,
+      "added": 1773039290.686,
+      "timestamp": 1786579200,
       "permissions": [],
       "features": {},
-      "stars": 65,
+      "stars": 110,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1771490922.196,
-        "source": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs",
+        "added": 1773039290.686,
+        "source": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1771490922.196,
-          "version": "1.3.1",
-          "versionCode": 131,
-          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/v1.3.1/meta-overlayfs-13100-1.3.1.zip",
-          "changelog": "<!-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9wcyI6eyJpZCI6Im1ldGEtb3ZlcmxheWZzIiwibWV0YW1vZHVsZSI6IjEiLCJuYW1lIjoiT3ZlcmxheUZTIE1ldGFNb2R1bGUiLCJ2ZXJzaW9uIjoiMS4zLjEiLCJ2ZXJzaW9uQ29kZSI6IjEzMTAwIiwiYXV0aG9yIjoiS2VybmVsU1UgRGV2ZWxvcGVycyIsImRlc2NyaXB0aW9uIjoiQW4gaW1wbGVtZW50YXRpb24gb2YgYSBtZXRhbW9kdWxlIHVzaW5nIE92ZXJsYXlGUyBmb3IgS2VybmVsU1UifSwiZG93bmxvYWRVcmwiOiJodHRwczovL2dpdGh1Yi5jb20vS2VybmVsU1UtTW9kdWxlcy1SZXBvL21ldGEtb3ZlcmxheWZzL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMS9tZXRhLW92ZXJsYXlmcy0xMzEwMC0xLjMuMS56aXAiLCJ0YWdOYW1lIjoidjEuMy4xIiwiaWF0IjoxNzY1NjEyMDE0fQ.8kxF5ReCB0Kf9dCsTUpAuxMpiGCbuQVmrR61TNauhNk -->\n## What's Changed\n* Skip SYSTEM_RW_DIR in directory processing by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/4\n* Recognize SYSTEM_RW_DIR correctly by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/6\n* Implement SELinux context application for .rw by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/8\n* Set correct context to img file before mounting by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/10\n\n\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/v1.3.0...v1.3.1"
+          "timestamp": 1773039290.686,
+          "version": "4.3",
+          "versionCode": 43,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.3/TrickyAddonModule-v4.3.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** UI improvement: optimized dialog animation and menu appearence.\n- **WebUI:** Fixed fallback link not working, fixed no internet connection in some condition.\n- **WebUI:** Implemented translation hot update feature, allow pulling transation from crowdin branch and apply without reboot. Translation in repo will sync with Crowdin on every Sunday.\n- **WebUI:** Fixed fail to apply custom keybox on some path.\n- **Script:** Added auto security patch support for custom.pif.prop\n- **Script:** Added sensitive props handling from shamiko."
         },
         {
-          "timestamp": 1771491232.764,
-          "version": "1.3.0",
-          "versionCode": 130,
-          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/v1.3.0/meta-overlayfs-13000-1.3.0.zip",
-          "changelog": "<!-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9wcyI6eyJpZCI6Im1ldGEtb3ZlcmxheWZzIiwibWV0YW1vZHVsZSI6IjEiLCJuYW1lIjoiT3ZlcmxheUZTIE1ldGFNb2R1bGUiLCJ2ZXJzaW9uIjoiMS4zLjAiLCJ2ZXJzaW9uQ29kZSI6IjEzMDAwIiwiYXV0aG9yIjoiS2VybmVsU1UgRGV2ZWxvcGVycyIsImRlc2NyaXB0aW9uIjoiQW4gaW1wbGVtZW50YXRpb24gb2YgYSBtZXRhbW9kdWxlIHVzaW5nIE92ZXJsYXlGUyBmb3IgS2VybmVsU1UifSwiZG93bmxvYWRVcmwiOiJodHRwczovL2dpdGh1Yi5jb20vS2VybmVsU1UtTW9kdWxlcy1SZXBvL21ldGEtb3ZlcmxheWZzL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9tZXRhLW92ZXJsYXlmcy0xMzAwMC0xLjMuMC56aXAiLCJ0YWdOYW1lIjoidjEuMy4wIiwiaWF0IjoxNzY1NjEyMDE0fQ.IMjoSv33pBEDuY7b_MUrqJLOEJwYscm0lDnLXAcTK88 -->\n## What's Changed\n* fix: REPLACE by @7a72 in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/1\n* Change ext4 formatting to disable journal by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/2\n\n## New Contributors\n* @7a72 made their first contribution in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/1\n* @aviraxp made their first contribution in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/2\n\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1100...v1.3.0"
+          "timestamp": 1773039290.693,
+          "version": "4.2",
+          "versionCode": 42,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.2/TrickyAddonModule-v4.2.zip",
+          "changelog": "### Tricky Addon module\r\n- **WebUI:** New UI with [Material Web Component](https://material-web.dev) and some various improvements.\r\n- **WebUI:** Fixed missing security patch option in newer version of [beakthoven/TrickyStoreOSS](https://github.com/beakthoven/TrickyStoreOSS).\r\n- **WebUI:** Fixed broken devconfig.toml value reading when using [qwq233/TrickyStore](https://github.com/qwq233/TrickyStore).\r\n- **WebUI:** Added Vietnamese translation (@doanvtamhuynh, #96).\r\n- **WebUI:** Updated many [translation](https://crowdin.com/project/TA_utl) [ff3e2e4](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/commit/ff3e2e4cd3ba6e40277c0c8def016e764673c262).\r\n- No longer ship full openssl binary."
         },
         {
-          "timestamp": 1771491232.769,
-          "version": "1207-stable",
-          "versionCode": 1207,
-          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1207-stable/meta-overlayfs-1100-1.1.0.zip",
-          "changelog": "<!-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9wcyI6eyJpZCI6Im1ldGEtb3ZlcmxheWZzIiwibWV0YW1vZHVsZSI6IjEiLCJuYW1lIjoiT3ZlcmxheUZTIE1ldGFNb2R1bGUiLCJ2ZXJzaW9uIjoiMS4xLjAiLCJ2ZXJzaW9uQ29kZSI6IjExMDAiLCJhdXRob3IiOiJLZXJuZWxTVSBEZXZlbG9wZXJzIiwiZGVzY3JpcHRpb24iOiJBbiBpbXBsZW1lbnRhdGlvbiBvZiBhIG1ldGFtb2R1bGUgdXNpbmcgT3ZlcmxheUZTIGZvciBLZXJuZWxTVSJ9LCJkb3dubG9hZFVybCI6Imh0dHBzOi8vZ2l0aHViLmNvbS9LZXJuZWxTVS1Nb2R1bGVzLVJlcG8vbWV0YS1vdmVybGF5ZnMvcmVsZWFzZXMvZG93bmxvYWQvMTIwNy1zdGFibGUvbWV0YS1vdmVybGF5ZnMtMTEwMC0xLjEuMC56aXAiLCJ0YWdOYW1lIjoiMTIwNy1zdGFibGUiLCJpYXQiOjE3NjU2MTIwMTR9.F3zFUwdxZfQ9LgG1EJfZiXQG6A7D2W7aZluN7RqFV50 -->\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1205-stable...1207-stable"
+          "timestamp": 1773039290.696,
+          "version": "4.1",
+          "versionCode": 41,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.1/TrickyAddonModule-v4.1.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** Added right-to-left language support in UI.\n- **WebUI:** Fixed 'Failed to fetch applist' in certain condition.\n- **Script:** Added auto security patch support for pif.prop.\n- **WebUI:** Added support for Dakkshesh's TrickyStore fork [(GitHub@beakthoven/TrickyStore)](https://github.com/beakthoven/TrickyStore).\n- **WebUI:** Added device props support for qwq233's TrickyStore fork (this will not modify system prop automatically).\n- **WebUI:** Added German (#78, @xxOrdulu52xx), Bengali, Persian translation.\n- **WebUI:** Updated Turkish, Italian, Japanese, Arabic translation. (@cvnertnc, @GRgabrix, @reindex-ot, @ZG089)"
         },
         {
-          "timestamp": 1771491232.79,
-          "version": "1205-stable",
-          "versionCode": 1205,
-          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1205-stable/meta-overlayfs-1205-stable.zip",
-          "changelog": "## What's Changed\n* Change ext4 formatting to disable journal by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/2\n\n## New Contributors\n* @aviraxp made their first contribution in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/2\n\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1204-stable...1205-stable"
+          "timestamp": 1773039290.711,
+          "version": "4.0",
+          "versionCode": 40,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.0/TrickyAddonModule-v4.0.zip",
+          "changelog": "### Tricky Addon module\r\n- **WebUI:** Fixed `Failed to fetch security patch` issue in most condition.\r\n- **WebUI:** Added support for [qwq233's TrickyStore fork](https://github.com/qwq233/TrickyStore).\r\n- **WebUI:** Provide option to download latest canary version in about menu.\r\n- **action:** Removed MMRL from action redirect WebUI since MMRL no longer provide built-in WebUI. (#66, @ThanhCN0)\r\n- **WebUI:** Unknown keybox option no longer rely on internet connection.\r\n- **WebUI:** Fixed built-in update mechanism might fail in some condition. (@backslashxx)\r\n- **WebUI:** Translation service now is available on crowdin, view [translation guide](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/blob/main/module/webui/locales/GUIDE.md) for more detail. You can reach our crowdin website in the WebUI language menu too.\r\n- **WebUI:** Added Ukrainian (#43, @StepanSad), Greek (#61, @Goku818) translation.\r\n- **WebUI:** Updated Japanese, Indonesian, Arabic, Polish, French, Portuguese, Ukrainian translation. (@reindex-ot, @Rem01Gaming, @ZG089, @Bladius2024, @GhostFRR, @SecretGogeta, [crowdin@IlliaS](https://crowdin.com/profile/illias))"
         },
         {
-          "timestamp": 1771491232.804,
-          "version": "1204-stable",
-          "versionCode": 1204,
-          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1204-stable/meta-overlayfs-1204-stable.zip",
-          "changelog": "**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1203-stable...1204-stable"
+          "timestamp": 1773039290.723,
+          "version": "3.9",
+          "versionCode": 39,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.9/TrickyAddonModule-v3.9.zip",
+          "changelog": "### Tricky Addon module\r\n- **WebUI:** Optmized app loading speed, fixed all known freezing issue.\r\n- **WebUI:** Added unknown keybox option, similar to AOSP keybox, removed AOSP keybox fallback when no valid keybox available.\r\n- **MMRL:** Added app icon support, enjoy with latest [MMRL](https://github.com/MMRLApp/MMRL/releases/latest) or [WebUI X](https://github.com/MMRLApp/WebUI-X-Portable/releases/latest).\r\n- **Action:** Added support for Magisk action redirect WebUI X.\r\n- **Script:** Get actual vbmeta size before resetprop.\r\n- **WebUI:** Add Portuguese Brazilian Translation (#38, @JeanxPereira)"
         },
         {
-          "timestamp": 1771491232.807,
-          "version": "1203-stable",
-          "versionCode": 1203,
-          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1203-stable/meta-overlayfs-1203-stable.zip",
-          "changelog": "**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1202-stable...1203-stable"
+          "timestamp": 1773039290.727,
+          "version": "3.8.1",
+          "versionCode": 381,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.8.1/TrickyAddonModule-v3.8.1.zip",
+          "changelog": "### Tricky Addon module\r\n- **WebUI:** Fixed missing aosp key fallback when no valid key is available."
         },
         {
-          "timestamp": 1771491232.821,
-          "version": "1202-stable",
-          "versionCode": 1202,
-          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1202-stable/meta-overlayfs-1202-stable.zip",
-          "changelog": "## What's Changed\n* fix: REPLACE by @7a72 in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/1\n\n## New Contributors\n* @7a72 made their first contribution in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/1\n\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1-stable...1202-stable"
+          "timestamp": 1773039290.74,
+          "version": "3.8",
+          "versionCode": 38,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.8/TrickyAddonModule-v3.8.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** Optimized UI.\n- **WebUI:** Added mirror link fallback to fetch content from raw.githubusercontent.com\n- **WebUI:** Added French translation (#31, @anaelle-dev)\n- **WebUI:** Added Arabic Translation (#32, @ZG089)\n- **WebUI:** Added Azerbaijani Translation (#34, @mnasibzade)"
         },
         {
-          "timestamp": 1771491232.824,
-          "version": "1-stable",
-          "versionCode": 1,
-          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1-stable/meta-overlayfs-1-stable.zip",
-          "changelog": "<!-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9wcyI6eyJpZCI6Im1ldGEtb3ZlcmxheWZzIiwibWV0YW1vZHVsZSI6IjEiLCJuYW1lIjoiT3ZlcmxheUZTIE1ldGFNb2R1bGUiLCJ2ZXJzaW9uIjoiMS4xLjAiLCJ2ZXJzaW9uQ29kZSI6IjExMDAiLCJhdXRob3IiOiJLZXJuZWxTVSBEZXZlbG9wZXJzIiwiZGVzY3JpcHRpb24iOiJBbiBpbXBsZW1lbnRhdGlvbiBvZiBhIG1ldGFtb2R1bGUgdXNpbmcgT3ZlcmxheUZTIGZvciBLZXJuZWxTVSJ9LCJkb3dubG9hZFVybCI6Imh0dHBzOi8vZ2l0aHViLmNvbS9LZXJuZWxTVS1Nb2R1bGVzLVJlcG8vbWV0YS1vdmVybGF5ZnMvcmVsZWFzZXMvZG93bmxvYWQvMS1zdGFibGUvbWV0YS1vdmVybGF5ZnMtMS1zdGFibGUuemlwIiwidGFnTmFtZSI6IjEtc3RhYmxlIiwiaWF0IjoxNzY1NjEyMDE0fQ.NqsztUuVc9fyCxZI8rhIjsuC2XfVVa19IMtLTKeKW6g -->\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/commits/1-stable\r\n"
+          "timestamp": 1773039290.743,
+          "version": "3.7",
+          "versionCode": 37,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.7/TrickyAddonModule-v3.7.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** Optimized UI.\n- **WebUI:** Added uninstall confirmation dialog.\n- **WebUI:** Sanitize text content (#23, @totalolage)\n- **WebUI:** Added selected language memory.\n- **WebUI:** Fixed Chinese translation (#26 #27, @xiaokuqwq)\n- **WebUI:** Added Indonesian translation (#28, @ChiseWaguri)\n- **WebUI:** Added Italian translation (#30, @luigimak)\n- **MMRL:** Added monet theme suport.\n- **MMRL:** Fixed fail to display guide when permission is not granted.\n- No longer add Play Store by default."
+        },
+        {
+          "timestamp": 1773039290.756,
+          "version": "3.6",
+          "versionCode": 36,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.6/TrickyAddonModule-v3.6.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** Option to add system apps.\n- **WebUI:** Fixed abnormal gap between content and header in MMRL.\n- Handle some vbmeta related prop, enforce boot hash to lowercase.\n- No longer auto config security patch by default (old user will remain current setup).\n- Fixed issue with disable sucompat.\n- More minor improvements."
+        },
+        {
+          "timestamp": 1773039290.758,
+          "version": "3.5",
+          "versionCode": 35,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.5/TrickyAddonModule-v3.5.zip",
+          "changelog": "### Tricky Addon module\n- **Script:** Set `system=prop` in auto config.\n- **WebUI:** Option to fetch secuirty patch date.\n- **WebUI:** Fixed `Failed to fetch app list` issue in vanilla rom.\n- **WebUI:** Added Polish translation (#18, @Bladius2024)\n- **WebUI:** Update Japanese translation (#20, @reindex-ot)\n- **WebUI:** Minor UI improvements."
+        },
+        {
+          "timestamp": 1775207015.11,
+          "version": "5.0-beta.1",
+          "versionCode": 501,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.1/TrickyAddonModule-v5.0-beta.1.zip",
+          "changelog": "### Tricky Addon module\r\n- **Dropped support for old KernelSU and APatch versions** - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n- **Module:** Drop aapt and keygen, no longer ship any binary.\r\n- **Script:** Fix uninstallation in overlayfs manager.\r\n- **Script:** Fix missing prop in sensitive props handling, support resetprop compact.\r\n- **Script:** Support hotinstall in supported metamodule.\r\n- **WebUI:** Add support for JingMatrix's fork ([JingMatrix/TEESimulator](https://github.com/JingMatrix/TEESimulator)).\r\n- **WebUI:** Improve rtl language support, update gitmirror link.\r\n- **WebUI:** Support custom keybox provider, allow fetching and decoding keybox from any url.\r\n- **WebUI:** Add Thai translation (@zr89-richter, #122).\r\n"
+        },
+        {
+          "timestamp": 1780075808.39,
+          "version": "5.0-beta.2",
+          "versionCode": 502,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.2/TrickyAddonModule-v5.0-beta.2.zip",
+          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Refactor codebase, change license to Apache 2.0 (#137)\r\n- **WebUI:** Add prop handler switch (option to disable shamiko's resetprop script)\r\n- **Script:** Drop auto security patch feature"
+        },
+        {
+          "timestamp": 1780842052.326,
+          "version": "5.0-beta.3",
+          "versionCode": 503,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.3/TrickyAddonModule-v5.0-beta.3.zip",
+          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Add [keybox repo](https://keybox.kowx712.cc/) support, current addon's custom keybox provider will be maintained less actively in the future.\r\n- **WebUI:** Fix unable to load WebUI.\r\n- **WebUI:** Fix built-in module update.\r\n- **WebUI:** Updated many strings, welcome to contribute via [crowdin](https://crowdin.com/project/TA_utl)."
+        },
+        {
+          "timestamp": 1782041614.189,
+          "version": "4.4",
+          "versionCode": 44,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.4/TrickyAddonModule-v4.4.zip",
+          "changelog": "### Tricky Addon module\r\n\r\n#### This is last v4 release before v5 stable release, v5 will drop support for legacy KSU WebUI that doesn't support package manager api. This is a downgrade for existing v5 beta user.\r\n- **Script:** Fix uninstallation in overlayfs manager.\r\n- **Script:** Fix missing prop in sensitive props handling, support resetprop compact.\r\n- **WebUI:** Add community driven [keybox repo](https://keybox.kowx712.cc/) support, current valid keybox will be maintained less actively in the future.\r\n- **WebUI:** Improve rtl language support, update gitmirror link.\r\n- **WebUI:** Support custom keybox provider, allow fetching and decoding keybox from any url.\r\n- **WebUI:** Add Thai translation (@zr89-richter, #122)."
+        },
+        {
+          "timestamp": 1786617657.18,
+          "version": "5.0-beta.4",
+          "versionCode": 504,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.4/TrickyAddonModule-v5.0-beta.4.zip",
+          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Add support for [OhMyKeymint](https://github.com/qwq233/OhMyKeymint) (#140)."
         }
       ]
     },
     {
-      "id": "a_Tl6u0ctcTX",
-      "name": "Zygisk Next",
-      "version": "1.3.4",
-      "versionCode": 134,
-      "author": "5ec1cff and Nullptr",
-      "description": "Standalone implementation of Zygisk, providing Zygisk API support for KernelSU and a replacement of Magisk's built-in Zygisk.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/a_Tl6u0ctcTX/README.md",
-      "license": "Proprietary",
-      "categories": [
-        "system"
-      ],
-      "verified": false,
-      "added": 1777063578.328,
-      "timestamp": 1776988800,
-      "permissions": [],
-      "features": {},
-      "stars": 179,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1777063578.328,
-        "source": "",
-        "antifeatures": [
-          "ClosedSource"
-        ],
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1777063578.328,
-          "version": "1.3.4",
-          "versionCode": 134,
-          "zipUrl": "https://github.com/Dr-TSNG/ZygiskNext/releases/download/v1.3.4/Zygisk-Next-1.3.4-746-d1b76b3-release.zip",
-          "changelog": "https://api.nullptr.icu/android/zygisk-next/static/changelog.md"
-        }
-      ]
-    },
-    {
-      "id": "bdJJPDbVGjKU",
-      "name": "shizuku auto starter",
-      "version": "1.0",
-      "versionCode": 10,
-      "author": "merbah3266",
-      "description": "Magisk module activates Shizuku during boot",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/bdJJPDbVGjKU/README.md",
-      "license": "MIT",
-      "categories": [
-        "system"
-      ],
-      "verified": false,
-      "added": 1771134983.104,
-      "timestamp": 1771113600,
-      "permissions": [],
-      "features": {},
-      "stars": 137,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1771134983.104,
-        "source": "https://github.com/merbah3266/shizuku-auto-starter",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1771134983.104,
-          "version": "1.0",
-          "versionCode": 10,
-          "zipUrl": "https://github.com/merbah3266/shizuku-auto-starter/releases/download/v1.0/Shizuku_Auto_Starter_1.0_1.zip",
-          "changelog": "## Shizuku Auto Starter - First Release\r\n\r\nThis is the first release of the module.\r\n\r\nIt automatically runs Shizuku at boot by executing `libshizuku.so`.  \r\nTested on a Magisk-rooted device. Other environments are not guaranteed.\r\n\r\nSimple and minimal."
-        }
-      ]
-    },
-    {
-      "id": "BM8cG-gDofy0",
+      "id": "hybrid-mount",
       "name": "Hybrid Mount",
       "version": "6.2.3-rc.3",
       "versionCode": 6233,
@@ -1236,259 +1374,6 @@
       ]
     },
     {
-      "id": "CUVsU3qWDft4",
-      "name": "Tricky Addon - Update Target List",
-      "version": "5.0-beta.4",
-      "versionCode": 504,
-      "author": "KOWX712",
-      "description": "A WebUI to conifgure tricky store target.txt",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/CUVsU3qWDft4/README.md",
-      "license": "GPL-3.0",
-      "categories": [
-        "miscellaneous"
-      ],
-      "verified": false,
-      "added": 1773039290.686,
-      "timestamp": 1786579200,
-      "permissions": [],
-      "features": {},
-      "stars": 110,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1773039290.686,
-        "source": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1773039290.686,
-          "version": "4.3",
-          "versionCode": 43,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.3/TrickyAddonModule-v4.3.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** UI improvement: optimized dialog animation and menu appearence.\n- **WebUI:** Fixed fallback link not working, fixed no internet connection in some condition.\n- **WebUI:** Implemented translation hot update feature, allow pulling transation from crowdin branch and apply without reboot. Translation in repo will sync with Crowdin on every Sunday.\n- **WebUI:** Fixed fail to apply custom keybox on some path.\n- **Script:** Added auto security patch support for custom.pif.prop\n- **Script:** Added sensitive props handling from shamiko."
-        },
-        {
-          "timestamp": 1773039290.693,
-          "version": "4.2",
-          "versionCode": 42,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.2/TrickyAddonModule-v4.2.zip",
-          "changelog": "### Tricky Addon module\r\n- **WebUI:** New UI with [Material Web Component](https://material-web.dev) and some various improvements.\r\n- **WebUI:** Fixed missing security patch option in newer version of [beakthoven/TrickyStoreOSS](https://github.com/beakthoven/TrickyStoreOSS).\r\n- **WebUI:** Fixed broken devconfig.toml value reading when using [qwq233/TrickyStore](https://github.com/qwq233/TrickyStore).\r\n- **WebUI:** Added Vietnamese translation (@doanvtamhuynh, #96).\r\n- **WebUI:** Updated many [translation](https://crowdin.com/project/TA_utl) [ff3e2e4](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/commit/ff3e2e4cd3ba6e40277c0c8def016e764673c262).\r\n- No longer ship full openssl binary."
-        },
-        {
-          "timestamp": 1773039290.696,
-          "version": "4.1",
-          "versionCode": 41,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.1/TrickyAddonModule-v4.1.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** Added right-to-left language support in UI.\n- **WebUI:** Fixed 'Failed to fetch applist' in certain condition.\n- **Script:** Added auto security patch support for pif.prop.\n- **WebUI:** Added support for Dakkshesh's TrickyStore fork [(GitHub@beakthoven/TrickyStore)](https://github.com/beakthoven/TrickyStore).\n- **WebUI:** Added device props support for qwq233's TrickyStore fork (this will not modify system prop automatically).\n- **WebUI:** Added German (#78, @xxOrdulu52xx), Bengali, Persian translation.\n- **WebUI:** Updated Turkish, Italian, Japanese, Arabic translation. (@cvnertnc, @GRgabrix, @reindex-ot, @ZG089)"
-        },
-        {
-          "timestamp": 1773039290.711,
-          "version": "4.0",
-          "versionCode": 40,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.0/TrickyAddonModule-v4.0.zip",
-          "changelog": "### Tricky Addon module\r\n- **WebUI:** Fixed `Failed to fetch security patch` issue in most condition.\r\n- **WebUI:** Added support for [qwq233's TrickyStore fork](https://github.com/qwq233/TrickyStore).\r\n- **WebUI:** Provide option to download latest canary version in about menu.\r\n- **action:** Removed MMRL from action redirect WebUI since MMRL no longer provide built-in WebUI. (#66, @ThanhCN0)\r\n- **WebUI:** Unknown keybox option no longer rely on internet connection.\r\n- **WebUI:** Fixed built-in update mechanism might fail in some condition. (@backslashxx)\r\n- **WebUI:** Translation service now is available on crowdin, view [translation guide](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/blob/main/module/webui/locales/GUIDE.md) for more detail. You can reach our crowdin website in the WebUI language menu too.\r\n- **WebUI:** Added Ukrainian (#43, @StepanSad), Greek (#61, @Goku818) translation.\r\n- **WebUI:** Updated Japanese, Indonesian, Arabic, Polish, French, Portuguese, Ukrainian translation. (@reindex-ot, @Rem01Gaming, @ZG089, @Bladius2024, @GhostFRR, @SecretGogeta, [crowdin@IlliaS](https://crowdin.com/profile/illias))"
-        },
-        {
-          "timestamp": 1773039290.723,
-          "version": "3.9",
-          "versionCode": 39,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.9/TrickyAddonModule-v3.9.zip",
-          "changelog": "### Tricky Addon module\r\n- **WebUI:** Optmized app loading speed, fixed all known freezing issue.\r\n- **WebUI:** Added unknown keybox option, similar to AOSP keybox, removed AOSP keybox fallback when no valid keybox available.\r\n- **MMRL:** Added app icon support, enjoy with latest [MMRL](https://github.com/MMRLApp/MMRL/releases/latest) or [WebUI X](https://github.com/MMRLApp/WebUI-X-Portable/releases/latest).\r\n- **Action:** Added support for Magisk action redirect WebUI X.\r\n- **Script:** Get actual vbmeta size before resetprop.\r\n- **WebUI:** Add Portuguese Brazilian Translation (#38, @JeanxPereira)"
-        },
-        {
-          "timestamp": 1773039290.727,
-          "version": "3.8.1",
-          "versionCode": 381,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.8.1/TrickyAddonModule-v3.8.1.zip",
-          "changelog": "### Tricky Addon module\r\n- **WebUI:** Fixed missing aosp key fallback when no valid key is available."
-        },
-        {
-          "timestamp": 1773039290.74,
-          "version": "3.8",
-          "versionCode": 38,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.8/TrickyAddonModule-v3.8.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** Optimized UI.\n- **WebUI:** Added mirror link fallback to fetch content from raw.githubusercontent.com\n- **WebUI:** Added French translation (#31, @anaelle-dev)\n- **WebUI:** Added Arabic Translation (#32, @ZG089)\n- **WebUI:** Added Azerbaijani Translation (#34, @mnasibzade)"
-        },
-        {
-          "timestamp": 1773039290.743,
-          "version": "3.7",
-          "versionCode": 37,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.7/TrickyAddonModule-v3.7.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** Optimized UI.\n- **WebUI:** Added uninstall confirmation dialog.\n- **WebUI:** Sanitize text content (#23, @totalolage)\n- **WebUI:** Added selected language memory.\n- **WebUI:** Fixed Chinese translation (#26 #27, @xiaokuqwq)\n- **WebUI:** Added Indonesian translation (#28, @ChiseWaguri)\n- **WebUI:** Added Italian translation (#30, @luigimak)\n- **MMRL:** Added monet theme suport.\n- **MMRL:** Fixed fail to display guide when permission is not granted.\n- No longer add Play Store by default."
-        },
-        {
-          "timestamp": 1773039290.756,
-          "version": "3.6",
-          "versionCode": 36,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.6/TrickyAddonModule-v3.6.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** Option to add system apps.\n- **WebUI:** Fixed abnormal gap between content and header in MMRL.\n- Handle some vbmeta related prop, enforce boot hash to lowercase.\n- No longer auto config security patch by default (old user will remain current setup).\n- Fixed issue with disable sucompat.\n- More minor improvements."
-        },
-        {
-          "timestamp": 1773039290.758,
-          "version": "3.5",
-          "versionCode": 35,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.5/TrickyAddonModule-v3.5.zip",
-          "changelog": "### Tricky Addon module\n- **Script:** Set `system=prop` in auto config.\n- **WebUI:** Option to fetch secuirty patch date.\n- **WebUI:** Fixed `Failed to fetch app list` issue in vanilla rom.\n- **WebUI:** Added Polish translation (#18, @Bladius2024)\n- **WebUI:** Update Japanese translation (#20, @reindex-ot)\n- **WebUI:** Minor UI improvements."
-        },
-        {
-          "timestamp": 1775207015.11,
-          "version": "5.0-beta.1",
-          "versionCode": 501,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.1/TrickyAddonModule-v5.0-beta.1.zip",
-          "changelog": "### Tricky Addon module\r\n- **Dropped support for old KernelSU and APatch versions** - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n- **Module:** Drop aapt and keygen, no longer ship any binary.\r\n- **Script:** Fix uninstallation in overlayfs manager.\r\n- **Script:** Fix missing prop in sensitive props handling, support resetprop compact.\r\n- **Script:** Support hotinstall in supported metamodule.\r\n- **WebUI:** Add support for JingMatrix's fork ([JingMatrix/TEESimulator](https://github.com/JingMatrix/TEESimulator)).\r\n- **WebUI:** Improve rtl language support, update gitmirror link.\r\n- **WebUI:** Support custom keybox provider, allow fetching and decoding keybox from any url.\r\n- **WebUI:** Add Thai translation (@zr89-richter, #122).\r\n"
-        },
-        {
-          "timestamp": 1780075808.39,
-          "version": "5.0-beta.2",
-          "versionCode": 502,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.2/TrickyAddonModule-v5.0-beta.2.zip",
-          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Refactor codebase, change license to Apache 2.0 (#137)\r\n- **WebUI:** Add prop handler switch (option to disable shamiko's resetprop script)\r\n- **Script:** Drop auto security patch feature"
-        },
-        {
-          "timestamp": 1780842052.326,
-          "version": "5.0-beta.3",
-          "versionCode": 503,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.3/TrickyAddonModule-v5.0-beta.3.zip",
-          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Add [keybox repo](https://keybox.kowx712.cc/) support, current addon's custom keybox provider will be maintained less actively in the future.\r\n- **WebUI:** Fix unable to load WebUI.\r\n- **WebUI:** Fix built-in module update.\r\n- **WebUI:** Updated many strings, welcome to contribute via [crowdin](https://crowdin.com/project/TA_utl)."
-        },
-        {
-          "timestamp": 1782041614.189,
-          "version": "4.4",
-          "versionCode": 44,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.4/TrickyAddonModule-v4.4.zip",
-          "changelog": "### Tricky Addon module\r\n\r\n#### This is last v4 release before v5 stable release, v5 will drop support for legacy KSU WebUI that doesn't support package manager api. This is a downgrade for existing v5 beta user.\r\n- **Script:** Fix uninstallation in overlayfs manager.\r\n- **Script:** Fix missing prop in sensitive props handling, support resetprop compact.\r\n- **WebUI:** Add community driven [keybox repo](https://keybox.kowx712.cc/) support, current valid keybox will be maintained less actively in the future.\r\n- **WebUI:** Improve rtl language support, update gitmirror link.\r\n- **WebUI:** Support custom keybox provider, allow fetching and decoding keybox from any url.\r\n- **WebUI:** Add Thai translation (@zr89-richter, #122)."
-        },
-        {
-          "timestamp": 1786617657.18,
-          "version": "5.0-beta.4",
-          "versionCode": 504,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.4/TrickyAddonModule-v5.0-beta.4.zip",
-          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Add support for [OhMyKeymint](https://github.com/qwq233/OhMyKeymint) (#140)."
-        }
-      ]
-    },
-    {
-      "id": "h6ysMxFbsTUf",
-      "name": "Privileged Shell Wrapper for Termux",
-      "version": "23",
-      "versionCode": 23,
-      "author": "Der_Googler",
-      "description": "A lightweight utility designed to provide a controlled root-like shell environment on Termux for Android.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/h6ysMxFbsTUf/README.md",
-      "license": "MIT",
-      "categories": [
-        "system"
-      ],
-      "verified": false,
-      "added": 1777543380.58,
-      "timestamp": 1777507200,
-      "permissions": [],
-      "features": {},
-      "stars": 109,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1777543380.58,
-        "source": "https://github.com/DerGoogler/psh",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1777543380.58,
-          "version": "23",
-          "versionCode": 23,
-          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/23/psh-arm64-v8a",
-          "changelog": "## Installation on Termux\n\nYou can install `psh` easily on Termux using the provided install script, which downloads the appropriate binary for your device architecture, sets permissions, and configures ownership:\n\nRun this command directly in Termux (curl or wget):\n\n```bash\ncurl -fsSL https://psh.dergoogler.com/install.sh | bash\n```\n\nOr with wget:\n\n```bash\nwget -qO- https://psh.dergoogler.com/install.sh | bash\n```\n\nBy default, it installs the latest stable release. You can specify a version like so:\n\n```bash\nVERSION=23 curl -fsSL https://psh.dergoogler.com/install.sh | bash\n```\nVersion: 23"
-        },
-        {
-          "timestamp": 1777543405.187,
-          "version": "21",
-          "versionCode": 21,
-          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/21/psh-arm64-v8a",
-          "changelog": "Automated release based on commit count.\nVersion: 21"
-        },
-        {
-          "timestamp": 1777543405.193,
-          "version": "20",
-          "versionCode": 20,
-          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/20/psh-arm64-v8a",
-          "changelog": "Automated release based on commit count.\nVersion: 20"
-        },
-        {
-          "timestamp": 1777543405.198,
-          "version": "1.0.0",
-          "versionCode": 100,
-          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/1.0.0/psh-arm64-v8a",
-          "changelog": ""
-        }
-      ]
-    },
-    {
-      "id": "HkLpjrW5-REH",
-      "name": "XH for Android",
-      "version": "0.25.3",
-      "versionCode": 253,
-      "author": "ducaale and Der_Googler",
-      "description": "Friendly and fast tool for sending HTTP requests as Magisk module",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/HkLpjrW5-REH/README.md",
-      "support": "https://github.com/ducaale/xh",
-      "license": "MIT",
-      "categories": [
-        "system"
-      ],
-      "verified": true,
-      "added": 1771229811.017,
-      "timestamp": 1771200000,
-      "permissions": [],
-      "features": {},
-      "stars": 382,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1771229811.017,
-        "source": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1771229811.017,
-          "version": "0.22.0",
-          "versionCode": 220,
-          "zipUrl": "https://api.github.com/repos/Magisk-Modules-Alt-Repo/xhhttp/zipball/v0.22.0",
-          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.22.1 for changes."
-        },
-        {
-          "timestamp": 1771229879.528,
-          "version": "0.18.0",
-          "versionCode": 180,
-          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.18.0/xh_0.18.0.zip",
-          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.18.0 for changes."
-        },
-        {
-          "timestamp": 1771229879.547,
-          "version": "0.17.0",
-          "versionCode": 170,
-          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.17.0/xh_0.17.0.zip",
-          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.17.0 for changes."
-        },
-        {
-          "timestamp": 1771232881.846,
-          "version": "0.25.3",
-          "versionCode": 253,
-          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.25.3/xh-magisk-module.zip",
-          "changelog": "### Features\r\n\r\n* Add colors to `--help`/`-h`, see #432 (@starsep)\r\n\r\n### Bug fixes\r\n\r\n* Don't fail on error code 416 if resuming download, see #434 (@simonomi)\r\n\r\n### Other\r\n\r\n* Upgrade brotli to latest version, see #438 (@ducaale)\r\n\r\n### Contributors\r\n\r\n* starsep\r\n* ducaale\r\n* simonomi"
-        },
-        {
-          "timestamp": 1771232881.851,
-          "version": "0.24.0",
-          "versionCode": 240,
-          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.24.0/xh-magisk-module.zip",
-          "changelog": ""
-        }
-      ]
-    },
-    {
       "id": "IK6cln023OA3",
       "name": "KernelSU",
       "version": "3.3.0",
@@ -1636,7 +1521,7 @@
       ]
     },
     {
-      "id": "j5gfx7hKT7yb",
+      "id": "lune_bridge",
       "name": "Lune Bridge",
       "version": "2.0.5",
       "versionCode": 205,
@@ -1706,128 +1591,142 @@
       ]
     },
     {
-      "id": "Ji-RMqoX8hTP",
-      "name": "Bindhosts",
-      "version": "2.1.5",
-      "versionCode": 215,
-      "author": "xx and KOWX712",
-      "description": "Systemless hosts for APatch, KernelSU and Magisk",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/Ji-RMqoX8hTP/README.md",
-      "license": "WTFPL",
+      "id": "meta-overlayfsx",
+      "name": "META OverlayFS",
+      "version": "1207-stable",
+      "versionCode": 1207,
+      "author": "KernelSU Developers",
+      "description": "A reference implementation of the overlayfs mount handler for KernelSU metamodules",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/9SEMfT4HLm2Z/README.md",
+      "license": "GPL-3.0",
       "categories": [
         "system"
       ],
-      "verified": true,
-      "added": 1771846972.662,
-      "timestamp": 1787529600,
+      "verified": false,
+      "added": 1771490922.196,
+      "timestamp": 1771459200,
       "permissions": [],
       "features": {},
-      "stars": 631,
+      "stars": 65,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1771846972.662,
-        "source": "https://github.com/bindhosts/bindhosts",
+        "added": 1771490922.196,
+        "source": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1771846972.662,
-          "version": "2.1.1",
-          "versionCode": 211,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.1/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.1\n- scripts/post-fs-data: reorder rules for ksun ksuv3 migration\n- scripts/bindhosts: ignore comments inline after entry\n- scripts/post-fs-data: move metamodule-capable APatch to mode 2\n- webui/home: setup link only when file not found\n- scripts/service: pre-calc module.prop values\n- webui/locales: updates"
+          "timestamp": 1771490922.196,
+          "version": "1.3.1",
+          "versionCode": 131,
+          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/v1.3.1/meta-overlayfs-13100-1.3.1.zip",
+          "changelog": "<!-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9wcyI6eyJpZCI6Im1ldGEtb3ZlcmxheWZzIiwibWV0YW1vZHVsZSI6IjEiLCJuYW1lIjoiT3ZlcmxheUZTIE1ldGFNb2R1bGUiLCJ2ZXJzaW9uIjoiMS4zLjEiLCJ2ZXJzaW9uQ29kZSI6IjEzMTAwIiwiYXV0aG9yIjoiS2VybmVsU1UgRGV2ZWxvcGVycyIsImRlc2NyaXB0aW9uIjoiQW4gaW1wbGVtZW50YXRpb24gb2YgYSBtZXRhbW9kdWxlIHVzaW5nIE92ZXJsYXlGUyBmb3IgS2VybmVsU1UifSwiZG93bmxvYWRVcmwiOiJodHRwczovL2dpdGh1Yi5jb20vS2VybmVsU1UtTW9kdWxlcy1SZXBvL21ldGEtb3ZlcmxheWZzL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMS9tZXRhLW92ZXJsYXlmcy0xMzEwMC0xLjMuMS56aXAiLCJ0YWdOYW1lIjoidjEuMy4xIiwiaWF0IjoxNzY1NjEyMDE0fQ.8kxF5ReCB0Kf9dCsTUpAuxMpiGCbuQVmrR61TNauhNk -->\n## What's Changed\n* Skip SYSTEM_RW_DIR in directory processing by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/4\n* Recognize SYSTEM_RW_DIR correctly by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/6\n* Implement SELinux context application for .rw by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/8\n* Set correct context to img file before mounting by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/10\n\n\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/v1.3.0...v1.3.1"
         },
         {
-          "timestamp": 1771847040.416,
-          "version": "2.1.0",
-          "versionCode": 210,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.0/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.0\n- module: remove skip_mount content\n- webui/js: Use WebUI X API for Intent (#158)\n- scripts/bindhosts: force kill old bindhosts instance\n- webui: append mode options dynamically\n- Documentation: update ZygiskNext information"
+          "timestamp": 1771491232.764,
+          "version": "1.3.0",
+          "versionCode": 130,
+          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/v1.3.0/meta-overlayfs-13000-1.3.0.zip",
+          "changelog": "<!-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9wcyI6eyJpZCI6Im1ldGEtb3ZlcmxheWZzIiwibWV0YW1vZHVsZSI6IjEiLCJuYW1lIjoiT3ZlcmxheUZTIE1ldGFNb2R1bGUiLCJ2ZXJzaW9uIjoiMS4zLjAiLCJ2ZXJzaW9uQ29kZSI6IjEzMDAwIiwiYXV0aG9yIjoiS2VybmVsU1UgRGV2ZWxvcGVycyIsImRlc2NyaXB0aW9uIjoiQW4gaW1wbGVtZW50YXRpb24gb2YgYSBtZXRhbW9kdWxlIHVzaW5nIE92ZXJsYXlGUyBmb3IgS2VybmVsU1UifSwiZG93bmxvYWRVcmwiOiJodHRwczovL2dpdGh1Yi5jb20vS2VybmVsU1UtTW9kdWxlcy1SZXBvL21ldGEtb3ZlcmxheWZzL3JlbGVhc2VzL2Rvd25sb2FkL3YxLjMuMC9tZXRhLW92ZXJsYXlmcy0xMzAwMC0xLjMuMC56aXAiLCJ0YWdOYW1lIjoidjEuMy4wIiwiaWF0IjoxNzY1NjEyMDE0fQ.IMjoSv33pBEDuY7b_MUrqJLOEJwYscm0lDnLXAcTK88 -->\n## What's Changed\n* fix: REPLACE by @7a72 in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/1\n* Change ext4 formatting to disable journal by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/2\n\n## New Contributors\n* @7a72 made their first contribution in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/1\n* @aviraxp made their first contribution in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/2\n\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1100...v1.3.0"
         },
         {
-          "timestamp": 1771847040.434,
-          "version": "2.0.9",
-          "versionCode": 209,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.9/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.0.9\n- webui/js: fix mirror link not loading\n- scripts/bindhosts: update translation bundle when installing canary\n- webui: rework prompt message\n- webui/js: use crowdin branch for documentation\n- webui/js: fix multiple event listener\n- scripts: add mode 10 to support for KernelSU v2.1.2+"
+          "timestamp": 1771491232.769,
+          "version": "1207-stable",
+          "versionCode": 1207,
+          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1207-stable/meta-overlayfs-1100-1.1.0.zip",
+          "changelog": "<!-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9wcyI6eyJpZCI6Im1ldGEtb3ZlcmxheWZzIiwibWV0YW1vZHVsZSI6IjEiLCJuYW1lIjoiT3ZlcmxheUZTIE1ldGFNb2R1bGUiLCJ2ZXJzaW9uIjoiMS4xLjAiLCJ2ZXJzaW9uQ29kZSI6IjExMDAiLCJhdXRob3IiOiJLZXJuZWxTVSBEZXZlbG9wZXJzIiwiZGVzY3JpcHRpb24iOiJBbiBpbXBsZW1lbnRhdGlvbiBvZiBhIG1ldGFtb2R1bGUgdXNpbmcgT3ZlcmxheUZTIGZvciBLZXJuZWxTVSJ9LCJkb3dubG9hZFVybCI6Imh0dHBzOi8vZ2l0aHViLmNvbS9LZXJuZWxTVS1Nb2R1bGVzLVJlcG8vbWV0YS1vdmVybGF5ZnMvcmVsZWFzZXMvZG93bmxvYWQvMTIwNy1zdGFibGUvbWV0YS1vdmVybGF5ZnMtMTEwMC0xLjEuMC56aXAiLCJ0YWdOYW1lIjoiMTIwNy1zdGFibGUiLCJpYXQiOjE3NjU2MTIwMTR9.F3zFUwdxZfQ9LgG1EJfZiXQG6A7D2W7aZluN7RqFV50 -->\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1205-stable...1207-stable"
         },
         {
-          "timestamp": 1771847040.446,
-          "version": "2.0.8",
-          "versionCode": 208,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.8/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.0.8\n- scripts/post-fs-data: add ZN 1.3.0 mode 2 support\n- webui: various changes for rtl languages\n- webui: add kernelsu-alt to dependency\n- scripts/post-fs-data: add NeoZygisk into denylist_handlers\n- scripts/post-fs-data: add mode 10001\n- webui: fix abnormal color and content height\n- webui: fix restore json config"
+          "timestamp": 1771491232.79,
+          "version": "1205-stable",
+          "versionCode": 1205,
+          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1205-stable/meta-overlayfs-1205-stable.zip",
+          "changelog": "## What's Changed\n* Change ext4 formatting to disable journal by @aviraxp in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/2\n\n## New Contributors\n* @aviraxp made their first contribution in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/2\n\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1204-stable...1205-stable"
         },
         {
-          "timestamp": 1771847040.45,
-          "version": "2.0.7",
-          "versionCode": 207,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.7/bindhosts.zip",
-          "changelog": "## bindhosts\r\nSystemless hosts for APatch, KernelSU and Magisk.\r\n\r\n---\r\n\r\n# Changelog:\r\n### 2.0.7\r\n- webui: adapted WebUI-X back gesture interceptor\r\n- webui: fix favicon not loading in WebUI-X\r\n- webui: add support for right-to-left language\r\n- webui: new color scheme, refactored ui\r\n- webui: new button to update to latest canary version in 'more' page\r\n- webui: better custom background support. custom.css will not be updated if you're upgrading from an older version, please extract from zip and replace manually if needed. [detail](https://github.com/bindhosts/bindhosts/blob/master/Documentation/customize.md)\r\n- scripts: custom.txt now support 'disable|' prefix to disable specific host. This feature is also available in webui.\r\n- translation: use Crowdin for translation service. [detail](https://github.com/bindhosts/bindhosts/blob/master/Documentation/localize.md)\r\n- translation: new language: French, Portuguese (Brazilian). [contributor](https://github.com/bindhosts/bindhosts/blob/master/module/webroot/locales/CONTRIBUTOR.md)"
+          "timestamp": 1771491232.804,
+          "version": "1204-stable",
+          "versionCode": 1204,
+          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1204-stable/meta-overlayfs-1204-stable.zip",
+          "changelog": "**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1203-stable...1204-stable"
         },
         {
-          "timestamp": 1771847040.462,
-          "version": "2.0.6",
-          "versionCode": 206,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.6/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.0.6\n- webui/js: remove unnecessary line when no custom hosts\n- webui/css: update WebUI-X css import address\n- webui/locales: add Polish translation\n- webui: drop homescreen shortcut button\n- scripts/post-fs-data: various mode probing hardening"
+          "timestamp": 1771491232.807,
+          "version": "1203-stable",
+          "versionCode": 1203,
+          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1203-stable/meta-overlayfs-1203-stable.zip",
+          "changelog": "**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1202-stable...1203-stable"
         },
         {
-          "timestamp": 1771847040.467,
-          "version": "2.0.5",
-          "versionCode": 205,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.5/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.0.5\n- action: remove MMRL from action redirect WebUI\n- webui: fix some false error log\n- scripts: probe ReZygisk for mode 2\n- scripts: properly detect susfs enabled_features"
+          "timestamp": 1771491232.821,
+          "version": "1202-stable",
+          "versionCode": 1202,
+          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1202-stable/meta-overlayfs-1202-stable.zip",
+          "changelog": "## What's Changed\n* fix: REPLACE by @7a72 in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/1\n\n## New Contributors\n* @7a72 made their first contribution in https://github.com/KernelSU-Modules-Repo/meta-overlayfs/pull/1\n\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/compare/1-stable...1202-stable"
         },
         {
-          "timestamp": 1771847040.48,
-          "version": "2.0.4",
-          "versionCode": 204,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.4/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk\n\n---\n\n# Changelog\n### 2.0.4\n- scripts: pull shamiko out of mode 2"
+          "timestamp": 1771491232.824,
+          "version": "1-stable",
+          "versionCode": 1,
+          "zipUrl": "https://github.com/KernelSU-Modules-Repo/meta-overlayfs/releases/download/1-stable/meta-overlayfs-1-stable.zip",
+          "changelog": "<!-- eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9wcyI6eyJpZCI6Im1ldGEtb3ZlcmxheWZzIiwibWV0YW1vZHVsZSI6IjEiLCJuYW1lIjoiT3ZlcmxheUZTIE1ldGFNb2R1bGUiLCJ2ZXJzaW9uIjoiMS4xLjAiLCJ2ZXJzaW9uQ29kZSI6IjExMDAiLCJhdXRob3IiOiJLZXJuZWxTVSBEZXZlbG9wZXJzIiwiZGVzY3JpcHRpb24iOiJBbiBpbXBsZW1lbnRhdGlvbiBvZiBhIG1ldGFtb2R1bGUgdXNpbmcgT3ZlcmxheUZTIGZvciBLZXJuZWxTVSJ9LCJkb3dubG9hZFVybCI6Imh0dHBzOi8vZ2l0aHViLmNvbS9LZXJuZWxTVS1Nb2R1bGVzLVJlcG8vbWV0YS1vdmVybGF5ZnMvcmVsZWFzZXMvZG93bmxvYWQvMS1zdGFibGUvbWV0YS1vdmVybGF5ZnMtMS1zdGFibGUuemlwIiwidGFnTmFtZSI6IjEtc3RhYmxlIiwiaWF0IjoxNzY1NjEyMDE0fQ.NqsztUuVc9fyCxZI8rhIjsuC2XfVVa19IMtLTKeKW6g -->\n**Full Changelog**: https://github.com/KernelSU-Modules-Repo/meta-overlayfs/commits/1-stable\r\n"
+        }
+      ]
+    },
+    {
+      "id": "misnomer",
+      "name": "Misnomer",
+      "version": "1.0.3",
+      "versionCode": 103,
+      "author": "SchlorpyDorp",
+      "description": "Change Android device identity properties through a simple WebUI. Gaslight Android.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/Onl9w3OLhGhv/README.md",
+      "license": "GPL-3.0",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1784431468.258,
+      "timestamp": 1784419200,
+      "permissions": [],
+      "features": {},
+      "stars": 39,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1784431468.258,
+        "source": "https://github.com/SchlorpyDorp/Misnomer",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1784431468.258,
+          "version": "1.0.3",
+          "versionCode": 103,
+          "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0.3/Misnomer-v1.0.3.zip",
+          "changelog": "# Misnomer v1.0.3\r\n\r\nThis update focuses on improving the overall user experience and preparing Misnomer for future releases.\r\n\r\n## What's New\r\n\r\n### Automatic update support\r\n\r\nMisnomer now supports automatic update checking through compatible root managers.\r\n\r\nFuture releases can now be discovered and installed without manually checking the GitHub repository.\r\n\r\n### Installer improvements\r\n\r\nThe installer has received a visual refresh with:\r\n\r\n- Improved installation messages\r\n- Clearer installation progress\r\n- Better feedback during installation\r\n- A small amount of additional personality\r\n\r\n### Project improvements\r\n\r\n- Added update metadata\r\n- Added changelog support\r\n- Improved release workflow\r\n- General repository cleanup\r\n\r\n## Upgrade\r\n\r\nExisting users can simply update through their compatible root manager once the update becomes available.\r\n\r\nFresh installations can download the latest ZIP from the Releases page.\r\n\r\n---\r\n\r\nThanks to everyone trying out Misnomer.\r\n\r\n**Gaslight Android.**"
         },
         {
-          "timestamp": 1771847040.483,
-          "version": "2.0.3",
-          "versionCode": 203,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.3/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk\n\n---\n\n# Changelog\n### 2.0.3\n- webui: ksu.spawn on update\n- webui: ksu.spawn on tcpdump\n- webui: WebUI X support and fixes\n- webui/locales: JP and CN\n- scripts: --install-canary\n- scripts: whitelist wildcarding support"
+          "timestamp": 1785842949.407,
+          "version": "1.0.2",
+          "versionCode": 102,
+          "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0.2/Misnomer-v1.0.2.zip",
+          "changelog": "# Misnomer v1.0.2\r\n\r\nA visual and presentation update for **Misnomer**.\r\n\r\n### Changes\r\n- Added the new Misnomer banner\r\n- Added **\"Gaslight Android.\"** branding\r\n- Added the banner to the WebUI with a background fade\r\n- Improved overall WebUI presentation\r\n- Added project documentation and GitHub release support\r\n\r\n### Compatibility\r\n- KernelSU\r\n- KernelSU Next\r\n- Magisk support is currently experimental and requires KsuWebUI for access to the WebUI\r\n\r\n### Installation\r\nDownload `Misnomer-v1.0.2.zip`, install it through your root manager, and reboot."
         },
         {
-          "timestamp": 1771847040.494,
-          "version": "2.0.2",
-          "versionCode": 202,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.0.2/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk\n\n---\n\n# Changelog\n### 2.0.2\n- webui: Add support to create home screen shortcut in WebUI X\n- webui: optimize animation\n- webui: fix input box text not centered issue, better input box experience\n- webui: drop support to old version of MMRL\n- webui: add favicon to hosts link\n- scripts: Fix webui crash when using AdAway\n- webui: add Swedish translation (#103, @Sopor)"
+          "timestamp": 1785842949.411,
+          "version": "1.0.1",
+          "versionCode": 101,
+          "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0.1/Misnomer-v1.0.1.zip",
+          "changelog": "# Misnomer v1.0.1\r\n\r\nThe first round of improvements and fixes for **Misnomer**.\r\n\r\n### Changes\r\n- Improved WebUI configuration handling\r\n- Added safer atomic saving for `props.conf`\r\n- Improved reliability when saving and restoring device properties\r\n- General cleanup and fixes\r\n\r\n### Installation\r\nDownload `Misnomer-v1.0.1.zip`, install it through your root manager, and reboot."
         },
         {
-          "timestamp": 1775012588.261,
-          "version": "2.1.2",
-          "versionCode": 212,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.2/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.2\n- webui/locales: new translations\n- webui: other small fixes\n- scripts: hot install support\n- webui: new list active styling, clean up close button\n- webui/hosts: add rename dialog\n- webui/hosts: support disable source\n- webui: migrate to material web component\n- webui: add formatting support to translation strings\n- webui: refactor routing, file selector"
-        },
-        {
-          "timestamp": 1777894223.079,
-          "version": "2.1.3",
-          "versionCode": 213,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.3/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.3\n- scripts/post-fs-data: update ksu_susfs_open_redirect routine\n- webui: add scroll into view on input focus\n- scripts/service: rework module.prop description update\n- scripts: actually use boot-completed.sh"
-        },
-        {
-          "timestamp": 1782365602.218,
-          "version": "2.1.4",
-          "versionCode": 214,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.4/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.4\n- scripts/service: fix module.prop edit\n- scripts/bindhosts: handle bad curl env\n- webui: multiple host render on show (#206)\n- scripts/bindhosts: drop curl -Z usage\n- webui/locales: updates"
-        },
-        {
-          "timestamp": 1787546451.022,
-          "version": "2.1.5",
-          "versionCode": 215,
-          "zipUrl": "https://github.com/bindhosts/bindhosts/releases/download/v2.1.5/bindhosts.zip",
-          "changelog": "## bindhosts\nSystemless hosts for APatch, KernelSU and Magisk.\n\n---\n\n# Changelog:\n### 2.1.5\n- webui: use codemirror editor\n- scripts: support KSU late load\n- scripts/post-fs-data: add nomount metamodule support"
+          "timestamp": 1785842949.422,
+          "version": "1.0",
+          "versionCode": 10,
+          "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0/Misnomer-v1.0.zip",
+          "changelog": "# Misnomer v1.0\r\n\r\nThe first public release of **Misnomer**.\r\n\r\n**Gaslight Android.**\r\n\r\n### Features\r\n- Change Android device identity properties through a WebUI\r\n- Model\r\n- Brand\r\n- Manufacturer\r\n- Device\r\n- Name\r\n- Product\r\n- Persistent property configuration\r\n- Restore original values\r\n- KernelSU WebUI support\r\n\r\n### Installation\r\nDownload `Misnomer-v1.0.zip`, install it through your root manager, and reboot."
         }
       ]
     },
@@ -1965,58 +1864,58 @@
       ]
     },
     {
-      "id": "Onl9w3OLhGhv",
-      "name": "Misnomer",
-      "version": "1.0.3",
-      "versionCode": 103,
-      "author": "SchlorpyDorp",
-      "description": "Change Android device identity properties through a simple WebUI. Gaslight Android.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/Onl9w3OLhGhv/README.md",
-      "license": "GPL-3.0",
+      "id": "psh",
+      "name": "Privileged Shell Wrapper for Termux",
+      "version": "23",
+      "versionCode": 23,
+      "author": "Der_Googler",
+      "description": "A lightweight utility designed to provide a controlled root-like shell environment on Termux for Android.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/h6ysMxFbsTUf/README.md",
+      "license": "MIT",
       "categories": [
         "system"
       ],
       "verified": false,
-      "added": 1784431468.258,
-      "timestamp": 1784419200,
+      "added": 1777543380.58,
+      "timestamp": 1777507200,
       "permissions": [],
       "features": {},
-      "stars": 39,
+      "stars": 109,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1784431468.258,
-        "source": "https://github.com/SchlorpyDorp/Misnomer",
+        "added": 1777543380.58,
+        "source": "https://github.com/DerGoogler/psh",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1784431468.258,
-          "version": "1.0.3",
-          "versionCode": 103,
-          "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0.3/Misnomer-v1.0.3.zip",
-          "changelog": "# Misnomer v1.0.3\r\n\r\nThis update focuses on improving the overall user experience and preparing Misnomer for future releases.\r\n\r\n## What's New\r\n\r\n### Automatic update support\r\n\r\nMisnomer now supports automatic update checking through compatible root managers.\r\n\r\nFuture releases can now be discovered and installed without manually checking the GitHub repository.\r\n\r\n### Installer improvements\r\n\r\nThe installer has received a visual refresh with:\r\n\r\n- Improved installation messages\r\n- Clearer installation progress\r\n- Better feedback during installation\r\n- A small amount of additional personality\r\n\r\n### Project improvements\r\n\r\n- Added update metadata\r\n- Added changelog support\r\n- Improved release workflow\r\n- General repository cleanup\r\n\r\n## Upgrade\r\n\r\nExisting users can simply update through their compatible root manager once the update becomes available.\r\n\r\nFresh installations can download the latest ZIP from the Releases page.\r\n\r\n---\r\n\r\nThanks to everyone trying out Misnomer.\r\n\r\n**Gaslight Android.**"
+          "timestamp": 1777543380.58,
+          "version": "23",
+          "versionCode": 23,
+          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/23/psh-arm64-v8a",
+          "changelog": "## Installation on Termux\n\nYou can install `psh` easily on Termux using the provided install script, which downloads the appropriate binary for your device architecture, sets permissions, and configures ownership:\n\nRun this command directly in Termux (curl or wget):\n\n```bash\ncurl -fsSL https://psh.dergoogler.com/install.sh | bash\n```\n\nOr with wget:\n\n```bash\nwget -qO- https://psh.dergoogler.com/install.sh | bash\n```\n\nBy default, it installs the latest stable release. You can specify a version like so:\n\n```bash\nVERSION=23 curl -fsSL https://psh.dergoogler.com/install.sh | bash\n```\nVersion: 23"
         },
         {
-          "timestamp": 1785842949.407,
-          "version": "1.0.2",
-          "versionCode": 102,
-          "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0.2/Misnomer-v1.0.2.zip",
-          "changelog": "# Misnomer v1.0.2\r\n\r\nA visual and presentation update for **Misnomer**.\r\n\r\n### Changes\r\n- Added the new Misnomer banner\r\n- Added **\"Gaslight Android.\"** branding\r\n- Added the banner to the WebUI with a background fade\r\n- Improved overall WebUI presentation\r\n- Added project documentation and GitHub release support\r\n\r\n### Compatibility\r\n- KernelSU\r\n- KernelSU Next\r\n- Magisk support is currently experimental and requires KsuWebUI for access to the WebUI\r\n\r\n### Installation\r\nDownload `Misnomer-v1.0.2.zip`, install it through your root manager, and reboot."
+          "timestamp": 1777543405.187,
+          "version": "21",
+          "versionCode": 21,
+          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/21/psh-arm64-v8a",
+          "changelog": "Automated release based on commit count.\nVersion: 21"
         },
         {
-          "timestamp": 1785842949.411,
-          "version": "1.0.1",
-          "versionCode": 101,
-          "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0.1/Misnomer-v1.0.1.zip",
-          "changelog": "# Misnomer v1.0.1\r\n\r\nThe first round of improvements and fixes for **Misnomer**.\r\n\r\n### Changes\r\n- Improved WebUI configuration handling\r\n- Added safer atomic saving for `props.conf`\r\n- Improved reliability when saving and restoring device properties\r\n- General cleanup and fixes\r\n\r\n### Installation\r\nDownload `Misnomer-v1.0.1.zip`, install it through your root manager, and reboot."
+          "timestamp": 1777543405.193,
+          "version": "20",
+          "versionCode": 20,
+          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/20/psh-arm64-v8a",
+          "changelog": "Automated release based on commit count.\nVersion: 20"
         },
         {
-          "timestamp": 1785842949.422,
-          "version": "1.0",
-          "versionCode": 10,
-          "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0/Misnomer-v1.0.zip",
-          "changelog": "# Misnomer v1.0\r\n\r\nThe first public release of **Misnomer**.\r\n\r\n**Gaslight Android.**\r\n\r\n### Features\r\n- Change Android device identity properties through a WebUI\r\n- Model\r\n- Brand\r\n- Manufacturer\r\n- Device\r\n- Name\r\n- Product\r\n- Persistent property configuration\r\n- Restore original values\r\n- KernelSU WebUI support\r\n\r\n### Installation\r\nDownload `Misnomer-v1.0.zip`, install it through your root manager, and reboot."
+          "timestamp": 1777543405.198,
+          "version": "1.0.0",
+          "versionCode": 100,
+          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/1.0.0/psh-arm64-v8a",
+          "changelog": ""
         }
       ]
     },
@@ -2136,8 +2035,8 @@
     {
       "id": "qgcP03aUu-Rq",
       "name": "WiFi Password Viewer for MMRL",
-      "version": "5.7.7",
-      "versionCode": 577,
+      "version": "7.0.0",
+      "versionCode": 700,
       "author": "Der_Googler",
       "description": "An inspired project from veez21's wpd gist, ported to MMRL.",
       "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/qgcP03aUu-Rq/README.md",
@@ -2148,10 +2047,10 @@
       ],
       "verified": false,
       "added": 1771108173.19,
-      "timestamp": 1771027200,
+      "timestamp": 1791590400,
       "permissions": [],
       "features": {},
-      "stars": 101,
+      "stars": 102,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771108173.19,
@@ -2208,6 +2107,132 @@
           "versionCode": 210,
           "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.1.0/module.zip",
           "changelog": "- added hiding passwords\r\n- now without shell\r\n- requires mmrl above 2.14.10"
+        },
+        {
+          "timestamp": 1791646593.319,
+          "version": "7.0.0",
+          "versionCode": 700,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v7.0.0/mmrl_wpd-7.0.0.zip",
+          "changelog": "**Full Changelog**: https://github.com/Googlers-Repo/wpd/commits/v7.0.0"
+        }
+      ]
+    },
+    {
+      "id": "system_app_nuker",
+      "name": "System App Nuker",
+      "version": "2.2.6",
+      "versionCode": 226,
+      "author": "ChiseWaguri",
+      "description": "A systemless debloater for Magisk, KernelSU, and APatch. Pick the apps. Nuke them.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/xcsucIQLQeQR/README.md",
+      "license": "GPL-3.0",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1790678362.071,
+      "timestamp": 1790985600,
+      "permissions": [],
+      "features": {},
+      "stars": 16,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1790678362.071,
+        "source": "https://github.com/chisewaguri/systemapp_nuker",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1790678362.071,
+          "version": "2.2.2",
+          "versionCode": 222,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.2/SAN_v2.2.2.zip",
+          "changelog": "> v2.2.1 users should update. Package-manager calls can miss APK paths while processing the nuke list, leaving apps not whiteouted on reboot.\r\n\r\n#### Scripts\r\n- keep package-manager commands from inheriting the nuke list as stdin (thanks, @smbdspk) \r\n- rebuild missing APK paths and whiteouts during module update (thanks, @smbdspk)"
+        },
+        {
+          "timestamp": 1790678402.175,
+          "version": "2.2.1",
+          "versionCode": 221,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.1/SAN_v2.2.1.zip",
+          "changelog": "> v2.2.0 users must update. v2.2.0 can fail to nuke apps with package-manager errors or installed system updates.\n\n#### Scripts\n- filter pm path errors before creating whiteouts\n- cache factory apk paths before removing system updates\n- fall back to uninstall for user 0 when no system apk path is available\n\n#### WebUI\n- move pending nukes to Restore and pending restores to Home before reboot"
+        },
+        {
+          "timestamp": 1790678402.18,
+          "version": "2.1.1",
+          "versionCode": 211,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.1.1/SAN_v2.1.1.zip",
+          "changelog": "#### Scripts\n- fix last nuked app never being processed (missing trailing newline)\n- migrate pre-2.1.0 nuke lists by recovering paths from module tree (fix #59)"
+        },
+        {
+          "timestamp": 1790678402.183,
+          "version": "2.1.0",
+          "versionCode": 210,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.1.0/SAN_v2.1.0.zip",
+          "changelog": "#### Scripts\n- keep apk path in nuke_list.txt so update whiteouts without pm (fix #58)\n"
+        },
+        {
+          "timestamp": 1790678402.187,
+          "version": "2.0.0",
+          "versionCode": 200,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.0.0/SAN_v2.0.0.zip",
+          "changelog": "Breaking changes: require KernelSU 22082+, APatch 11159+, Magisk user need to switch to [KsuWebUIStandalone fork](https://github.com/KOWX712/KsuWebUIStandalone/releases). No backward compatibility.\r\n\r\n#### WebUI\r\n- rewrite with vite + react (@KOWX712)\r\n- use KSU API for app list (@KOWX712)\r\n\r\n\r\n#### Scripts\r\n- reflect new webui changes (@KOWX712)\r\n- add current manager for reliable module installation (@KOWX712)\r\n- improve uninstall logic\r\n- improve metamodule support\r\n- uninstall for user 0 instead of disable\r\n\r\n#### Workflows\r\n- build webui (@KOWX712)\r\n\r\n#### Docs\r\n- update guide for new codebase (@KOWX712)"
+        },
+        {
+          "timestamp": 1790678402.19,
+          "version": "1.2.1",
+          "versionCode": 121,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.2.1/SAN_v1.2.1.zip",
+          "changelog": "### v1.2.1\r\n\r\n#### Scripts\r\n- create_applist: prevent trailing comma bug in JSON output (fix app list generation #55)\r\n"
+        },
+        {
+          "timestamp": 1790678402.193,
+          "version": "1.2.0",
+          "versionCode": 120,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.2.0/SAN_v1.2.0.zip",
+          "changelog": "### v1.2.0\r\nfeels like i owe u guys this, no changes since the last commit on jan 3 tho \r\n\r\n#### Scripts\r\n- sync mountify to 019a216\r\n- search additional partition if mounted by mountify\r\n- make whiteouts optional and validate mounting\r\n- treat KSU >22098 the same as magic mount (should fix meta module mounting, use mountify mode/default)\r\n- fix mountify\r\n- better default mode check\r\n- fix error description\r\n\r\n#### WebUI\r\n- force redo link (fix #49, thanks @kowx712)"
+        },
+        {
+          "timestamp": 1790678402.196,
+          "version": "1.1.9",
+          "versionCode": 119,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.1.9/SAN_v1.1.9.zip",
+          "changelog": "### v1.1.9\r\n\r\n- minor module metadata fix\r\n\r\n#### WebUI\r\n- better UI feedback on app list loading\r\n- tell user if there are no nuked apps yet\r\n\r\n#### Scripts\r\n- show app list loading status"
+        },
+        {
+          "timestamp": 1790678402.199,
+          "version": "1.1.8",
+          "versionCode": 118,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.1.8/SAN_v1.1.8.zip",
+          "changelog": "### v1.1.8\r\n\r\n#### WebUI\r\n- update WebUI-X css import address (@KOWX712)\r\n- support canta preset import\r\n\r\n#### Scripts\r\n- properly support mountify\r\n- add more vendor-related partitions\r\n- revert useless app list generation on installation"
+        },
+        {
+          "timestamp": 1790794341.404,
+          "version": "2.2.3",
+          "versionCode": 223,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.3/SAN_v2.2.3.zip",
+          "changelog": "> Magisk and Magisk Alpha users should update. The WebUI could not save any change there and showed \"Failed to save changes\" (#62).\n\n#### Scripts\n- restore apps removed in uninstall-only mode when bootloop protection triggers, and retry until it works\n- restore every uninstalled app when the module is removed\n- only show apps as nuked once they are actually hidden\n- report failed mountify mounts in the module description instead of showing apps as nuked\n\n#### WebUI\n- save changes without busybox, which Magisk does not put on the WebUI's PATH\n- reload the app lists after a failed nuke or a backup restore, so rejected changes are not sent again\n- keep the original file when a save fails partway\n- stop hanging when the manager cannot start the nuke script\n- add empty states, a retry button, screen reader labels, and back navigation between tabs\n- confirm before deleting whiteouts\n\n#### Workflows\n- run lint and tests before building, and pin actions to commits"
+        },
+        {
+          "timestamp": 1790859145.789,
+          "version": "2.2.4",
+          "versionCode": 224,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.4/SAN_v2.2.4.zip",
+          "changelog": "> v2.0.x users should update. Updating from 2.0 could fail with \"cant find system apk\" when a nuked app had a Play Store update (#63).\n\n#### Scripts\n- keep updating when a nuked app only shows its Play Store copy, and uninstall that copy for user 0\n- recover the APK path of apps nuked before 2.1, so they can be restored one at a time\n- uninstall an app for user 0 when its old path cannot be recovered, so it stays hidden"
+        },
+        {
+          "timestamp": 1790988755.087,
+          "version": "2.2.5",
+          "versionCode": 225,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.5/SAN_v2.2.5.zip",
+          "changelog": "> Adds app descriptions and removal levels from UAD-ng (#60).\n\n#### WebUI\n- show what each app is and how risky it is to remove, from a UAD-ng list bundled with every release\n- update that list from Settings. Nothing is downloaded unless you tap it\n- filter apps by removal level from a button in the search bar\n- keep icons for nuked apps on the Restore page\n- add a Credits dialog under About\n\n#### Workflows\n- bundle the latest UAD-ng list into each build"
+        },
+        {
+          "timestamp": 1791010356.577,
+          "version": "2.2.6",
+          "versionCode": 226,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.6/SAN_v2.2.6.zip",
+          "changelog": "> You no longer need to reboot before opening the WebUI. Installing or updating the module refreshes the WebUI right away, and nuked apps still disappear after the next reboot.\n\n#### Scripts\n- install the new WebUI and scripts into the running module, and leave its whiteouts for the reboot\n- keep the running module as it was if that copy fails\n- remove the update flag after an install or a nuke, so KernelSU opens the WebUI before the reboot\n\n#### WebUI\n- soft reboot when KernelSU was loaded after boot, so root survives the reboot\n"
         }
       ]
     },
@@ -2346,121 +2371,66 @@
       ]
     },
     {
-      "id": "xcsucIQLQeQR",
-      "name": "System App Nuker",
-      "version": "2.2.6",
-      "versionCode": 226,
-      "author": "ChiseWaguri",
-      "description": "A systemless debloater for Magisk, KernelSU, and APatch. Pick the apps. Nuke them.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/xcsucIQLQeQR/README.md",
-      "license": "GPL-3.0",
+      "id": "xhhttp",
+      "name": "XH for Android",
+      "version": "0.25.3",
+      "versionCode": 253,
+      "author": "ducaale and Der_Googler",
+      "description": "Friendly and fast tool for sending HTTP requests as Magisk module",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/HkLpjrW5-REH/README.md",
+      "support": "https://github.com/ducaale/xh",
+      "license": "MIT",
       "categories": [
         "system"
       ],
-      "verified": false,
-      "added": 1790678362.071,
-      "timestamp": 1790985600,
+      "verified": true,
+      "added": 1771229811.017,
+      "timestamp": 1771200000,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 382,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1790678362.071,
-        "source": "https://github.com/chisewaguri/systemapp_nuker",
+        "added": 1771229811.017,
+        "source": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1790678362.071,
-          "version": "2.2.2",
-          "versionCode": 222,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.2/SAN_v2.2.2.zip",
-          "changelog": "> v2.2.1 users should update. Package-manager calls can miss APK paths while processing the nuke list, leaving apps not whiteouted on reboot.\r\n\r\n#### Scripts\r\n- keep package-manager commands from inheriting the nuke list as stdin (thanks, @smbdspk) \r\n- rebuild missing APK paths and whiteouts during module update (thanks, @smbdspk)"
+          "timestamp": 1771229811.017,
+          "version": "0.22.0",
+          "versionCode": 220,
+          "zipUrl": "https://api.github.com/repos/Magisk-Modules-Alt-Repo/xhhttp/zipball/v0.22.0",
+          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.22.1 for changes."
         },
         {
-          "timestamp": 1790678402.175,
-          "version": "2.2.1",
-          "versionCode": 221,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.1/SAN_v2.2.1.zip",
-          "changelog": "> v2.2.0 users must update. v2.2.0 can fail to nuke apps with package-manager errors or installed system updates.\n\n#### Scripts\n- filter pm path errors before creating whiteouts\n- cache factory apk paths before removing system updates\n- fall back to uninstall for user 0 when no system apk path is available\n\n#### WebUI\n- move pending nukes to Restore and pending restores to Home before reboot"
+          "timestamp": 1771229879.528,
+          "version": "0.18.0",
+          "versionCode": 180,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.18.0/xh_0.18.0.zip",
+          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.18.0 for changes."
         },
         {
-          "timestamp": 1790678402.18,
-          "version": "2.1.1",
-          "versionCode": 211,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.1.1/SAN_v2.1.1.zip",
-          "changelog": "#### Scripts\n- fix last nuked app never being processed (missing trailing newline)\n- migrate pre-2.1.0 nuke lists by recovering paths from module tree (fix #59)"
+          "timestamp": 1771229879.547,
+          "version": "0.17.0",
+          "versionCode": 170,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.17.0/xh_0.17.0.zip",
+          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.17.0 for changes."
         },
         {
-          "timestamp": 1790678402.183,
-          "version": "2.1.0",
-          "versionCode": 210,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.1.0/SAN_v2.1.0.zip",
-          "changelog": "#### Scripts\n- keep apk path in nuke_list.txt so update whiteouts without pm (fix #58)\n"
+          "timestamp": 1771232881.846,
+          "version": "0.25.3",
+          "versionCode": 253,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.25.3/xh-magisk-module.zip",
+          "changelog": "### Features\r\n\r\n* Add colors to `--help`/`-h`, see #432 (@starsep)\r\n\r\n### Bug fixes\r\n\r\n* Don't fail on error code 416 if resuming download, see #434 (@simonomi)\r\n\r\n### Other\r\n\r\n* Upgrade brotli to latest version, see #438 (@ducaale)\r\n\r\n### Contributors\r\n\r\n* starsep\r\n* ducaale\r\n* simonomi"
         },
         {
-          "timestamp": 1790678402.187,
-          "version": "2.0.0",
-          "versionCode": 200,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.0.0/SAN_v2.0.0.zip",
-          "changelog": "Breaking changes: require KernelSU 22082+, APatch 11159+, Magisk user need to switch to [KsuWebUIStandalone fork](https://github.com/KOWX712/KsuWebUIStandalone/releases). No backward compatibility.\r\n\r\n#### WebUI\r\n- rewrite with vite + react (@KOWX712)\r\n- use KSU API for app list (@KOWX712)\r\n\r\n\r\n#### Scripts\r\n- reflect new webui changes (@KOWX712)\r\n- add current manager for reliable module installation (@KOWX712)\r\n- improve uninstall logic\r\n- improve metamodule support\r\n- uninstall for user 0 instead of disable\r\n\r\n#### Workflows\r\n- build webui (@KOWX712)\r\n\r\n#### Docs\r\n- update guide for new codebase (@KOWX712)"
-        },
-        {
-          "timestamp": 1790678402.19,
-          "version": "1.2.1",
-          "versionCode": 121,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.2.1/SAN_v1.2.1.zip",
-          "changelog": "### v1.2.1\r\n\r\n#### Scripts\r\n- create_applist: prevent trailing comma bug in JSON output (fix app list generation #55)\r\n"
-        },
-        {
-          "timestamp": 1790678402.193,
-          "version": "1.2.0",
-          "versionCode": 120,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.2.0/SAN_v1.2.0.zip",
-          "changelog": "### v1.2.0\r\nfeels like i owe u guys this, no changes since the last commit on jan 3 tho \r\n\r\n#### Scripts\r\n- sync mountify to 019a216\r\n- search additional partition if mounted by mountify\r\n- make whiteouts optional and validate mounting\r\n- treat KSU >22098 the same as magic mount (should fix meta module mounting, use mountify mode/default)\r\n- fix mountify\r\n- better default mode check\r\n- fix error description\r\n\r\n#### WebUI\r\n- force redo link (fix #49, thanks @kowx712)"
-        },
-        {
-          "timestamp": 1790678402.196,
-          "version": "1.1.9",
-          "versionCode": 119,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.1.9/SAN_v1.1.9.zip",
-          "changelog": "### v1.1.9\r\n\r\n- minor module metadata fix\r\n\r\n#### WebUI\r\n- better UI feedback on app list loading\r\n- tell user if there are no nuked apps yet\r\n\r\n#### Scripts\r\n- show app list loading status"
-        },
-        {
-          "timestamp": 1790678402.199,
-          "version": "1.1.8",
-          "versionCode": 118,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.1.8/SAN_v1.1.8.zip",
-          "changelog": "### v1.1.8\r\n\r\n#### WebUI\r\n- update WebUI-X css import address (@KOWX712)\r\n- support canta preset import\r\n\r\n#### Scripts\r\n- properly support mountify\r\n- add more vendor-related partitions\r\n- revert useless app list generation on installation"
-        },
-        {
-          "timestamp": 1790794341.404,
-          "version": "2.2.3",
-          "versionCode": 223,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.3/SAN_v2.2.3.zip",
-          "changelog": "> Magisk and Magisk Alpha users should update. The WebUI could not save any change there and showed \"Failed to save changes\" (#62).\n\n#### Scripts\n- restore apps removed in uninstall-only mode when bootloop protection triggers, and retry until it works\n- restore every uninstalled app when the module is removed\n- only show apps as nuked once they are actually hidden\n- report failed mountify mounts in the module description instead of showing apps as nuked\n\n#### WebUI\n- save changes without busybox, which Magisk does not put on the WebUI's PATH\n- reload the app lists after a failed nuke or a backup restore, so rejected changes are not sent again\n- keep the original file when a save fails partway\n- stop hanging when the manager cannot start the nuke script\n- add empty states, a retry button, screen reader labels, and back navigation between tabs\n- confirm before deleting whiteouts\n\n#### Workflows\n- run lint and tests before building, and pin actions to commits"
-        },
-        {
-          "timestamp": 1790859145.789,
-          "version": "2.2.4",
-          "versionCode": 224,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.4/SAN_v2.2.4.zip",
-          "changelog": "> v2.0.x users should update. Updating from 2.0 could fail with \"cant find system apk\" when a nuked app had a Play Store update (#63).\n\n#### Scripts\n- keep updating when a nuked app only shows its Play Store copy, and uninstall that copy for user 0\n- recover the APK path of apps nuked before 2.1, so they can be restored one at a time\n- uninstall an app for user 0 when its old path cannot be recovered, so it stays hidden"
-        },
-        {
-          "timestamp": 1790988755.087,
-          "version": "2.2.5",
-          "versionCode": 225,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.5/SAN_v2.2.5.zip",
-          "changelog": "> Adds app descriptions and removal levels from UAD-ng (#60).\n\n#### WebUI\n- show what each app is and how risky it is to remove, from a UAD-ng list bundled with every release\n- update that list from Settings. Nothing is downloaded unless you tap it\n- filter apps by removal level from a button in the search bar\n- keep icons for nuked apps on the Restore page\n- add a Credits dialog under About\n\n#### Workflows\n- bundle the latest UAD-ng list into each build"
-        },
-        {
-          "timestamp": 1791010356.577,
-          "version": "2.2.6",
-          "versionCode": 226,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.6/SAN_v2.2.6.zip",
-          "changelog": "> You no longer need to reboot before opening the WebUI. Installing or updating the module refreshes the WebUI right away, and nuked apps still disappear after the next reboot.\n\n#### Scripts\n- install the new WebUI and scripts into the running module, and leave its whiteouts for the reboot\n- keep the running module as it was if that copy fails\n- remove the update flag after an install or a nuke, so KernelSU opens the WebUI before the reboot\n\n#### WebUI\n- soft reboot when KernelSU was loaded after boot, so root survives the reboot\n"
+          "timestamp": 1771232881.851,
+          "version": "0.24.0",
+          "versionCode": 240,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.24.0/xh-magisk-module.zip",
+          "changelog": ""
         }
       ]
     },
@@ -2672,6 +2642,43 @@
           "versionCode": 310,
           "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v31.0/app-debug.apk",
           "changelog": "The highlight of this release is a complete, ground-up rewrite of the **Magisk app UI**.\r\n\r\nOver the years, the Android application codebase had accumulated significant technical debt—spanning legacy XML layouts, Databinding, and KAPT. In this release, the entire UI layer has been rebuilt from scratch with modern **Jetpack Compose** and **Material 3**.\r\n\r\nThis rewrite allowed us to modernize the architecture and introduce substantial UI/UX improvements, with additional new features:\r\n\r\n- A new **built-in terminal emulator** with full TTY and ANSI support for module flashing and action scripts.\r\n- Direct support for **streaming and extracting boot images from remote OTA URLs** on-the-fly.\r\n\r\n### Legacy App Still Available\r\n\r\nThis kind of full rewrite can sometimes introduce unexpected edge cases or bugs. If you encounter issues with the new app, the legacy View-based version will still be built and uploaded for a couple of releases, available for download [here](https://github.com/topjohnwu/magisk-files/releases/download/files/Magisk-v31.0-legacy.apk).\r\n\r\n## Changelog\r\n\r\n- [App] Complete UI overhaul with Jetpack Compose and Material 3, completely removing the legacy View and Fragment architecture\r\n- [App] Add new built-in terminal emulator with full TTY and ANSI support for module flashing and action scripts\r\n- [App] Support downloading and streaming boot image extraction directly from remote OTA URLs\r\n- [MagiskBoot] Support dynamic zImage payload sizes without requiring exact size padding during repack\r\n- [MagiskBoot] Update AVB hash descriptor image size to match unpacked image size\r\n- [MagiskBoot] Lower default compression preset for XZ and LZMA to reduce memory usage during repacking\r\n- [Zygisk] Support Android 17 (API 37)\r\n- [Zygisk] Support Meta Quest (Horizon OS) lazy partition zygotes\r\n- [MagiskPolicy] Fix identifier parsing for names containing hyphens\r\n- [resetprop] Add `--compact` (`-c`) flag to compact property storage areas\r\n- [MagiskInit] Properly prioritize charger mode detection before `force_normal_boot`\r\n- [DenyList] Add `webview_zygote` as an unmount target\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
+        }
+      ]
+    },
+    {
+      "id": "zygisksu",
+      "name": "Zygisk Next",
+      "version": "1.3.4",
+      "versionCode": 134,
+      "author": "5ec1cff and Nullptr",
+      "description": "Standalone implementation of Zygisk, providing Zygisk API support for KernelSU and a replacement of Magisk's built-in Zygisk.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/a_Tl6u0ctcTX/README.md",
+      "license": "Proprietary",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1777063578.328,
+      "timestamp": 1776988800,
+      "permissions": [],
+      "features": {},
+      "stars": 179,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1777063578.328,
+        "source": "",
+        "antifeatures": [
+          "ClosedSource"
+        ],
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1777063578.328,
+          "version": "1.3.4",
+          "versionCode": 134,
+          "zipUrl": "https://github.com/Dr-TSNG/ZygiskNext/releases/download/v1.3.4/Zygisk-Next-1.3.4-746-d1b76b3-release.zip",
+          "changelog": "https://api.nullptr.icu/android/zygisk-next/static/changelog.md"
         }
       ]
     }
