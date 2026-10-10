@@ -9,7 +9,7 @@
   "description": "A collection of handy tools and tweaks for your Magisk-enabled Android device. If you're into customizing your phone, GMR makes it easy to find, download, and install Magisk modules that can enhance your device's functionality or add cool features.",
   "metadata": {
     "version": 1,
-    "timestamp": 1791649743.569
+    "timestamp": 1791665278.888
   },
   "modules": [
     {
@@ -570,7 +570,7 @@
       "timestamp": 1791072000,
       "permissions": [],
       "features": {},
-      "stars": 667,
+      "stars": 668,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1773524551.091,
@@ -725,7 +725,7 @@
       "timestamp": 1790899200,
       "permissions": [],
       "features": {},
-      "stars": 21,
+      "stars": 23,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1790193106.726,
@@ -963,7 +963,7 @@
       "timestamp": 1790985600,
       "permissions": [],
       "features": {},
-      "stars": 445,
+      "stars": 446,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771491136.52,
@@ -1537,7 +1537,7 @@
       "timestamp": 1790812800,
       "permissions": [],
       "features": {},
-      "stars": 35,
+      "stars": 36,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1790213186.696,
@@ -1994,7 +1994,7 @@
       "timestamp": 1772236800,
       "permissions": [],
       "features": {},
-      "stars": 810,
+      "stars": 811,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1772285340.189,
@@ -2107,7 +2107,7 @@
       "timestamp": 1791590400,
       "permissions": [],
       "features": {},
-      "stars": 104,
+      "stars": 106,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771108173.19,
@@ -2191,7 +2191,7 @@
       "timestamp": 1790985600,
       "permissions": [],
       "features": {},
-      "stars": 16,
+      "stars": 17,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1790678362.071,
@@ -2445,7 +2445,7 @@
       "timestamp": 1771200000,
       "permissions": [],
       "features": {},
-      "stars": 382,
+      "stars": 383,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771229811.017,
