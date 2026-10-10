@@ -9,7 +9,7 @@
   "description": "A collection of handy tools and tweaks for your Magisk-enabled Android device. If you're into customizing your phone, GMR makes it easy to find, download, and install Magisk modules that can enhance your device's functionality or add cool features.",
   "metadata": {
     "version": 1,
-    "timestamp": 1791647384.054
+    "timestamp": 1791649743.569
   },
   "modules": [
     {
@@ -1731,6 +1731,63 @@
       ]
     },
     {
+      "id": "nextsusfs",
+      "name": "NextSUSFS",
+      "version": "0.0.7",
+      "versionCode": 7,
+      "author": "IFOKNR",
+      "description": "Kernel-level root hiding with SuSFS v2 for KernelSU. The kernel layer of the NEXT stack.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/rNDEi1ct-b17/README.md",
+      "support": "https://t.me/BeNeXTBrO",
+      "license": "AGPL-3.0",
+      "categories": [
+        "security"
+      ],
+      "verified": false,
+      "added": 1791412757.431,
+      "timestamp": 1791590400,
+      "permissions": [],
+      "features": {},
+      "stars": 0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1791412757.431,
+        "source": "https://github.com/ifoknr/NextSUSFS",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1791412757.431,
+          "version": "0.0.6",
+          "versionCode": 6,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.6/NextSUSFS-v0.0.6.zip",
+          "changelog": "> [!WARNING]\n> **Personal project, use at your own risk.** Keep a way to boot without modules (safe mode) before installing.\n\n## Changes\n\n- Tools page, Play Integrity: Play Integrity Fork, TEESimulator and Tricky Addon next to\n  AlwaysStrong, with their install status. Use AlwaysStrong alone, or the three together.\n- Tools page, detection apps: Key Attestation (VisionR1) and VD Google.\n- Tools page, Community: the BeNeXTBrO Telegram group and the developer's GitHub, with a\n  note on where to ask for help or send ideas.\n- Tricky Addon's module folder is hidden at boot, like the other integrity modules.\n\n\n## Install\n\nInstall `NextSUSFS.zip` from KernelSU (or a fork) → Modules → Install from storage, then reboot. Needs a SuSFS-patched kernel."
+        },
+        {
+          "timestamp": 1791648748.111,
+          "version": "0.0.7",
+          "versionCode": 7,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.7/NextSUSFS-v0.0.7.zip",
+          "changelog": "> [!WARNING]\n> **Personal project, use at your own risk.** Keep a way to boot without modules (safe mode) before installing.\n\n## Changes\n\n- Fixed: NextSUSFS turned KernelSU's kernel umount back on at boot after NextZygisk had\n  turned it off, so both unmounted the same apps on every launch. With NextZygisk installed\n  and enabled, NextSUSFS now leaves kernel umount to it.\n- Boot-loop protection (Safe Mode): if the last three boots never finished, the next\n  boot skips all hiding so the device comes up, and the Home screen warns you that your\n  settings were skipped and offers a reboot to retry. A successful boot clears it.\n- New list: Spoof file stats. Paths listed here are shown to apps with an old, untouched\n  timestamp, so a system file you edited does not give itself away by its modify time.\n- System properties: a \"Restore real values now\" button puts spoofed properties back to\n  their real values immediately, without a reboot.\n- Navbar: equal-width icons with a pill that slides to the active tab; you can drag across\n  the bar to switch, and it slides out of the way while you scroll down.\n- New list: Open redirect (from BRENE v0.0.70). Each line is \"<path> <new path> <scope>\":\n  opening the path opens the new path instead, for the processes in the scope (0 to 4,\n  3 is apps without root). The WebUI explains the scopes and checks each line before\n  saving; the boot script applies the list with SuSFS open_redirect.\n- Fixed: with \"Hide custom ROM files\" on, apps that use an app zygote (for example the\n  Chunqiu Native Check detector) crashed on launch with \"Failed open(/system/framework/\n  org.lineageos.platform-res.apk)\". Zygote keeps framework files open and every app zygote\n  reopens them, so hiding them from apps made that reopen fail. Files under a framework\n  folder are now hidden from memory maps only.\n\n\n## Install\n\nInstall `NextSUSFS.zip` from KernelSU (or a fork) → Modules → Install from storage, then reboot. Needs a SuSFS-patched kernel.\n"
+        },
+        {
+          "timestamp": 1791648748.118,
+          "version": "0.0.5",
+          "versionCode": 5,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.5/NextSUSFS-v0.0.5.zip",
+          "changelog": "> [!WARNING]\n> **Personal project, use at your own risk.** Keep a way to boot without modules (safe mode) before installing.\n\n## Changes\n\n- Fixed: the module banner did not show in the root manager. module.prop now points to it\n  relative to the module folder (banner=banner.png), which is the form managers load.\n\n\n## Install\n\nInstall `NextSUSFS.zip` from KernelSU (or a fork) → Modules → Install from storage, then reboot. Needs a SuSFS-patched kernel.\n"
+        },
+        {
+          "timestamp": 1791648748.123,
+          "version": "0.0.4",
+          "versionCode": 4,
+          "zipUrl": "https://github.com/ifoknr/NextSUSFS/releases/download/v0.0.4/NextSUSFS-v0.0.4.zip",
+          "changelog": "> [!WARNING]\n> **Personal project, use at your own risk.** Keep a way to boot without modules (safe mode) before installing.\n\n## Changes\n\nFirst public release.\n\n**Highlights**\n- Kernel-level root hiding with SuSFS v2 for KernelSU and its forks, on arm64, arm, x86 and x86_64.\n- Hides the NEXT stack (NextWheel, NextZygisk, NextSUSFS) plus AlwaysStrong, Play Integrity Fix\n  and HMA-OSS automatically at every boot.\n- WebUI with over 40 settings on 7 pages, your own path lists, kernel features, logs, backup\n  and reset, in English and Arabic, for phones and tablets.\n- Tools page with the NEXT stack, root hiding, Play Integrity and detection apps (Native\n  Detector, TrustAttestor, KKND Detector).\n- Status shown in NextWheel and NextZygisk; module banner in the root manager.\n\n**Fixes in this version**\n- Fixed: on some managers the module installed with only a few files, so the WebUI hung on\n  opening and the status stayed on \"Waiting for reboot\". The installer no longer copies\n  itself into /data/adb/modules during install; the manager moves it in at the next boot.\n- Action button now prints a NextSUSFS status report (SuSFS, kernel features, NEXT stack,\n  your lists) instead of a placeholder.\n- Module card text shows only NextSUSFS; credits stay in the WebUI's About and the README.\n- Module banner and a \"personal project, use at your own risk\" note in About.\n\n\n## Install\n\nInstall `NextSUSFS.zip` from KernelSU (or a fork) → Modules → Install from storage, then reboot. Needs a SuSFS-patched kernel.\n"
+        }
+      ]
+    },
+    {
       "id": "NuSZDmpQSsO6",
       "name": "Zygisk Detach",
       "version": "1.24.0",
@@ -2050,7 +2107,7 @@
       "timestamp": 1791590400,
       "permissions": [],
       "features": {},
-      "stars": 102,
+      "stars": 104,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771108173.19,
