@@ -2,6 +2,7 @@
   "name": "MMRL Repository",
   "website": "https://repo.mmrl.dev",
   "donate": "https://github.com/sponsors/MMRLApp",
+  "cover": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/assets/cover.png",
   "submission": "https://repo.mmrl.dev/submit",
   "description": "A decentralized ecosystem for sharing, distributing, and discovering Magisk modules."
 }
