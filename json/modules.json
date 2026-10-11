@@ -9,108 +9,9 @@
   "description": "A collection of handy tools and tweaks for your Magisk-enabled Android device. If you're into customizing your phone, GMR makes it easy to find, download, and install Magisk modules that can enhance your device's functionality or add cool features.",
   "metadata": {
     "version": 1,
-    "timestamp": 1791718962.024
+    "timestamp": 1791737628.024
   },
   "modules": [
-    {
-      "id": "-TrC_dHWvEV3",
-      "name": "microG Installer Revived.... again",
-      "version": "1.1.2",
-      "versionCode": 112,
-      "author": "spacealtctrl",
-      "description": "Install microG GmsCore, GsfProxy, Companion/Play Store and MapsV1 to '/priv-app/' with privileged permissions",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/-TrC_dHWvEV3/README.md",
-      "support": "https://t.me/microGRevivedAgainResults",
-      "license": "GPL-3.0",
-      "categories": [
-        "security"
-      ],
-      "verified": false,
-      "added": 1772745246.753,
-      "timestamp": 1785628800,
-      "permissions": [],
-      "features": {},
-      "stars": 201,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1772745246.753,
-        "source": "https://github.com/spacealtctrl/microg_installer_revived_again",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1772745246.753,
-          "version": "1.0.0-0",
-          "versionCode": 1000,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.0.0-0/microg_installer_revived_again-v1.0.0-0.zip",
-          "changelog": "## What's New\r\n* Initial full stable release\r\n* Rebuilt module logic to dynamically promote user-installed microG apps to system `priv-app`\r\n* Introduced a built-in KernelSU WebUI for managing module state (promote/demote)\r\n* Built-in APK downloader to directly fetch and update microG and Companion from GitHub releases\r\n\r\n## Requirements\r\n* Magisk or KernelSU\r\n* A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\r\n* Signature spoofing support\r\n\r\n## Install\r\n1. Flash this module and Reboot.\r\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\r\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\r\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\r\n5. Reboot to apply.\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\nBased on nift4's microG Installer Revived"
-        },
-        {
-          "timestamp": 1772790230.095,
-          "version": "0.5.4-0",
-          "versionCode": 540,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.4-0/microg_installer_revived_again-v5.4.0.zip",
-          "changelog": "## What's New\r\n- Updated to support microG latest release:\r\n[https://github.com/microg/GmsCore/releases/tag/v0.3.13.250932](https://github.com/microg/GmsCore/releases/tag/v0.3.13.250932)\r\n- Added metamodule detection requirement before installation\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.13.250932026 installed\r\n- microG Companion 0.3.13.84022626 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n- A valid metamodule installed at /data/adb/metamodule\r\n\r\n## Install\r\n1. Install microG GmsCore [0.3.13.250932026](https://github.com/microg/GmsCore/releases/download/v0.3.13.250932/com.google.android.gms-250932026.apk)\r\n2. Install microG Companion [0.3.13.84022626](https://github.com/microg/GmsCore/releases/download/v0.3.13.250932/com.android.vending-84022626.apk)\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
-        },
-        {
-          "timestamp": 1772790230.099,
-          "version": "0.5.3-0",
-          "versionCode": 530,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.3-0/microg_installer_revived_again-v5.3.0.zip",
-          "changelog": "## What's New\r\n- Updated to support microG latest release:\r\n[https://github.com/microg/GmsCore/releases/tag/v0.3.12.250932](https://github.com/microg/GmsCore/releases/tag/v0.3.12.250932)\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.12.250932024 installed\r\n- microG Companion 0.3.12.84022624 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n\r\n## Install\r\n1. Install microG GmsCore [0.3.12.250932024](https://github.com/microg/GmsCore/releases/download/v0.3.12.250932/com.google.android.gms-250932024.apk)\r\n2. Install microG Companion [0.3.12.84022624](https://github.com/microg/GmsCore/releases/download/v0.3.12.250932/com.android.vending-84022624.apk)\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
-        },
-        {
-          "timestamp": 1772790230.111,
-          "version": "0.5.2-0",
-          "versionCode": 520,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.2-0/microg_installer_revived_again-v5.2.0.zip",
-          "changelog": "## What's New\r\n- Updated to support microG latest release:\r\n[https://github.com/microg/GmsCore/releases/tag/v0.3.11.250932](https://github.com/microg/GmsCore/releases/tag/v0.3.11.250932)\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.11.250932022 installed\r\n- microG Companion 0.3.11.84022622 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n\r\n## Install\r\n1. Install microG GmsCore [0.3.11.250932022](https://github.com/microg/GmsCore/releases/download/v0.3.11.250932/com.google.android.gms-250932022.apk)\r\n2. Install microG Companion [0.3.11.84022622](https://github.com/microg/GmsCore/releases/download/v0.3.11.250932/com.android.vending-84022622.apk)\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
-        },
-        {
-          "timestamp": 1772790230.115,
-          "version": "0.5.1-3",
-          "versionCode": 513,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.1-3/microg_installer_revived_again-v5.1.3.zip",
-          "changelog": "## What's New\r\n- Simplified PlayStore Logic\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.10.250932 installed\r\n- microG Companion 0.3.10.840226 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n\r\n## Install\r\n1. Install microG GmsCore 0.3.10.250932\r\n2. Install microG Companion 0.3.10.840226\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
-        },
-        {
-          "timestamp": 1772790230.132,
-          "version": "0.5.1-2",
-          "versionCode": 512,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.1-2/microg_installer_revived_again-v5.1.2.zip",
-          "changelog": "**Updated to support microG 0.10.250932**\r\n\r\n## What's New\r\n- Code Clean-up\r\n- Test Auto-update  [Success ✔️]\r\n- Support for microG 0.3.10.250932 (version code 250932020)\r\n- Updated version check to current microG\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.10.250932 installed\r\n- microG Companion 0.3.10.840226 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n\r\n## Install\r\n1. Install microG GmsCore 0.3.10.250932\r\n2. Install microG Companion 0.3.10.840226\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
-        },
-        {
-          "timestamp": 1778175011.643,
-          "version": "1.0.1-0",
-          "versionCode": 1010,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/1.0.1-0/microg_installer_revived_again-1.0.1-0.zip",
-          "changelog": "## What's New\r\n- Add Simplified Chinese (zh) translation — thanks @BiosFeel\r\n- Add Vietnamese (vi) translation — thanks @tinbilly\r\n- Add Brazilian Portuguese (ptbr) translation — thanks @pedroborraz\r\n- Add Croatian (hr) translation — thanks Marin\r\n\r\n## Requirements\r\n* Magisk or KernelSU\r\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\r\n* Signature spoofing support\r\n\r\n## Install\r\n1. Flash this module and Reboot.\r\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\r\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\r\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\r\n5. Reboot to apply.\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\nBased on nift4's microG Installer Revived\r\n"
-        },
-        {
-          "timestamp": 1782732812.551,
-          "version": "1.0.2",
-          "versionCode": 102,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.0.2/microg_installer_revived_again-v1.0.2.zip",
-          "changelog": "## What's New\n- Maintenance release: dependency updates\n\n## Requirements\n* Magisk or KernelSU\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\n* Signature spoofing support\n\n## Install\n1. Flash this module and Reboot.\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\n5. Reboot to apply.\n\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\n\n---\nBased on nift4's microG Installer Revived\n"
-        },
-        {
-          "timestamp": 1782754414.592,
-          "version": "1.1.1",
-          "versionCode": 111,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.1.1/microg_installer_revived_again-v1.1.1.zip",
-          "changelog": "## What's New\n- Verify downloaded APKs against GitHub SHA-256 before installing\n- Live download progress with curl/wget fallback\n- Clean up temporary APKs after install\n- Signature-based microG Companion detection during install\n- Keep the previous boot's debug log instead of wiping it\n- Module action button and uninstall cleanup\n- Graceful handling of GitHub API rate limits\n- Hardened WebUI shell command handling\n\n## Requirements\n* Magisk or KernelSU\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\n* Signature spoofing support\n\n## Install\n1. Flash this module and Reboot.\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\n5. Reboot to apply.\n\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\n\n---\nBased on nift4's microG Installer Revived\n"
-        },
-        {
-          "timestamp": 1785667259.296,
-          "version": "1.1.2",
-          "versionCode": 112,
-          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.1.2/microg_installer_revived_again-v1.1.2.zip",
-          "changelog": "## What's New\n- Maintenance release: dependency updates\n\n## Requirements\n* Magisk or KernelSU\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\n* Signature spoofing support\n\n## Install\n1. Flash this module and Reboot.\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\n5. Reboot to apply.\n\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\n\n---\nBased on nift4's microG Installer Revived\n"
-        }
-      ]
-    },
     {
       "id": "1sOtoOo63t0d",
       "name": "ReZygisk",
@@ -210,184 +111,136 @@
       ]
     },
     {
-      "id": "2KInpaKvruE3",
-      "name": "Mountify",
-      "version": "204",
-      "versionCode": 204,
-      "author": "xx and KOWX712",
-      "description": "Globally mounted modules via OverlayFS.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/2KInpaKvruE3/README.md",
-      "license": "GPL-3.0",
+      "id": "AZenith",
+      "name": "AZenith",
+      "version": "ThermalCoreStandalone",
+      "versionCode": 15,
+      "author": "liliya2727",
+      "description": "Universal auto Performance module to enhance gaming experience while preserving daily usability.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/TLQUMPPonjOV/README.md",
+      "support": "https://t.me/ArchHavenDisc",
+      "license": "Apache-2.0",
       "categories": [
         "system"
       ],
       "verified": false,
-      "added": 1772613355.403,
-      "timestamp": 1787616000,
+      "added": 1772607080.237,
+      "timestamp": 1788393600,
       "permissions": [],
       "features": {},
-      "stars": 122,
+      "stars": 211,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1772613355.403,
-        "source": "https://github.com/backslashxx/mountify",
+        "added": 1772607080.237,
+        "source": "https://github.com/Liliya2727/AZenith",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1772613355.403,
-          "version": "192",
-          "versionCode": 192,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/192/mountify.zip",
-          "changelog": ""
+          "timestamp": 1772607080.237,
+          "version": "AZenith-4.5",
+          "versionCode": 45,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-4.5/AZenith-4.5-1213-57ff2ab-release.zip",
+          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/05268454-2874-4901-895c-e9f7097db5f4\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v4.5! There's so many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n## New Contributors\r\n* @Gustyx-Power made their first contribution in https://github.com/Liliya2727/AZenith/pull/5\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-4.3...AZenith-4.5"
         },
         {
-          "timestamp": 1772613355.409,
-          "version": "191",
-          "versionCode": 191,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/191/mountify.zip",
-          "changelog": ""
+          "timestamp": 1772609689.473,
+          "version": "AZenith-4.3",
+          "versionCode": 43,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-4.3/AZenith-4.3-1070-b60aaa9-release.zip",
+          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/05268454-2874-4901-895c-e9f7097db5f4\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v4.3! There's so many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/Antares/compare/AZenith-4.2...AZenith-4.3"
         },
         {
-          "timestamp": 1772613355.419,
-          "version": "190",
-          "versionCode": 190,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/190/mountify.zip",
-          "changelog": ""
+          "timestamp": 1772609689.48,
+          "version": "AZenith-4.2",
+          "versionCode": 42,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-4.2/AZenith-4.2-760-87ce132-release.zip",
+          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/05268454-2874-4901-895c-e9f7097db5f4\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v4.2! There's so many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
         },
         {
-          "timestamp": 1772613355.423,
-          "version": "189",
-          "versionCode": 189,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/189/mountify.zip",
-          "changelog": ""
+          "timestamp": 1772609689.499,
+          "version": "AZenith-4.0",
+          "versionCode": 40,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-4.0/AZenith-4.0-704-055ccb4-release.zip",
+          "changelog": "<img width=\"4096\" height=\"2048\" alt=\"20251014_232534\" src=\"https://github.com/user-attachments/assets/6ceae2e6-5418-4517-9ae4-67aec61c9a21\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v4.0! There's so many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
         },
         {
-          "timestamp": 1772613355.427,
-          "version": "188",
-          "versionCode": 188,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/188/mountify.zip",
-          "changelog": ""
+          "timestamp": 1772609689.503,
+          "version": "AZenith-3.8",
+          "versionCode": 38,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.8/AZenith-3.8-622-777236c-release.zip",
+          "changelog": "![photo_6266958026690907566_w](https://github.com/user-attachments/assets/2f193bb4-aa29-4835-a39e-45de63cf1b67)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.8! There's many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
         },
         {
-          "timestamp": 1772613355.436,
-          "version": "187",
-          "versionCode": 187,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/187/mountify.zip",
-          "changelog": ""
+          "timestamp": 1772609689.507,
+          "version": "AZenith-3.6",
+          "versionCode": 36,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.6/AZenith-3.6-576-8e38b9c-release.zip",
+          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.6! There's many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
         },
         {
-          "timestamp": 1772613355.439,
-          "version": "186",
-          "versionCode": 186,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/186/mountify.zip",
-          "changelog": ""
+          "timestamp": 1772609689.516,
+          "version": "AZenith-3.4",
+          "versionCode": 34,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.4/AZenith-Tweaks-3.4-3cb12df-Release.zip",
+          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.4! There's many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/Antares/compare/AZenith-3.3...AZenith-3.4"
         },
         {
-          "timestamp": 1772613355.442,
-          "version": "185",
-          "versionCode": 185,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/185/mountify.zip",
-          "changelog": "https://github.com/backslashxx/mountify/compare/181...185"
+          "timestamp": 1772609689.519,
+          "version": "AZenith-3.3",
+          "versionCode": 33,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.3/AZenith-Tweaks-3.3-e607498-Release.zip",
+          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.3! There's a few changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/Antares/compare/AZenith-3.1...AZenith-3.3"
         },
         {
-          "timestamp": 1772613355.451,
-          "version": "181",
-          "versionCode": 181,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/181/mountify.zip",
-          "changelog": ""
+          "timestamp": 1772609689.523,
+          "version": "AZenith-3.1",
+          "versionCode": 31,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.1/AZenith-3.1-3b0d742-Release.zip",
+          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.1! There's a few changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/Antares/compare/AZenith-3.0...AZenith-3.1"
         },
         {
-          "timestamp": 1772613355.454,
-          "version": "180",
-          "versionCode": 180,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/180/mountify.zip",
-          "changelog": "https://github.com/backslashxx/mountify/compare/178...180"
+          "timestamp": 1781091204.052,
+          "version": "AZenith-3.0",
+          "versionCode": 30,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.0/AZenith.-3.0-df56e84-Release.zip",
+          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.0! There's a few changes from previous version!\r\n**Read full changelog here** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
         },
         {
-          "timestamp": 1773228076.605,
-          "version": "193",
-          "versionCode": 193,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/193/mountify.zip",
-          "changelog": ""
+          "timestamp": 1782063211.571,
+          "version": "AZenith-5.0",
+          "versionCode": 50,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.0/AZenith-5.0.3-1665-4084f84-Andromeda.zip",
+          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/a3ac7f35-ff7e-4d73-8952-0fcd985a6f26\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v5.0! Major changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/AZenith/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-4.5...AZenith-5.0"
         },
         {
-          "timestamp": 1773508862.525,
-          "version": "194",
-          "versionCode": 194,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/194/mountify.zip",
-          "changelog": ""
+          "timestamp": 1782322401.901,
+          "version": "AZenith-5.0.4",
+          "versionCode": 504,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.0.4/AZenith-5.0.4-1702-ae37801-Andromeda.zip",
+          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/a3ac7f35-ff7e-4d73-8952-0fcd985a6f26\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v5.0.4! Minor changes and some bug fixes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/AZenith/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-5.0...AZenith-5.0.4"
         },
         {
-          "timestamp": 1773746451.603,
-          "version": "195",
-          "versionCode": 195,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/195/mountify.zip",
-          "changelog": ""
+          "timestamp": 1783251208.785,
+          "version": "AZenith-5.1",
+          "versionCode": 51,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.1/AZenith-5.1-1735-d249817-Bluerose.zip",
+          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/a3ac7f35-ff7e-4d73-8952-0fcd985a6f26\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v5.1 Minor changes and some bug fixes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/AZenith/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-5.0.4...AZenith-5.1"
         },
         {
-          "timestamp": 1774156878.035,
-          "version": "196",
-          "versionCode": 196,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/196/mountify.zip",
-          "changelog": ""
+          "timestamp": 1787157657.389,
+          "version": "AZenith-5.2",
+          "versionCode": 52,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.2/AZenith-5.2-1823-bf02195-Dazzling.zip",
+          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/a3ac7f35-ff7e-4d73-8952-0fcd985a6f26\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v5.2 Minor changes and some bug fixes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/AZenith/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-5.1...AZenith-5.2"
         },
         {
-          "timestamp": 1775077402.151,
-          "version": "197",
-          "versionCode": 197,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/197/mountify.zip",
-          "changelog": ""
-        },
-        {
-          "timestamp": 1776265417.674,
-          "version": "198",
-          "versionCode": 198,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/198/mountify.zip",
-          "changelog": ""
-        },
-        {
-          "timestamp": 1777147309.166,
-          "version": "199",
-          "versionCode": 199,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/199/mountify.zip",
-          "changelog": ""
-        },
-        {
-          "timestamp": 1777872612.85,
-          "version": "200",
-          "versionCode": 200,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/200/mountify.zip",
-          "changelog": ""
-        },
-        {
-          "timestamp": 1777959020.33,
-          "version": "201",
-          "versionCode": 201,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/201/mountify.zip",
-          "changelog": ""
-        },
-        {
-          "timestamp": 1782408810.886,
-          "version": "203",
-          "versionCode": 203,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/203/mountify.zip",
-          "changelog": ""
-        },
-        {
-          "timestamp": 1782408810.893,
-          "version": "202",
-          "versionCode": 202,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/202/mountify.zip",
-          "changelog": ""
-        },
-        {
-          "timestamp": 1787654463.299,
-          "version": "204",
-          "versionCode": 204,
-          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/204/mountify.zip",
-          "changelog": ""
+          "timestamp": 1788453655.519,
+          "version": "ThermalCoreStandalone",
+          "versionCode": 15,
+          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/ThermalCoreStandalone/XiaThermalCore.zip",
+          "changelog": "Standalone Implementation of Xia ThermalCore Service"
         }
       ]
     },
@@ -443,7 +296,7 @@
       "timestamp": 1787529600,
       "permissions": [],
       "features": {},
-      "stars": 632,
+      "stars": 633,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771846972.662,
@@ -570,7 +423,7 @@
       "timestamp": 1791072000,
       "permissions": [],
       "features": {},
-      "stars": 670,
+      "stars": 671,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1773524551.091,
@@ -725,7 +578,7 @@
       "timestamp": 1790899200,
       "permissions": [],
       "features": {},
-      "stars": 25,
+      "stars": 26,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1790193106.726,
@@ -814,135 +667,108 @@
       ]
     },
     {
-      "id": "CUVsU3qWDft4",
-      "name": "Tricky Addon - Update Target List",
-      "version": "5.0-beta.4",
-      "versionCode": 504,
-      "author": "KOWX712",
-      "description": "A WebUI to conifgure tricky store target.txt",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/CUVsU3qWDft4/README.md",
-      "license": "GPL-3.0",
+      "id": "encore",
+      "name": "Encore Tweaks",
+      "version": "5.2.1",
+      "versionCode": 521,
+      "author": "Rem01Gaming",
+      "description": "Special performance module for your device",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/z9xid8Mt87d_/README.md",
+      "support": "https://t.me/rem01schannel",
+      "license": "Apache-2.0",
       "categories": [
-        "miscellaneous"
+        "gaming"
       ],
       "verified": false,
-      "added": 1773039290.686,
-      "timestamp": 1786579200,
+      "added": 1772399589.764,
+      "timestamp": 1783641600,
       "permissions": [],
       "features": {},
-      "stars": 110,
+      "stars": 148,
       "track": {
         "type": "ONLINE_JSON",
-        "added": 1773039290.686,
-        "source": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List",
+        "added": 1772399589.764,
+        "source": "https://github.com/Rem01Gaming/encore",
         "antifeatures": null,
         "build_metadata": null
       },
       "versions": [
         {
-          "timestamp": 1773039290.686,
-          "version": "4.3",
-          "versionCode": 43,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.3/TrickyAddonModule-v4.3.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** UI improvement: optimized dialog animation and menu appearence.\n- **WebUI:** Fixed fallback link not working, fixed no internet connection in some condition.\n- **WebUI:** Implemented translation hot update feature, allow pulling transation from crowdin branch and apply without reboot. Translation in repo will sync with Crowdin on every Sunday.\n- **WebUI:** Fixed fail to apply custom keybox on some path.\n- **Script:** Added auto security patch support for custom.pif.prop\n- **Script:** Added sensitive props handling from shamiko."
+          "timestamp": 1772399589.764,
+          "version": "5.0",
+          "versionCode": 50,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.0/encore-5.0-1294-667f35e-release.zip",
+          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\nWhile this release may appear minor on the surface, the entire codebase has undergone significant refactoring and migration. The previously C-based daemon has been completely rewritten in C++ to leverage abstraction and object-oriented programming. Similarly, the WebUI has been fully rebuilt in VueJS, enabling a native-like single-page application experience.\r\n\r\n- Massive internal refactoring and code migration\r\n- UI/UX improvements in WebUI\r\n- Drop support for logging system interface to other processes/module\r\n- Fix performance profile stuck when exiting games\r\n- Other misc changes and optimizations"
         },
         {
-          "timestamp": 1773039290.693,
-          "version": "4.2",
-          "versionCode": 42,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.2/TrickyAddonModule-v4.2.zip",
-          "changelog": "### Tricky Addon module\r\n- **WebUI:** New UI with [Material Web Component](https://material-web.dev) and some various improvements.\r\n- **WebUI:** Fixed missing security patch option in newer version of [beakthoven/TrickyStoreOSS](https://github.com/beakthoven/TrickyStoreOSS).\r\n- **WebUI:** Fixed broken devconfig.toml value reading when using [qwq233/TrickyStore](https://github.com/qwq233/TrickyStore).\r\n- **WebUI:** Added Vietnamese translation (@doanvtamhuynh, #96).\r\n- **WebUI:** Updated many [translation](https://crowdin.com/project/TA_utl) [ff3e2e4](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/commit/ff3e2e4cd3ba6e40277c0c8def016e764673c262).\r\n- No longer ship full openssl binary."
+          "timestamp": 1772399589.773,
+          "version": "4.6",
+          "versionCode": 46,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.6/encore-4.6-1080-2fa4940-release.zip",
+          "changelog": "###  Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Refactor and design changes on the WebUI\r\n- Implement WebUI X API for file read/write\r\n- WebUI translation updates\r\n- Exposes Encore's logging system to other processes/module\r\n- Add sanity check for dumpsys\r\n- Other misc changes and optimizations"
         },
         {
-          "timestamp": 1773039290.696,
-          "version": "4.1",
-          "versionCode": 41,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.1/TrickyAddonModule-v4.1.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** Added right-to-left language support in UI.\n- **WebUI:** Fixed 'Failed to fetch applist' in certain condition.\n- **Script:** Added auto security patch support for pif.prop.\n- **WebUI:** Added support for Dakkshesh's TrickyStore fork [(GitHub@beakthoven/TrickyStore)](https://github.com/beakthoven/TrickyStore).\n- **WebUI:** Added device props support for qwq233's TrickyStore fork (this will not modify system prop automatically).\n- **WebUI:** Added German (#78, @xxOrdulu52xx), Bengali, Persian translation.\n- **WebUI:** Updated Turkish, Italian, Japanese, Arabic translation. (@cvnertnc, @GRgabrix, @reindex-ot, @ZG089)"
+          "timestamp": 1772399589.784,
+          "version": "4.5",
+          "versionCode": 45,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.5/encore-4.5-1004-f8bf8f8-release.zip",
+          "changelog": "###  Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Fix root detection issue on module files\r\n- Mitigate buggy thermal throttling on post-startup in old MediaTek devices\r\n- Fix random reboot and performance dip on some devices\r\n- Add module banner for KernelSU Next\r\n- Add option to create WebUI shortcut\r\n- Add back DDR tweaks for Exynos and Tensor devices\r\n- Remove MMRL from action redirect WebUI\r\n- Shrink module size even more\r\n\r\n### Notes\r\n\r\nIn order to mitigate root detection, all configurations such as gamelists and preferences will be wiped. After the update, please set up the module again using the WebUI.\r\n\r\nThe Encore Addon API also changed on this update, please refer to the docs on the website.\r\n\r\n### Contributors\r\n\r\n- @e5u - Mandarin WebUI translation\r\n- @al4uu - WebUI translation"
         },
         {
-          "timestamp": 1773039290.711,
-          "version": "4.0",
-          "versionCode": 40,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.0/TrickyAddonModule-v4.0.zip",
-          "changelog": "### Tricky Addon module\r\n- **WebUI:** Fixed `Failed to fetch security patch` issue in most condition.\r\n- **WebUI:** Added support for [qwq233's TrickyStore fork](https://github.com/qwq233/TrickyStore).\r\n- **WebUI:** Provide option to download latest canary version in about menu.\r\n- **action:** Removed MMRL from action redirect WebUI since MMRL no longer provide built-in WebUI. (#66, @ThanhCN0)\r\n- **WebUI:** Unknown keybox option no longer rely on internet connection.\r\n- **WebUI:** Fixed built-in update mechanism might fail in some condition. (@backslashxx)\r\n- **WebUI:** Translation service now is available on crowdin, view [translation guide](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/blob/main/module/webui/locales/GUIDE.md) for more detail. You can reach our crowdin website in the WebUI language menu too.\r\n- **WebUI:** Added Ukrainian (#43, @StepanSad), Greek (#61, @Goku818) translation.\r\n- **WebUI:** Updated Japanese, Indonesian, Arabic, Polish, French, Portuguese, Ukrainian translation. (@reindex-ot, @Rem01Gaming, @ZG089, @Bladius2024, @GhostFRR, @SecretGogeta, [crowdin@IlliaS](https://crowdin.com/profile/illias))"
-        },
-        {
-          "timestamp": 1773039290.723,
-          "version": "3.9",
-          "versionCode": 39,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.9/TrickyAddonModule-v3.9.zip",
-          "changelog": "### Tricky Addon module\r\n- **WebUI:** Optmized app loading speed, fixed all known freezing issue.\r\n- **WebUI:** Added unknown keybox option, similar to AOSP keybox, removed AOSP keybox fallback when no valid keybox available.\r\n- **MMRL:** Added app icon support, enjoy with latest [MMRL](https://github.com/MMRLApp/MMRL/releases/latest) or [WebUI X](https://github.com/MMRLApp/WebUI-X-Portable/releases/latest).\r\n- **Action:** Added support for Magisk action redirect WebUI X.\r\n- **Script:** Get actual vbmeta size before resetprop.\r\n- **WebUI:** Add Portuguese Brazilian Translation (#38, @JeanxPereira)"
-        },
-        {
-          "timestamp": 1773039290.727,
-          "version": "3.8.1",
-          "versionCode": 381,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.8.1/TrickyAddonModule-v3.8.1.zip",
-          "changelog": "### Tricky Addon module\r\n- **WebUI:** Fixed missing aosp key fallback when no valid key is available."
-        },
-        {
-          "timestamp": 1773039290.74,
-          "version": "3.8",
-          "versionCode": 38,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.8/TrickyAddonModule-v3.8.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** Optimized UI.\n- **WebUI:** Added mirror link fallback to fetch content from raw.githubusercontent.com\n- **WebUI:** Added French translation (#31, @anaelle-dev)\n- **WebUI:** Added Arabic Translation (#32, @ZG089)\n- **WebUI:** Added Azerbaijani Translation (#34, @mnasibzade)"
-        },
-        {
-          "timestamp": 1773039290.743,
-          "version": "3.7",
-          "versionCode": 37,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.7/TrickyAddonModule-v3.7.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** Optimized UI.\n- **WebUI:** Added uninstall confirmation dialog.\n- **WebUI:** Sanitize text content (#23, @totalolage)\n- **WebUI:** Added selected language memory.\n- **WebUI:** Fixed Chinese translation (#26 #27, @xiaokuqwq)\n- **WebUI:** Added Indonesian translation (#28, @ChiseWaguri)\n- **WebUI:** Added Italian translation (#30, @luigimak)\n- **MMRL:** Added monet theme suport.\n- **MMRL:** Fixed fail to display guide when permission is not granted.\n- No longer add Play Store by default."
-        },
-        {
-          "timestamp": 1773039290.756,
-          "version": "3.6",
-          "versionCode": 36,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.6/TrickyAddonModule-v3.6.zip",
-          "changelog": "### Tricky Addon module\n- **WebUI:** Option to add system apps.\n- **WebUI:** Fixed abnormal gap between content and header in MMRL.\n- Handle some vbmeta related prop, enforce boot hash to lowercase.\n- No longer auto config security patch by default (old user will remain current setup).\n- Fixed issue with disable sucompat.\n- More minor improvements."
-        },
-        {
-          "timestamp": 1773039290.758,
-          "version": "3.5",
-          "versionCode": 35,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.5/TrickyAddonModule-v3.5.zip",
-          "changelog": "### Tricky Addon module\n- **Script:** Set `system=prop` in auto config.\n- **WebUI:** Option to fetch secuirty patch date.\n- **WebUI:** Fixed `Failed to fetch app list` issue in vanilla rom.\n- **WebUI:** Added Polish translation (#18, @Bladius2024)\n- **WebUI:** Update Japanese translation (#20, @reindex-ot)\n- **WebUI:** Minor UI improvements."
-        },
-        {
-          "timestamp": 1775207015.11,
-          "version": "5.0-beta.1",
-          "versionCode": 501,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.1/TrickyAddonModule-v5.0-beta.1.zip",
-          "changelog": "### Tricky Addon module\r\n- **Dropped support for old KernelSU and APatch versions** - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n- **Module:** Drop aapt and keygen, no longer ship any binary.\r\n- **Script:** Fix uninstallation in overlayfs manager.\r\n- **Script:** Fix missing prop in sensitive props handling, support resetprop compact.\r\n- **Script:** Support hotinstall in supported metamodule.\r\n- **WebUI:** Add support for JingMatrix's fork ([JingMatrix/TEESimulator](https://github.com/JingMatrix/TEESimulator)).\r\n- **WebUI:** Improve rtl language support, update gitmirror link.\r\n- **WebUI:** Support custom keybox provider, allow fetching and decoding keybox from any url.\r\n- **WebUI:** Add Thai translation (@zr89-richter, #122).\r\n"
-        },
-        {
-          "timestamp": 1780075808.39,
-          "version": "5.0-beta.2",
-          "versionCode": 502,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.2/TrickyAddonModule-v5.0-beta.2.zip",
-          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Refactor codebase, change license to Apache 2.0 (#137)\r\n- **WebUI:** Add prop handler switch (option to disable shamiko's resetprop script)\r\n- **Script:** Drop auto security patch feature"
-        },
-        {
-          "timestamp": 1780842052.326,
-          "version": "5.0-beta.3",
-          "versionCode": 503,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.3/TrickyAddonModule-v5.0-beta.3.zip",
-          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Add [keybox repo](https://keybox.kowx712.cc/) support, current addon's custom keybox provider will be maintained less actively in the future.\r\n- **WebUI:** Fix unable to load WebUI.\r\n- **WebUI:** Fix built-in module update.\r\n- **WebUI:** Updated many strings, welcome to contribute via [crowdin](https://crowdin.com/project/TA_utl)."
-        },
-        {
-          "timestamp": 1782041614.189,
+          "timestamp": 1772399589.788,
           "version": "4.4",
           "versionCode": 44,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.4/TrickyAddonModule-v4.4.zip",
-          "changelog": "### Tricky Addon module\r\n\r\n#### This is last v4 release before v5 stable release, v5 will drop support for legacy KSU WebUI that doesn't support package manager api. This is a downgrade for existing v5 beta user.\r\n- **Script:** Fix uninstallation in overlayfs manager.\r\n- **Script:** Fix missing prop in sensitive props handling, support resetprop compact.\r\n- **WebUI:** Add community driven [keybox repo](https://keybox.kowx712.cc/) support, current valid keybox will be maintained less actively in the future.\r\n- **WebUI:** Improve rtl language support, update gitmirror link.\r\n- **WebUI:** Support custom keybox provider, allow fetching and decoding keybox from any url.\r\n- **WebUI:** Add Thai translation (@zr89-richter, #122)."
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.4/encore-4.4-972-620057d-release.zip",
+          "changelog": "###  Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Fix UI lags in normal mode on certain older MediaTek devices\r\n- Revert startup tweak (post-fs-data) to mitigate bootloops on some devices\r\n- Introduced Device Mitigation to fix certain device specific bugs\r\n- Better and more accurate SoC recognition\r\n- Update Mandarin WebUI translation\r\n- Reduces module size to ~190kB\r\n- Disable Oplus CPU limit\r\n- Refactor and de-spaghetti the profiler code\r\n- Other misc changes and optimizations\r\n\r\n### Contributors\r\n\r\n- @e5u - Mandarin WebUI translation\r\n- @fukiame - Vietnamese WebUI translation\r\n- @al4uu - WebUI translation\r\n- @mingzun09 - Mandarin readme translation\r\n\r\n---\r\n\r\n**MD5**: `13de2fef84d3776cc3ea82b2cec4863d`"
         },
         {
-          "timestamp": 1786617657.18,
-          "version": "5.0-beta.4",
-          "versionCode": 504,
-          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.4/TrickyAddonModule-v5.0-beta.4.zip",
-          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Add support for [OhMyKeymint](https://github.com/qwq233/OhMyKeymint) (#140)."
+          "timestamp": 1772399589.807,
+          "version": "4.3",
+          "versionCode": 43,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.3/encore-4.3-933-36f8bbc-release.zip",
+          "changelog": "###  Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Introducing Lite Mode\r\n- Improve SoC recognition logic\r\n- Revert MTK PBM implement due random reboot issue\r\n- Fix system instability in some Snapdragon devices\r\n- Fix SoC recognition on some Google Tensor devices\r\n- Fix Monet color theme in the latest MMRL build\r\n- Update default WebUI color theme to \"purpleish\"\r\n- Disable GED KPI on performance profile\r\n- Drop kill logger feature\r\n- Other misc changes and optimizations\r\n\r\n---\r\n**MD5**: `b6113253c79bf311f6d75bbc8a35dcf3`"
+        },
+        {
+          "timestamp": 1772399589.813,
+          "version": "4.2",
+          "versionCode": 42,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.2/encore-4.2-899-84bbcb5-release.zip",
+          "changelog": "### Changelog\r\n\r\n- Disable MTK PBM on performance profile\r\n- Update Vietnamese and Polish WebUI translation\r\n- Use `energy_step` for default CPU governor candidate\r\n- Remove unnecessary file creation on late_start service\r\n- Workaround for game freezes in Xiaomi peridot\r\n- Globally disable `iostats` and `add_random`\r\n- Reduce `nr_requests` to 32 on performance profile\r\n- Other misc changes and optimizations\r\n\r\n---\r\n**MD5**: `225bfb58140bd53dad537e8390198209`\r\n"
+        },
+        {
+          "timestamp": 1772399589.824,
+          "version": "4.1",
+          "versionCode": 41,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.1/encore-4.1-862-cc92fbc-release.zip",
+          "changelog": "### Changelog\r\n\r\n- Fix CPU governor defaulted as performance\r\n- Fix overheating after startup\r\n- Expose game information through `/dev/encore_game_info`\r\n- Reintroduce `cpu_dcvs` tweaks (LLCC, L3 and DDR)\r\n- Add more TCP congestion algo to use\r\n- Other misc changes and optimizations\r\n\r\n---\r\n**SHA256**: `44cbe2de95afb16dd9ac596a743583279ee64da56fe0669c22774021b1986066`\r\n"
+        },
+        {
+          "timestamp": 1774588862.718,
+          "version": "5.1",
+          "versionCode": 51,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.1/encore-5.1-1431-f347713-release.zip",
+          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Implement Java companion daemon for system info fetching, replacing `dumpsys` use\r\n- Fix performance regression caused by incorrect Inotify implementation\r\n- Implement event-driven architecture on native daemon\r\n- Any tweaks now will be applied instantly without any delay\r\n- Performance profile will no longer lock GPU frequency at highest frequency to prevent overheating and rapid battery drain\r\n- Adjust tweak for Snapdragon CPU Bus and DDR to prevent overheating and rapid battery drain\r\n- Update WebUI translation\r\n- Other misc changes and optimizations\r\n\r\n**Full Changelog**: https://github.com/Rem01Gaming/encore/compare/5.0...5.1"
+        },
+        {
+          "timestamp": 1775833410.843,
+          "version": "5.1.1",
+          "versionCode": 511,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.1.1/encore-5.1.1-1444-9ef7449-release.zip",
+          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Fix daemon status reported incorrectly as stopped\r\n- Fix issue where module will not start service daemon due Mountify issue on Magisk\r\n- Fix race condition on DND setting causing incorrect value applied\r\n- Other misc changes and optimizations\r\n\r\n**Full Changelog**: https://github.com/Rem01Gaming/encore/compare/5.1...5.1.1"
+        },
+        {
+          "timestamp": 1783186399.048,
+          "version": "5.2",
+          "versionCode": 52,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.2/encore-5.2-1523-15eb446-main.zip",
+          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Implement binder monitor for system monitoring\r\n- Fix daemon crash due java companion issue on certain devices\r\n- Fix frequency locking on Adreno GPU\r\n- Fix `module.prop` corruption issue\r\n- GPU frequency now will be locked at high frequency on performance profile, reverting previous change on v5.1.1\r\n- [Add disable tweaks setting](https://t.me/rem01schannel/784)\r\n- DND setting now will reset if the focused window was changed\r\n- Various UI/UX optimization and translation update on WebUI\r\n- Other misc changes and optimizations\r\n\r\n**Full Changelog**: https://github.com/Rem01Gaming/encore/compare/5.1.1...5.2"
+        },
+        {
+          "timestamp": 1783661602.214,
+          "version": "5.2.1",
+          "versionCode": 521,
+          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.2.1/encore-5.2.1-1533-361ab0e-main.zip",
+          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Fix addon modules doesn't working when disable tweaks is enabled\r\n- Fix DND mode did not reset after exiting the game\r\n\r\n**Full Changelog**: https://github.com/Rem01Gaming/encore/compare/5.2...5.2.1"
         }
       ]
     },
@@ -963,7 +789,7 @@
       "timestamp": 1790985600,
       "permissions": [],
       "features": {},
-      "stars": 447,
+      "stars": 449,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1771491136.52,
@@ -1537,7 +1363,7 @@
       "timestamp": 1790812800,
       "permissions": [],
       "features": {},
-      "stars": 36,
+      "stars": 37,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1790213186.696,
@@ -1587,6 +1413,111 @@
           "versionCode": 205,
           "zipUrl": "https://github.com/uraniam9/lune-bridge/releases/download/v2.0.5/LuneBridge-v2.0.5.zip",
           "changelog": "**Warmth reaches the warm end again.** Drag the warmth slider straight to its warmest, or take SonoLune's Light room to 100%, and on some phones nothing happened: the screen kept the warmth it already had, and nudging the slider back a step put it right. The cause is in Android. Its colour service remembers the last temperature its own Night Light slider gave it, and ignores any later setting that matches it, until the phone restarts. With this module's overlay in place, the warm end of Android's own slider is 1700K, which is also the warm end of every slider that drives this module. So once Android's own slider had been taken to its warmest, every request for 1700K was stored and then ignored. Measured on a Nothing Phone (2): after 3000K, a write of 1700K left the screen at 3000K. Lune now writes a value one kelvin away first, then the real one. Android can ignore at most one of the two, so the screen lands on what you asked for or one kelvin beside it, which nobody can see. If you drive Lune Bridge from SonoLune, this is the whole fix, and SonoLune does not need an update.\n\n**The panel's warmth takes turns.** The warmth slider waited for your finger to rest, then started a change and read the settings back when it finished, and the presets started theirs straight away. Nothing stopped a second change from starting while the first was still running, so a drag that paused, or a preset tapped right after a drag, could finish in either order and leave the screen on the older value. The read-back could also pull the thumb back under a finger that was still moving. Now only one change runs at a time, the newest value waits behind it, and the last thing you touched is always the last thing applied. The screen follows the thumb while you drag, and a preset moves the thumb the moment you tap it.\n\n**Commands that overlap no longer trip over each other.** Every lunectl command that changes the display now waits for the one before it, and the settings file is written so that two writers can never corrupt it. The wait can never be what keeps your screen dark: a command that died is stepped over at once, and one that is stuck gets about five seconds before Lune carries on without it. `lunectl warm` now also says so, and exits non-zero, when Android refuses a temperature, instead of recording a warmth the screen is not showing.\n"
+        }
+      ]
+    },
+    {
+      "id": "magisk",
+      "name": "Magisk",
+      "version": "31.0",
+      "versionCode": 310,
+      "author": "topjohnwu",
+      "description": "The Magic Mask for Android",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/zA1Fz1gjQyBn/README.md",
+      "license": "GPL-3.0",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1773659774.307,
+      "timestamp": 1788480000,
+      "permissions": [],
+      "features": {},
+      "stars": 206,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1773659774.307,
+        "source": "https://github.com/topjohnwu/Magisk",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1773659774.307,
+          "version": "30.7",
+          "versionCode": 307,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.7/app-debug.apk",
+          "changelog": "- [MagiskInit] Support Android 16 QPR2 sepolicy format\r\n- [MagiskInit] Support using klogdump partition as pre-init storage\r\n- [Zygisk] Support Android 16 QPR2 and higher\r\n- [Zygisk] Support Android XR and some Nubia devices\r\n- [MagiskSU] Do not drop capabilities by default, even when switching to non-root UIDs. Explicitly use the `--drop-cap` argument to drop capabilities.\r\n- [MagiskBoot] Better lzma format detection\r\n- [MagiskBoot] Fix various commandline argument parsing bugs\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
+        },
+        {
+          "timestamp": 1773659774.319,
+          "version": "30.6",
+          "versionCode": 306,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.6/app-debug.apk",
+          "changelog": "### Hotfix\r\n\r\n- [MagiskInit] Revert a change that could result in bootloops\r\n\r\n### v30.5 Changelog\r\n\r\n- [General] Migrate a significant portion of the codebase to Rust\r\n- [General] Various minor bug fixes\r\n- [General] Support installing Magisk into vendor_boot partition\r\n- [Core] Improve Magisk specific files injection logic\r\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\r\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\r\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\r\n- [resetprop] Reduce property modification traces\r\n- [resetprop] Properly support Android versions with property overrides\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
+        },
+        {
+          "timestamp": 1773659774.322,
+          "version": "30.5",
+          "versionCode": 305,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.5/app-debug.apk",
+          "changelog": "- [General] Migrate a significant portion of the codebase to Rust\r\n- [General] Various minor bug fixes\r\n- [General] Support installing Magisk into vendor_boot partition\r\n- [Core] Improve Magisk specific files injection logic\r\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\r\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\r\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\r\n- [resetprop] Reduce property modification traces\r\n- [resetprop] Properly support Android versions with property overrides\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
+        },
+        {
+          "timestamp": 1773659774.334,
+          "version": "30.4",
+          "versionCode": 304,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.4/app-debug.apk",
+          "changelog": "- [MagiskSU] Fix several implementation bugs\n\n## Diffs to v29.0\n\n- [General] Various minor bug fixes\n- [General] Support installing Magisk into vendor_boot partition\n- [General] Migrate a significant portion of the codebase to Rust\n- [Core] Improve Magisk specific files injection logic\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\n- [resetprop] Reduce property modification traces\n\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\n"
+        },
+        {
+          "timestamp": 1773659774.338,
+          "version": "30.3",
+          "versionCode": 303,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.3/app-debug.apk",
+          "changelog": "- [General] Support installing Magisk into vendor_boot partition\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\n- [Core] Migrate much more code into Rust\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\n\n## Diffs to v29.0\n\n- [General] Various minor bug fixes\n- [General] Support installing Magisk into vendor_boot partition\n- [General] Migrate a significant portion of the codebase to Rust\n- [Core] Improve Magisk specific files injection logic\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\n- [resetprop] Reduce property modification traces\n\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\n"
+        },
+        {
+          "timestamp": 1773659774.35,
+          "version": "30.2",
+          "versionCode": 302,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.2/app-debug.apk",
+          "changelog": "- [Core] Fix an edge case breaking modules when overlayfs is involved\n- [Core] Fix module `.replace` functionality in certain situations\n- [resetprop] Reduce property modification traces\n\n## Diffs to v29.0\n\n- [General] Various minor bug fixes\n- [Core] Migrate module implementation to Rust\n- [Core] Improve Magisk specific files injection logic\n- [MagiskBoot] Migrate compression code to Rust\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n- [resetprop] Reduce property modification traces\n\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\n"
+        },
+        {
+          "timestamp": 1773659774.354,
+          "version": "30.1",
+          "versionCode": 301,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.1/app-debug.apk",
+          "changelog": "- [Core] Fix bug in module mounting implementation\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n\n## Diffs to v29.0\n\n- [General] Various minor bug fixes\n- [Core] Migrate module implementation to Rust\n- [Core] Improve Magisk specific files injection logic\n- [MagiskBoot] Migrate compression code to Rust\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\n"
+        },
+        {
+          "timestamp": 1773659774.357,
+          "version": "30.0",
+          "versionCode": 300,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.0/app-debug.apk",
+          "changelog": "- [General] Various minor bug fixes\r\n- [Core] Migrate module implementation to Rust\r\n- [Core] Improve Magisk specific files injection logic\r\n- [MagiskBoot] Migrate compression code to Rust\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)"
+        },
+        {
+          "timestamp": 1773659774.368,
+          "version": "29.0",
+          "versionCode": 290,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v29.0/Magisk-v29.0.apk",
+          "changelog": "This release looks minor at the surface, however, the entire codebase has gone through significant refactoring and migration. The native code in Magisk used to be mainly C++, but several contributors and I have been steadily rewriting parts of the code in Rust since April 2022. After years of effort, the Rust-ification of the project slowly began picking up steam, and at the moment of this release, over 40% of the native code has been rewritten in Rust, with several major subsystem rewrites in the PR queue, planned to be merged for the next release.\r\n\r\nMany might wonder, why introduce a new language to the project? My reason is actually not to reduce memory safety issues (although it is a nice side benefit), but to be able to develop Magisk using a more modern programming language. After using Rust for a while, it's clear to me that using Rust allows me to write more correct code and makes me happier compared to dealing with C++. People share the [same sentiment as I do](https://threadreaderapp.com/thread/1577667445719912450.html).\r\n\r\n## Changelog\r\n\r\n- [General] Massive internal refactoring and code migration\r\n- [App] Support downloading module zip files with XZ compression\r\n- [App] Disable app animations when system animations are disabled\r\n- [MagiskMount] Support systemlessly deleting files with modules using blank file nodes\r\n- [MagiskInit] Redesign sepolicy patching and injection logic\r\n- [MagiskSU] Better TTY/PTY support\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
+        },
+        {
+          "timestamp": 1773659774.371,
+          "version": "canary-29001",
+          "versionCode": 29001,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/canary-29001/app-debug.apk",
+          "changelog": "- Sync with public release\r\n\r\n## Diffs to v29.0\r\n\r\nN/A\r\n"
+        },
+        {
+          "timestamp": 1788561667.31,
+          "version": "31.0",
+          "versionCode": 310,
+          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v31.0/app-debug.apk",
+          "changelog": "The highlight of this release is a complete, ground-up rewrite of the **Magisk app UI**.\r\n\r\nOver the years, the Android application codebase had accumulated significant technical debt—spanning legacy XML layouts, Databinding, and KAPT. In this release, the entire UI layer has been rebuilt from scratch with modern **Jetpack Compose** and **Material 3**.\r\n\r\nThis rewrite allowed us to modernize the architecture and introduce substantial UI/UX improvements, with additional new features:\r\n\r\n- A new **built-in terminal emulator** with full TTY and ANSI support for module flashing and action scripts.\r\n- Direct support for **streaming and extracting boot images from remote OTA URLs** on-the-fly.\r\n\r\n### Legacy App Still Available\r\n\r\nThis kind of full rewrite can sometimes introduce unexpected edge cases or bugs. If you encounter issues with the new app, the legacy View-based version will still be built and uploaded for a couple of releases, available for download [here](https://github.com/topjohnwu/magisk-files/releases/download/files/Magisk-v31.0-legacy.apk).\r\n\r\n## Changelog\r\n\r\n- [App] Complete UI overhaul with Jetpack Compose and Material 3, completely removing the legacy View and Fragment architecture\r\n- [App] Add new built-in terminal emulator with full TTY and ANSI support for module flashing and action scripts\r\n- [App] Support downloading and streaming boot image extraction directly from remote OTA URLs\r\n- [MagiskBoot] Support dynamic zImage payload sizes without requiring exact size padding during repack\r\n- [MagiskBoot] Update AVB hash descriptor image size to match unpacked image size\r\n- [MagiskBoot] Lower default compression preset for XZ and LZMA to reduce memory usage during repacking\r\n- [Zygisk] Support Android 17 (API 37)\r\n- [Zygisk] Support Meta Quest (Horizon OS) lazy partition zygotes\r\n- [MagiskPolicy] Fix identifier parsing for names containing hyphens\r\n- [resetprop] Add `--compact` (`-c`) flag to compact property storage areas\r\n- [MagiskInit] Properly prioritize charger mode detection before `force_normal_boot`\r\n- [DenyList] Add `webview_zygote` as an unmount target\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
         }
       ]
     },
@@ -1675,6 +1606,105 @@
       ]
     },
     {
+      "id": "microg_installer_revived_again",
+      "name": "microG Installer Revived.... again",
+      "version": "1.1.2",
+      "versionCode": 112,
+      "author": "spacealtctrl",
+      "description": "Install microG GmsCore, GsfProxy, Companion/Play Store and MapsV1 to '/priv-app/' with privileged permissions",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/-TrC_dHWvEV3/README.md",
+      "support": "https://t.me/microGRevivedAgainResults",
+      "license": "GPL-3.0",
+      "categories": [
+        "security"
+      ],
+      "verified": false,
+      "added": 1772745246.753,
+      "timestamp": 1785628800,
+      "permissions": [],
+      "features": {},
+      "stars": 201,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1772745246.753,
+        "source": "https://github.com/spacealtctrl/microg_installer_revived_again",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1772745246.753,
+          "version": "1.0.0-0",
+          "versionCode": 1000,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.0.0-0/microg_installer_revived_again-v1.0.0-0.zip",
+          "changelog": "## What's New\r\n* Initial full stable release\r\n* Rebuilt module logic to dynamically promote user-installed microG apps to system `priv-app`\r\n* Introduced a built-in KernelSU WebUI for managing module state (promote/demote)\r\n* Built-in APK downloader to directly fetch and update microG and Companion from GitHub releases\r\n\r\n## Requirements\r\n* Magisk or KernelSU\r\n* A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\r\n* Signature spoofing support\r\n\r\n## Install\r\n1. Flash this module and Reboot.\r\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\r\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\r\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\r\n5. Reboot to apply.\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\nBased on nift4's microG Installer Revived"
+        },
+        {
+          "timestamp": 1772790230.095,
+          "version": "0.5.4-0",
+          "versionCode": 540,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.4-0/microg_installer_revived_again-v5.4.0.zip",
+          "changelog": "## What's New\r\n- Updated to support microG latest release:\r\n[https://github.com/microg/GmsCore/releases/tag/v0.3.13.250932](https://github.com/microg/GmsCore/releases/tag/v0.3.13.250932)\r\n- Added metamodule detection requirement before installation\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.13.250932026 installed\r\n- microG Companion 0.3.13.84022626 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n- A valid metamodule installed at /data/adb/metamodule\r\n\r\n## Install\r\n1. Install microG GmsCore [0.3.13.250932026](https://github.com/microg/GmsCore/releases/download/v0.3.13.250932/com.google.android.gms-250932026.apk)\r\n2. Install microG Companion [0.3.13.84022626](https://github.com/microg/GmsCore/releases/download/v0.3.13.250932/com.android.vending-84022626.apk)\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
+        },
+        {
+          "timestamp": 1772790230.099,
+          "version": "0.5.3-0",
+          "versionCode": 530,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.3-0/microg_installer_revived_again-v5.3.0.zip",
+          "changelog": "## What's New\r\n- Updated to support microG latest release:\r\n[https://github.com/microg/GmsCore/releases/tag/v0.3.12.250932](https://github.com/microg/GmsCore/releases/tag/v0.3.12.250932)\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.12.250932024 installed\r\n- microG Companion 0.3.12.84022624 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n\r\n## Install\r\n1. Install microG GmsCore [0.3.12.250932024](https://github.com/microg/GmsCore/releases/download/v0.3.12.250932/com.google.android.gms-250932024.apk)\r\n2. Install microG Companion [0.3.12.84022624](https://github.com/microg/GmsCore/releases/download/v0.3.12.250932/com.android.vending-84022624.apk)\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
+        },
+        {
+          "timestamp": 1772790230.111,
+          "version": "0.5.2-0",
+          "versionCode": 520,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.2-0/microg_installer_revived_again-v5.2.0.zip",
+          "changelog": "## What's New\r\n- Updated to support microG latest release:\r\n[https://github.com/microg/GmsCore/releases/tag/v0.3.11.250932](https://github.com/microg/GmsCore/releases/tag/v0.3.11.250932)\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.11.250932022 installed\r\n- microG Companion 0.3.11.84022622 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n\r\n## Install\r\n1. Install microG GmsCore [0.3.11.250932022](https://github.com/microg/GmsCore/releases/download/v0.3.11.250932/com.google.android.gms-250932022.apk)\r\n2. Install microG Companion [0.3.11.84022622](https://github.com/microg/GmsCore/releases/download/v0.3.11.250932/com.android.vending-84022622.apk)\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
+        },
+        {
+          "timestamp": 1772790230.115,
+          "version": "0.5.1-3",
+          "versionCode": 513,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.1-3/microg_installer_revived_again-v5.1.3.zip",
+          "changelog": "## What's New\r\n- Simplified PlayStore Logic\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.10.250932 installed\r\n- microG Companion 0.3.10.840226 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n\r\n## Install\r\n1. Install microG GmsCore 0.3.10.250932\r\n2. Install microG Companion 0.3.10.840226\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
+        },
+        {
+          "timestamp": 1772790230.132,
+          "version": "0.5.1-2",
+          "versionCode": 512,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v0.5.1-2/microg_installer_revived_again-v5.1.2.zip",
+          "changelog": "**Updated to support microG 0.10.250932**\r\n\r\n## What's New\r\n- Code Clean-up\r\n- Test Auto-update  [Success ✔️]\r\n- Support for microG 0.3.10.250932 (version code 250932020)\r\n- Updated version check to current microG\r\n\r\n## Requirements\r\n- microG GmsCore 0.3.10.250932 installed\r\n- microG Companion 0.3.10.840226 installed\r\n- Signature spoofing support\r\n- Magisk or KernelSU\r\n\r\n## Install\r\n1. Install microG GmsCore 0.3.10.250932\r\n2. Install microG Companion 0.3.10.840226\r\n3. Flash this module\r\n4. Reboot\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\n\r\nBased on nift4's microG Installer Revived"
+        },
+        {
+          "timestamp": 1778175011.643,
+          "version": "1.0.1-0",
+          "versionCode": 1010,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/1.0.1-0/microg_installer_revived_again-1.0.1-0.zip",
+          "changelog": "## What's New\r\n- Add Simplified Chinese (zh) translation — thanks @BiosFeel\r\n- Add Vietnamese (vi) translation — thanks @tinbilly\r\n- Add Brazilian Portuguese (ptbr) translation — thanks @pedroborraz\r\n- Add Croatian (hr) translation — thanks Marin\r\n\r\n## Requirements\r\n* Magisk or KernelSU\r\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\r\n* Signature spoofing support\r\n\r\n## Install\r\n1. Flash this module and Reboot.\r\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\r\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\r\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\r\n5. Reboot to apply.\r\n\r\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\r\n\r\n---\r\nBased on nift4's microG Installer Revived\r\n"
+        },
+        {
+          "timestamp": 1782732812.551,
+          "version": "1.0.2",
+          "versionCode": 102,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.0.2/microg_installer_revived_again-v1.0.2.zip",
+          "changelog": "## What's New\n- Maintenance release: dependency updates\n\n## Requirements\n* Magisk or KernelSU\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\n* Signature spoofing support\n\n## Install\n1. Flash this module and Reboot.\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\n5. Reboot to apply.\n\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\n\n---\nBased on nift4's microG Installer Revived\n"
+        },
+        {
+          "timestamp": 1782754414.592,
+          "version": "1.1.1",
+          "versionCode": 111,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.1.1/microg_installer_revived_again-v1.1.1.zip",
+          "changelog": "## What's New\n- Verify downloaded APKs against GitHub SHA-256 before installing\n- Live download progress with curl/wget fallback\n- Clean up temporary APKs after install\n- Signature-based microG Companion detection during install\n- Keep the previous boot's debug log instead of wiping it\n- Module action button and uninstall cleanup\n- Graceful handling of GitHub API rate limits\n- Hardened WebUI shell command handling\n\n## Requirements\n* Magisk or KernelSU\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\n* Signature spoofing support\n\n## Install\n1. Flash this module and Reboot.\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\n5. Reboot to apply.\n\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\n\n---\nBased on nift4's microG Installer Revived\n"
+        },
+        {
+          "timestamp": 1785667259.296,
+          "version": "1.1.2",
+          "versionCode": 112,
+          "zipUrl": "https://github.com/spacealtctrl/microg_installer_revived_again/releases/download/v1.1.2/microg_installer_revived_again-v1.1.2.zip",
+          "changelog": "## What's New\n- Maintenance release: dependency updates\n\n## Requirements\n* Magisk or KernelSU\n* *For KSU* - A valid metamodule installed for partition mounting (e.g. `magic mount`, `mountify`, `overlayfs`)\n* Signature spoofing support\n\n## Install\n1. Flash this module and Reboot.\n2. Open the KernelSU / WebUI X manager and open this module's WebUI.\n3. Download and install your preferred versions of microG GmsCore and microG Companion via the Installer tab.\n4. Return to the Home tab and long-press \"Promote\" to push the apps to the system level.\n5. Reboot to apply.\n\nSee [README](https://github.com/spacealtctrl/microg_installer_revived_again) for full details\n\n---\nBased on nift4's microG Installer Revived\n"
+        }
+      ]
+    },
+    {
       "id": "misnomer",
       "name": "Misnomer",
       "version": "1.0.3",
@@ -1727,6 +1757,188 @@
           "versionCode": 10,
           "zipUrl": "https://github.com/SchlorpyDorp/Misnomer/releases/download/v1.0/Misnomer-v1.0.zip",
           "changelog": "# Misnomer v1.0\r\n\r\nThe first public release of **Misnomer**.\r\n\r\n**Gaslight Android.**\r\n\r\n### Features\r\n- Change Android device identity properties through a WebUI\r\n- Model\r\n- Brand\r\n- Manufacturer\r\n- Device\r\n- Name\r\n- Product\r\n- Persistent property configuration\r\n- Restore original values\r\n- KernelSU WebUI support\r\n\r\n### Installation\r\nDownload `Misnomer-v1.0.zip`, install it through your root manager, and reboot."
+        }
+      ]
+    },
+    {
+      "id": "mountify",
+      "name": "Mountify",
+      "version": "204",
+      "versionCode": 204,
+      "author": "xx and KOWX712",
+      "description": "Globally mounted modules via OverlayFS.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/2KInpaKvruE3/README.md",
+      "license": "GPL-3.0",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1772613355.403,
+      "timestamp": 1787616000,
+      "permissions": [],
+      "features": {},
+      "stars": 123,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1772613355.403,
+        "source": "https://github.com/backslashxx/mountify",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1772613355.403,
+          "version": "192",
+          "versionCode": 192,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/192/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1772613355.409,
+          "version": "191",
+          "versionCode": 191,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/191/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1772613355.419,
+          "version": "190",
+          "versionCode": 190,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/190/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1772613355.423,
+          "version": "189",
+          "versionCode": 189,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/189/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1772613355.427,
+          "version": "188",
+          "versionCode": 188,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/188/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1772613355.436,
+          "version": "187",
+          "versionCode": 187,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/187/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1772613355.439,
+          "version": "186",
+          "versionCode": 186,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/186/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1772613355.442,
+          "version": "185",
+          "versionCode": 185,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/185/mountify.zip",
+          "changelog": "https://github.com/backslashxx/mountify/compare/181...185"
+        },
+        {
+          "timestamp": 1772613355.451,
+          "version": "181",
+          "versionCode": 181,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/181/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1772613355.454,
+          "version": "180",
+          "versionCode": 180,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/180/mountify.zip",
+          "changelog": "https://github.com/backslashxx/mountify/compare/178...180"
+        },
+        {
+          "timestamp": 1773228076.605,
+          "version": "193",
+          "versionCode": 193,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/193/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1773508862.525,
+          "version": "194",
+          "versionCode": 194,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/194/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1773746451.603,
+          "version": "195",
+          "versionCode": 195,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/195/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1774156878.035,
+          "version": "196",
+          "versionCode": 196,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/196/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1775077402.151,
+          "version": "197",
+          "versionCode": 197,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/197/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1776265417.674,
+          "version": "198",
+          "versionCode": 198,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/198/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1777147309.166,
+          "version": "199",
+          "versionCode": 199,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/199/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1777872612.85,
+          "version": "200",
+          "versionCode": 200,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/200/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1777959020.33,
+          "version": "201",
+          "versionCode": 201,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/201/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1782408810.886,
+          "version": "203",
+          "versionCode": 203,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/203/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1782408810.893,
+          "version": "202",
+          "versionCode": 202,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/202/mountify.zip",
+          "changelog": ""
+        },
+        {
+          "timestamp": 1787654463.299,
+          "version": "204",
+          "versionCode": 204,
+          "zipUrl": "https://github.com/backslashxx/mountify/releases/download/204/mountify.zip",
+          "changelog": ""
         }
       ]
     },
@@ -1788,7 +2000,577 @@
       ]
     },
     {
-      "id": "NuSZDmpQSsO6",
+      "id": "playintegrityfix",
+      "name": "Play Integrity Fix [INJECT]",
+      "version": "19.2",
+      "versionCode": 192,
+      "author": "chiteroman and KOWX712",
+      "description": "This module tries to fix Play Integrity verdicts to get a valid attestation.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/qb1C2dlVBWgn/README.md",
+      "support": "https://xdaforums.com/t/module-play-integrity-fix-safetynet-fix.4607985/",
+      "license": "GPL-3.0",
+      "categories": [
+        "security"
+      ],
+      "verified": true,
+      "added": 1772285340.189,
+      "timestamp": 1772236800,
+      "permissions": [],
+      "features": {},
+      "stars": 812,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1772285340.189,
+        "source": "https://github.com/KOWX712/PlayIntegrityFix",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1772285340.189,
+          "version": "4.4-inject-s",
+          "versionCode": 44,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.4-inject-s/PlayIntegrityFix_v4.4-inject-s.zip",
+          "changelog": "- New WebUI interface, built-in help menu, rewrite with [Material Web Component](https://material-web.dev).\r\n- New Fetch pif.prop via GitHub feature, exclusive for WebUI, not relying on curl/wget but using fetch api from browser.\r\n- WebUI localization support, view [GUIDE.md](https://github.com/KOWX712/PlayIntegrityFix/blob/inject_s/webui/public/locales/GUIDE.md).\r\n- Proper fix for zygisk cxa_atexit detection via [GitHub@5ec1cff/local_cxa_atexit_finalize_impl](https://github.com/5ec1cff/local_cxa_atexit_finalize_impl)."
+        },
+        {
+          "timestamp": 1772285340.196,
+          "version": "4.3-inject-s",
+          "versionCode": 43,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.3-inject-s/PlayIntegrityFix_v4.3-inject-s.zip",
+          "changelog": "- Drop preview option\r\n- Hide debug option in WebUI\r\n- New script only mode, zygisk is still loaded but no injection to GMS/Play Store, no need reboot to take effect.\r\n- New spoofVendingBuild option, enable to spoof fingerprint field to Play Store.\r\n- WebUI: view option - view current pif.prop\r\n- WebUI: select device option - choose model that will be fetched\r\n- WebUI: update color scheme, improved UI"
+        },
+        {
+          "timestamp": 1772285340.208,
+          "version": "19.2",
+          "versionCode": 192,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v19.2/PlayIntegrityFix_v19.2.zip",
+          "changelog": "## General update from main branch\r\n\r\n- Update fingerprint.\r\n- Android 16 support.\r\n- WebUI improvement.\r\n- ReZygisk new modId support.\r\n\r\n> [!NOTE]\r\n> This version is different with inject version, no spoofVendingSdk and no manual configuration."
+        },
+        {
+          "timestamp": 1772285340.212,
+          "version": "4.2-inject-s",
+          "versionCode": 42,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.2-inject-s/PlayIntegrityFix_v4.2-inject-s.zip",
+          "changelog": "- Fixed crash."
+        },
+        {
+          "timestamp": 1772285340.223,
+          "version": "4.1-inject-s",
+          "versionCode": 41,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.1-inject-s/PlayIntegrityFix_v4.1-inject-s.zip",
+          "changelog": "- Update fingerprint.\r\n- Migrate from json to prop (pif.json -> pif.prop) for more optimized binary size.\r\n- Added spoofBuild option.\r\n- Auto reset pif.prop when the format is incorrect.\r\n- Improved WebUI, fixed false error log.\r\n- Added back module update.\r\n\r\n### Additional notes\r\n\r\n- pixel_beta fingerprint can no longer get device verdict even on legacy check, so enabling *spoofVendingSdk* won't help you to get device verdict. You can disable *spoofBuild* to stop spoofing as pixel beta to droidguard, but some device might require *spoofBuild* to use GPay/GWallet even with device/strong verdict.\r\n- Currently enabling *spoofProvider* can help you to get strong verdict in A13+ check with revoked keybox, but it will break google wallet. This exploit might be fixed in future."
+        },
+        {
+          "timestamp": 1772285340.227,
+          "version": "3.3-inject-vending",
+          "versionCode": 33,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v3.3-inject-vending/PlayIntegrityFix_v3.3-inject-manual.zip",
+          "changelog": "## Diff with previous version\r\n- OTA update support for fp fetching script, now it can be updated without reboot, module's update will be less needed. (Thanks to @backslashxx)\r\n- Magisk action redirect WebUI support, removed action button in KernelSU and APatch.\r\n- Improved WebUI , better WebUI X support.\r\n\r\n> [!WARNING]\r\n> What is vending and manual? Read [previous release note](https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v3-inject-release) if you haven't done it before.\r\n> When sharing this module to others, kindly use this release link instead of the zip file to avoid unnecessary issues."
+        },
+        {
+          "timestamp": 1772285340.231,
+          "version": "3.2-inject-release",
+          "versionCode": 32,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v3.2-inject-release/PlayIntegrityFix_v3.2-inject-manual.zip",
+          "changelog": "## Diff with previous version\r\n- update fingerprint.\r\n- fix action failed to fetch `pif.json`.\r\n\r\n> [!WARNING]\r\n> Read [previous release note](https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v3-inject-release) if you haven't done it before."
+        },
+        {
+          "timestamp": 1772285340.24,
+          "version": "3.1-inject-release",
+          "versionCode": 31,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v3.1-inject-release/PlayIntegrityFix_v3.1-inject-manual.zip",
+          "changelog": "## Diff with previous version\r\n- update fingerprint.\r\n- add new ReZygisk directory on installation zygisk check.\r\n\r\n> [!WARNING]\r\n> Read [previous release note](https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v3-inject-release) if you haven't done it before."
+        },
+        {
+          "timestamp": 1772285340.243,
+          "version": "3-inject-release",
+          "versionCode": 3,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v3-inject-release/PlayIntegrityFix_v3-inject-manual.zip",
+          "changelog": "## Diff with official inject v3\r\n\r\n### v3-inject-vending\r\n- based on official inject v3, no auto update\r\n- added spoofVendingSdk\r\n- added monet theme support in WebUI X\r\n\r\n### v3-inject-manual\r\n- based on `v3-inject-vending`\r\n- removed auto config (tricky store and rom signature check)\r\n- added manual conifg\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### Devices will experience degraded functionality in Play Store when spoofVendingSdk is enabled:\r\n\r\n- Back gesture/nav button from within the Play Store exits directly to homescreen for all\r\n- Blank account sign-in status and broken app updates for ROMs A14+\r\n- Incorrect app variants may be served for all\r\n- Full Play Store crashes for some setups\r\n"
+        },
+        {
+          "timestamp": 1774696856.179,
+          "version": "4.5-inject-s",
+          "versionCode": 45,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.5-inject-s/PlayIntegrityFix_v4.5-inject-s.zip",
+          "changelog": "- Inline inject logic and stream payload over companion to avoid detection.\r\n- Support resetprop compact.\r\n- WebUI new language: Traditional Chinese (@mattchengg, #3), Turkish (@DogancanYr, #4), Indonesian (@yourbestregard, #5), Arabic (@ZG089, #6).\r\n- Minor overall optimization."
+        },
+        {
+          "timestamp": 1782041627.667,
+          "version": "4.6-inject-s",
+          "versionCode": 46,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.6-inject-s/PlayIntegrityFix_v4.6-inject-s.zip",
+          "changelog": "- Android 17 support.\r\n- Improve method to find Zygisk provider module.\r\n- WebUI new language: Polish (@marcinmajsc, #12)\r\n"
+        },
+        {
+          "timestamp": 1783769629.288,
+          "version": "4.7-inject-s",
+          "versionCode": 47,
+          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.7-inject-s/PlayIntegrityFix_v4.7-inject-s.zip",
+          "changelog": "- Fix resetprop command for KernelSU.\r\n- Rework WebUI, use cdn approach to fetch GitHub resource to avoid `429 too many request`."
+        }
+      ]
+    },
+    {
+      "id": "psh",
+      "name": "Privileged Shell Wrapper for Termux",
+      "version": "23",
+      "versionCode": 23,
+      "author": "Der_Googler",
+      "description": "A lightweight utility designed to provide a controlled root-like shell environment on Termux for Android.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/h6ysMxFbsTUf/README.md",
+      "license": "MIT",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1777543380.58,
+      "timestamp": 1777507200,
+      "permissions": [],
+      "features": {},
+      "stars": 109,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1777543380.58,
+        "source": "https://github.com/DerGoogler/psh",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1777543380.58,
+          "version": "23",
+          "versionCode": 23,
+          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/23/psh-arm64-v8a",
+          "changelog": "## Installation on Termux\n\nYou can install `psh` easily on Termux using the provided install script, which downloads the appropriate binary for your device architecture, sets permissions, and configures ownership:\n\nRun this command directly in Termux (curl or wget):\n\n```bash\ncurl -fsSL https://psh.dergoogler.com/install.sh | bash\n```\n\nOr with wget:\n\n```bash\nwget -qO- https://psh.dergoogler.com/install.sh | bash\n```\n\nBy default, it installs the latest stable release. You can specify a version like so:\n\n```bash\nVERSION=23 curl -fsSL https://psh.dergoogler.com/install.sh | bash\n```\nVersion: 23"
+        },
+        {
+          "timestamp": 1777543405.187,
+          "version": "21",
+          "versionCode": 21,
+          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/21/psh-arm64-v8a",
+          "changelog": "Automated release based on commit count.\nVersion: 21"
+        },
+        {
+          "timestamp": 1777543405.193,
+          "version": "20",
+          "versionCode": 20,
+          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/20/psh-arm64-v8a",
+          "changelog": "Automated release based on commit count.\nVersion: 20"
+        },
+        {
+          "timestamp": 1777543405.198,
+          "version": "1.0.0",
+          "versionCode": 100,
+          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/1.0.0/psh-arm64-v8a",
+          "changelog": ""
+        }
+      ]
+    },
+    {
+      "id": "qgcP03aUu-Rq",
+      "name": "WiFi Password Viewer for MMRL",
+      "version": "7.0.0",
+      "versionCode": 700,
+      "author": "Der_Googler",
+      "description": "An inspired project from veez21's wpd gist, ported to MMRL.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/qgcP03aUu-Rq/README.md",
+      "support": "https://t.me/DerGoogler",
+      "license": "MIT",
+      "categories": [
+        "security"
+      ],
+      "verified": false,
+      "added": 1771108173.19,
+      "timestamp": 1791590400,
+      "permissions": [],
+      "features": {},
+      "stars": 111,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1771108173.19,
+        "source": "https://github.com/Googlers-Repo/wpd",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1771108173.19,
+          "version": "5.7.7",
+          "versionCode": 577,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v5.7.7/module.zip",
+          "changelog": "Requires MMRL [`33162`](https://t.me/MMRLCI/20)"
+        },
+        {
+          "timestamp": 1771108268.333,
+          "version": "2.4.3",
+          "versionCode": 243,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.4.3/module.zip",
+          "changelog": "- Fixed bluetooth tab\r\n- Fixed imports"
+        },
+        {
+          "timestamp": 1771108268.346,
+          "version": "2.3.2",
+          "versionCode": 232,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.3.2/module.zip",
+          "changelog": "- Removed toolbar coloring\r\n- Added ability to view saved bluetooth devices"
+        },
+        {
+          "timestamp": 1771108268.351,
+          "version": "2.2.2",
+          "versionCode": 222,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.2.2/module.zip",
+          "changelog": "- Fixed missing components"
+        },
+        {
+          "timestamp": 1771108268.365,
+          "version": "2.2.1",
+          "versionCode": 221,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.2.1/module.zip",
+          "changelog": "- Added CLI tool\r\n- Design re-worked\r\n- Added closing dialog"
+        },
+        {
+          "timestamp": 1771108268.378,
+          "version": "2.1.1",
+          "versionCode": 211,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.1.1/module.zip",
+          "changelog": "- import fix"
+        },
+        {
+          "timestamp": 1771108268.383,
+          "version": "2.1.0",
+          "versionCode": 210,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.1.0/module.zip",
+          "changelog": "- added hiding passwords\r\n- now without shell\r\n- requires mmrl above 2.14.10"
+        },
+        {
+          "timestamp": 1791646593.319,
+          "version": "7.0.0",
+          "versionCode": 700,
+          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v7.0.0/mmrl_wpd-7.0.0.zip",
+          "changelog": "**Full Changelog**: https://github.com/Googlers-Repo/wpd/commits/v7.0.0"
+        }
+      ]
+    },
+    {
+      "id": "system_app_nuker",
+      "name": "System App Nuker",
+      "version": "2.2.6",
+      "versionCode": 226,
+      "author": "ChiseWaguri",
+      "description": "A systemless debloater for Magisk, KernelSU, and APatch. Pick the apps. Nuke them.",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/xcsucIQLQeQR/README.md",
+      "license": "GPL-3.0",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1790678362.071,
+      "timestamp": 1790985600,
+      "permissions": [],
+      "features": {},
+      "stars": 18,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1790678362.071,
+        "source": "https://github.com/chisewaguri/systemapp_nuker",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1790678362.071,
+          "version": "2.2.2",
+          "versionCode": 222,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.2/SAN_v2.2.2.zip",
+          "changelog": "> v2.2.1 users should update. Package-manager calls can miss APK paths while processing the nuke list, leaving apps not whiteouted on reboot.\r\n\r\n#### Scripts\r\n- keep package-manager commands from inheriting the nuke list as stdin (thanks, @smbdspk) \r\n- rebuild missing APK paths and whiteouts during module update (thanks, @smbdspk)"
+        },
+        {
+          "timestamp": 1790678402.175,
+          "version": "2.2.1",
+          "versionCode": 221,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.1/SAN_v2.2.1.zip",
+          "changelog": "> v2.2.0 users must update. v2.2.0 can fail to nuke apps with package-manager errors or installed system updates.\n\n#### Scripts\n- filter pm path errors before creating whiteouts\n- cache factory apk paths before removing system updates\n- fall back to uninstall for user 0 when no system apk path is available\n\n#### WebUI\n- move pending nukes to Restore and pending restores to Home before reboot"
+        },
+        {
+          "timestamp": 1790678402.18,
+          "version": "2.1.1",
+          "versionCode": 211,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.1.1/SAN_v2.1.1.zip",
+          "changelog": "#### Scripts\n- fix last nuked app never being processed (missing trailing newline)\n- migrate pre-2.1.0 nuke lists by recovering paths from module tree (fix #59)"
+        },
+        {
+          "timestamp": 1790678402.183,
+          "version": "2.1.0",
+          "versionCode": 210,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.1.0/SAN_v2.1.0.zip",
+          "changelog": "#### Scripts\n- keep apk path in nuke_list.txt so update whiteouts without pm (fix #58)\n"
+        },
+        {
+          "timestamp": 1790678402.187,
+          "version": "2.0.0",
+          "versionCode": 200,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.0.0/SAN_v2.0.0.zip",
+          "changelog": "Breaking changes: require KernelSU 22082+, APatch 11159+, Magisk user need to switch to [KsuWebUIStandalone fork](https://github.com/KOWX712/KsuWebUIStandalone/releases). No backward compatibility.\r\n\r\n#### WebUI\r\n- rewrite with vite + react (@KOWX712)\r\n- use KSU API for app list (@KOWX712)\r\n\r\n\r\n#### Scripts\r\n- reflect new webui changes (@KOWX712)\r\n- add current manager for reliable module installation (@KOWX712)\r\n- improve uninstall logic\r\n- improve metamodule support\r\n- uninstall for user 0 instead of disable\r\n\r\n#### Workflows\r\n- build webui (@KOWX712)\r\n\r\n#### Docs\r\n- update guide for new codebase (@KOWX712)"
+        },
+        {
+          "timestamp": 1790678402.19,
+          "version": "1.2.1",
+          "versionCode": 121,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.2.1/SAN_v1.2.1.zip",
+          "changelog": "### v1.2.1\r\n\r\n#### Scripts\r\n- create_applist: prevent trailing comma bug in JSON output (fix app list generation #55)\r\n"
+        },
+        {
+          "timestamp": 1790678402.193,
+          "version": "1.2.0",
+          "versionCode": 120,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.2.0/SAN_v1.2.0.zip",
+          "changelog": "### v1.2.0\r\nfeels like i owe u guys this, no changes since the last commit on jan 3 tho \r\n\r\n#### Scripts\r\n- sync mountify to 019a216\r\n- search additional partition if mounted by mountify\r\n- make whiteouts optional and validate mounting\r\n- treat KSU >22098 the same as magic mount (should fix meta module mounting, use mountify mode/default)\r\n- fix mountify\r\n- better default mode check\r\n- fix error description\r\n\r\n#### WebUI\r\n- force redo link (fix #49, thanks @kowx712)"
+        },
+        {
+          "timestamp": 1790678402.196,
+          "version": "1.1.9",
+          "versionCode": 119,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.1.9/SAN_v1.1.9.zip",
+          "changelog": "### v1.1.9\r\n\r\n- minor module metadata fix\r\n\r\n#### WebUI\r\n- better UI feedback on app list loading\r\n- tell user if there are no nuked apps yet\r\n\r\n#### Scripts\r\n- show app list loading status"
+        },
+        {
+          "timestamp": 1790678402.199,
+          "version": "1.1.8",
+          "versionCode": 118,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.1.8/SAN_v1.1.8.zip",
+          "changelog": "### v1.1.8\r\n\r\n#### WebUI\r\n- update WebUI-X css import address (@KOWX712)\r\n- support canta preset import\r\n\r\n#### Scripts\r\n- properly support mountify\r\n- add more vendor-related partitions\r\n- revert useless app list generation on installation"
+        },
+        {
+          "timestamp": 1790794341.404,
+          "version": "2.2.3",
+          "versionCode": 223,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.3/SAN_v2.2.3.zip",
+          "changelog": "> Magisk and Magisk Alpha users should update. The WebUI could not save any change there and showed \"Failed to save changes\" (#62).\n\n#### Scripts\n- restore apps removed in uninstall-only mode when bootloop protection triggers, and retry until it works\n- restore every uninstalled app when the module is removed\n- only show apps as nuked once they are actually hidden\n- report failed mountify mounts in the module description instead of showing apps as nuked\n\n#### WebUI\n- save changes without busybox, which Magisk does not put on the WebUI's PATH\n- reload the app lists after a failed nuke or a backup restore, so rejected changes are not sent again\n- keep the original file when a save fails partway\n- stop hanging when the manager cannot start the nuke script\n- add empty states, a retry button, screen reader labels, and back navigation between tabs\n- confirm before deleting whiteouts\n\n#### Workflows\n- run lint and tests before building, and pin actions to commits"
+        },
+        {
+          "timestamp": 1790859145.789,
+          "version": "2.2.4",
+          "versionCode": 224,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.4/SAN_v2.2.4.zip",
+          "changelog": "> v2.0.x users should update. Updating from 2.0 could fail with \"cant find system apk\" when a nuked app had a Play Store update (#63).\n\n#### Scripts\n- keep updating when a nuked app only shows its Play Store copy, and uninstall that copy for user 0\n- recover the APK path of apps nuked before 2.1, so they can be restored one at a time\n- uninstall an app for user 0 when its old path cannot be recovered, so it stays hidden"
+        },
+        {
+          "timestamp": 1790988755.087,
+          "version": "2.2.5",
+          "versionCode": 225,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.5/SAN_v2.2.5.zip",
+          "changelog": "> Adds app descriptions and removal levels from UAD-ng (#60).\n\n#### WebUI\n- show what each app is and how risky it is to remove, from a UAD-ng list bundled with every release\n- update that list from Settings. Nothing is downloaded unless you tap it\n- filter apps by removal level from a button in the search bar\n- keep icons for nuked apps on the Restore page\n- add a Credits dialog under About\n\n#### Workflows\n- bundle the latest UAD-ng list into each build"
+        },
+        {
+          "timestamp": 1791010356.577,
+          "version": "2.2.6",
+          "versionCode": 226,
+          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.6/SAN_v2.2.6.zip",
+          "changelog": "> You no longer need to reboot before opening the WebUI. Installing or updating the module refreshes the WebUI right away, and nuked apps still disappear after the next reboot.\n\n#### Scripts\n- install the new WebUI and scripts into the running module, and leave its whiteouts for the reboot\n- keep the running module as it was if that copy fails\n- remove the update flag after an install or a nuke, so KernelSU opens the WebUI before the reboot\n\n#### WebUI\n- soft reboot when KernelSU was loaded after boot, so root survives the reboot\n"
+        }
+      ]
+    },
+    {
+      "id": "TA_utl",
+      "name": "Tricky Addon - Update Target List",
+      "version": "5.0-beta.4",
+      "versionCode": 504,
+      "author": "KOWX712",
+      "description": "A WebUI to conifgure tricky store target.txt",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/CUVsU3qWDft4/README.md",
+      "license": "GPL-3.0",
+      "categories": [
+        "miscellaneous"
+      ],
+      "verified": true,
+      "added": 1773039290.686,
+      "timestamp": 1786579200,
+      "permissions": [],
+      "features": {},
+      "stars": 111,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1773039290.686,
+        "source": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1773039290.686,
+          "version": "4.3",
+          "versionCode": 43,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.3/TrickyAddonModule-v4.3.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** UI improvement: optimized dialog animation and menu appearence.\n- **WebUI:** Fixed fallback link not working, fixed no internet connection in some condition.\n- **WebUI:** Implemented translation hot update feature, allow pulling transation from crowdin branch and apply without reboot. Translation in repo will sync with Crowdin on every Sunday.\n- **WebUI:** Fixed fail to apply custom keybox on some path.\n- **Script:** Added auto security patch support for custom.pif.prop\n- **Script:** Added sensitive props handling from shamiko."
+        },
+        {
+          "timestamp": 1773039290.693,
+          "version": "4.2",
+          "versionCode": 42,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.2/TrickyAddonModule-v4.2.zip",
+          "changelog": "### Tricky Addon module\r\n- **WebUI:** New UI with [Material Web Component](https://material-web.dev) and some various improvements.\r\n- **WebUI:** Fixed missing security patch option in newer version of [beakthoven/TrickyStoreOSS](https://github.com/beakthoven/TrickyStoreOSS).\r\n- **WebUI:** Fixed broken devconfig.toml value reading when using [qwq233/TrickyStore](https://github.com/qwq233/TrickyStore).\r\n- **WebUI:** Added Vietnamese translation (@doanvtamhuynh, #96).\r\n- **WebUI:** Updated many [translation](https://crowdin.com/project/TA_utl) [ff3e2e4](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/commit/ff3e2e4cd3ba6e40277c0c8def016e764673c262).\r\n- No longer ship full openssl binary."
+        },
+        {
+          "timestamp": 1773039290.696,
+          "version": "4.1",
+          "versionCode": 41,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.1/TrickyAddonModule-v4.1.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** Added right-to-left language support in UI.\n- **WebUI:** Fixed 'Failed to fetch applist' in certain condition.\n- **Script:** Added auto security patch support for pif.prop.\n- **WebUI:** Added support for Dakkshesh's TrickyStore fork [(GitHub@beakthoven/TrickyStore)](https://github.com/beakthoven/TrickyStore).\n- **WebUI:** Added device props support for qwq233's TrickyStore fork (this will not modify system prop automatically).\n- **WebUI:** Added German (#78, @xxOrdulu52xx), Bengali, Persian translation.\n- **WebUI:** Updated Turkish, Italian, Japanese, Arabic translation. (@cvnertnc, @GRgabrix, @reindex-ot, @ZG089)"
+        },
+        {
+          "timestamp": 1773039290.711,
+          "version": "4.0",
+          "versionCode": 40,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.0/TrickyAddonModule-v4.0.zip",
+          "changelog": "### Tricky Addon module\r\n- **WebUI:** Fixed `Failed to fetch security patch` issue in most condition.\r\n- **WebUI:** Added support for [qwq233's TrickyStore fork](https://github.com/qwq233/TrickyStore).\r\n- **WebUI:** Provide option to download latest canary version in about menu.\r\n- **action:** Removed MMRL from action redirect WebUI since MMRL no longer provide built-in WebUI. (#66, @ThanhCN0)\r\n- **WebUI:** Unknown keybox option no longer rely on internet connection.\r\n- **WebUI:** Fixed built-in update mechanism might fail in some condition. (@backslashxx)\r\n- **WebUI:** Translation service now is available on crowdin, view [translation guide](https://github.com/KOWX712/Tricky-Addon-Update-Target-List/blob/main/module/webui/locales/GUIDE.md) for more detail. You can reach our crowdin website in the WebUI language menu too.\r\n- **WebUI:** Added Ukrainian (#43, @StepanSad), Greek (#61, @Goku818) translation.\r\n- **WebUI:** Updated Japanese, Indonesian, Arabic, Polish, French, Portuguese, Ukrainian translation. (@reindex-ot, @Rem01Gaming, @ZG089, @Bladius2024, @GhostFRR, @SecretGogeta, [crowdin@IlliaS](https://crowdin.com/profile/illias))"
+        },
+        {
+          "timestamp": 1773039290.723,
+          "version": "3.9",
+          "versionCode": 39,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.9/TrickyAddonModule-v3.9.zip",
+          "changelog": "### Tricky Addon module\r\n- **WebUI:** Optmized app loading speed, fixed all known freezing issue.\r\n- **WebUI:** Added unknown keybox option, similar to AOSP keybox, removed AOSP keybox fallback when no valid keybox available.\r\n- **MMRL:** Added app icon support, enjoy with latest [MMRL](https://github.com/MMRLApp/MMRL/releases/latest) or [WebUI X](https://github.com/MMRLApp/WebUI-X-Portable/releases/latest).\r\n- **Action:** Added support for Magisk action redirect WebUI X.\r\n- **Script:** Get actual vbmeta size before resetprop.\r\n- **WebUI:** Add Portuguese Brazilian Translation (#38, @JeanxPereira)"
+        },
+        {
+          "timestamp": 1773039290.727,
+          "version": "3.8.1",
+          "versionCode": 381,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.8.1/TrickyAddonModule-v3.8.1.zip",
+          "changelog": "### Tricky Addon module\r\n- **WebUI:** Fixed missing aosp key fallback when no valid key is available."
+        },
+        {
+          "timestamp": 1773039290.74,
+          "version": "3.8",
+          "versionCode": 38,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.8/TrickyAddonModule-v3.8.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** Optimized UI.\n- **WebUI:** Added mirror link fallback to fetch content from raw.githubusercontent.com\n- **WebUI:** Added French translation (#31, @anaelle-dev)\n- **WebUI:** Added Arabic Translation (#32, @ZG089)\n- **WebUI:** Added Azerbaijani Translation (#34, @mnasibzade)"
+        },
+        {
+          "timestamp": 1773039290.743,
+          "version": "3.7",
+          "versionCode": 37,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.7/TrickyAddonModule-v3.7.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** Optimized UI.\n- **WebUI:** Added uninstall confirmation dialog.\n- **WebUI:** Sanitize text content (#23, @totalolage)\n- **WebUI:** Added selected language memory.\n- **WebUI:** Fixed Chinese translation (#26 #27, @xiaokuqwq)\n- **WebUI:** Added Indonesian translation (#28, @ChiseWaguri)\n- **WebUI:** Added Italian translation (#30, @luigimak)\n- **MMRL:** Added monet theme suport.\n- **MMRL:** Fixed fail to display guide when permission is not granted.\n- No longer add Play Store by default."
+        },
+        {
+          "timestamp": 1773039290.756,
+          "version": "3.6",
+          "versionCode": 36,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.6/TrickyAddonModule-v3.6.zip",
+          "changelog": "### Tricky Addon module\n- **WebUI:** Option to add system apps.\n- **WebUI:** Fixed abnormal gap between content and header in MMRL.\n- Handle some vbmeta related prop, enforce boot hash to lowercase.\n- No longer auto config security patch by default (old user will remain current setup).\n- Fixed issue with disable sucompat.\n- More minor improvements."
+        },
+        {
+          "timestamp": 1773039290.758,
+          "version": "3.5",
+          "versionCode": 35,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v3.5/TrickyAddonModule-v3.5.zip",
+          "changelog": "### Tricky Addon module\n- **Script:** Set `system=prop` in auto config.\n- **WebUI:** Option to fetch secuirty patch date.\n- **WebUI:** Fixed `Failed to fetch app list` issue in vanilla rom.\n- **WebUI:** Added Polish translation (#18, @Bladius2024)\n- **WebUI:** Update Japanese translation (#20, @reindex-ot)\n- **WebUI:** Minor UI improvements."
+        },
+        {
+          "timestamp": 1775207015.11,
+          "version": "5.0-beta.1",
+          "versionCode": 501,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.1/TrickyAddonModule-v5.0-beta.1.zip",
+          "changelog": "### Tricky Addon module\r\n- **Dropped support for old KernelSU and APatch versions** - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n- **Module:** Drop aapt and keygen, no longer ship any binary.\r\n- **Script:** Fix uninstallation in overlayfs manager.\r\n- **Script:** Fix missing prop in sensitive props handling, support resetprop compact.\r\n- **Script:** Support hotinstall in supported metamodule.\r\n- **WebUI:** Add support for JingMatrix's fork ([JingMatrix/TEESimulator](https://github.com/JingMatrix/TEESimulator)).\r\n- **WebUI:** Improve rtl language support, update gitmirror link.\r\n- **WebUI:** Support custom keybox provider, allow fetching and decoding keybox from any url.\r\n- **WebUI:** Add Thai translation (@zr89-richter, #122).\r\n"
+        },
+        {
+          "timestamp": 1780075808.39,
+          "version": "5.0-beta.2",
+          "versionCode": 502,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.2/TrickyAddonModule-v5.0-beta.2.zip",
+          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Refactor codebase, change license to Apache 2.0 (#137)\r\n- **WebUI:** Add prop handler switch (option to disable shamiko's resetprop script)\r\n- **Script:** Drop auto security patch feature"
+        },
+        {
+          "timestamp": 1780842052.326,
+          "version": "5.0-beta.3",
+          "versionCode": 503,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.3/TrickyAddonModule-v5.0-beta.3.zip",
+          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Add [keybox repo](https://keybox.kowx712.cc/) support, current addon's custom keybox provider will be maintained less actively in the future.\r\n- **WebUI:** Fix unable to load WebUI.\r\n- **WebUI:** Fix built-in module update.\r\n- **WebUI:** Updated many strings, welcome to contribute via [crowdin](https://crowdin.com/project/TA_utl)."
+        },
+        {
+          "timestamp": 1782041614.189,
+          "version": "4.4",
+          "versionCode": 44,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v4.4/TrickyAddonModule-v4.4.zip",
+          "changelog": "### Tricky Addon module\r\n\r\n#### This is last v4 release before v5 stable release, v5 will drop support for legacy KSU WebUI that doesn't support package manager api. This is a downgrade for existing v5 beta user.\r\n- **Script:** Fix uninstallation in overlayfs manager.\r\n- **Script:** Fix missing prop in sensitive props handling, support resetprop compact.\r\n- **WebUI:** Add community driven [keybox repo](https://keybox.kowx712.cc/) support, current valid keybox will be maintained less actively in the future.\r\n- **WebUI:** Improve rtl language support, update gitmirror link.\r\n- **WebUI:** Support custom keybox provider, allow fetching and decoding keybox from any url.\r\n- **WebUI:** Add Thai translation (@zr89-richter, #122)."
+        },
+        {
+          "timestamp": 1786617657.18,
+          "version": "5.0-beta.4",
+          "versionCode": 504,
+          "zipUrl": "https://github.com/KOWX712/Tricky-Addon-Update-Target-List/releases/download/v5.0-beta.4/TrickyAddonModule-v5.0-beta.4.zip",
+          "changelog": "### Tricky Addon module\r\n\r\n#### Breaking Change: Dropped support for old KernelSU and APatch versions - This release requires KernelSU 32234+ or APatch 11159+. For Magisk user, use [KSUWebUIStandalone fork](https://github.com/KOWX712/KSUWebUIStandalone/releases/latest) instead.\r\n\r\n- Add support for [OhMyKeymint](https://github.com/qwq233/OhMyKeymint) (#140)."
+        }
+      ]
+    },
+    {
+      "id": "xhhttp",
+      "name": "XH for Android",
+      "version": "0.25.3",
+      "versionCode": 253,
+      "author": "ducaale and Der_Googler",
+      "description": "Friendly and fast tool for sending HTTP requests as Magisk module",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/HkLpjrW5-REH/README.md",
+      "support": "https://github.com/ducaale/xh",
+      "license": "MIT",
+      "categories": [
+        "system"
+      ],
+      "verified": true,
+      "added": 1771229811.017,
+      "timestamp": 1771200000,
+      "permissions": [],
+      "features": {},
+      "stars": 385,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1771229811.017,
+        "source": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1771229811.017,
+          "version": "0.22.0",
+          "versionCode": 220,
+          "zipUrl": "https://api.github.com/repos/Magisk-Modules-Alt-Repo/xhhttp/zipball/v0.22.0",
+          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.22.1 for changes."
+        },
+        {
+          "timestamp": 1771229879.528,
+          "version": "0.18.0",
+          "versionCode": 180,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.18.0/xh_0.18.0.zip",
+          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.18.0 for changes."
+        },
+        {
+          "timestamp": 1771229879.547,
+          "version": "0.17.0",
+          "versionCode": 170,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.17.0/xh_0.17.0.zip",
+          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.17.0 for changes."
+        },
+        {
+          "timestamp": 1771232881.846,
+          "version": "0.25.3",
+          "versionCode": 253,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.25.3/xh-magisk-module.zip",
+          "changelog": "### Features\r\n\r\n* Add colors to `--help`/`-h`, see #432 (@starsep)\r\n\r\n### Bug fixes\r\n\r\n* Don't fail on error code 416 if resuming download, see #434 (@simonomi)\r\n\r\n### Other\r\n\r\n* Upgrade brotli to latest version, see #438 (@ducaale)\r\n\r\n### Contributors\r\n\r\n* starsep\r\n* ducaale\r\n* simonomi"
+        },
+        {
+          "timestamp": 1771232881.851,
+          "version": "0.24.0",
+          "versionCode": 240,
+          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.24.0/xh-magisk-module.zip",
+          "changelog": ""
+        }
+      ]
+    },
+    {
+      "id": "zygisk-detach",
       "name": "Zygisk Detach",
       "version": "1.24.0",
       "versionCode": 1240,
@@ -1804,7 +2586,7 @@
       "timestamp": 1789862400,
       "permissions": [],
       "features": {},
-      "stars": 171,
+      "stars": 172,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1772604846.623,
@@ -1917,788 +2699,6 @@
           "versionCode": 1240,
           "zipUrl": "https://github.com/j-hc/zygisk-detach/releases/download/v1.24.0/zygisk-detach-v1.24.0.zip",
           "changelog": "## What's Changed\r\n* Fix MTE process-name overread during specialization by @henriqueimoveis in https://github.com/j-hc/zygisk-detach/pull/113\r\n\r\n## New Contributors\r\n* @henriqueimoveis made their first contribution in https://github.com/j-hc/zygisk-detach/pull/113\r\n\r\n**Full Changelog**: https://github.com/j-hc/zygisk-detach/compare/v1.23.2...v1.24.0"
-        }
-      ]
-    },
-    {
-      "id": "psh",
-      "name": "Privileged Shell Wrapper for Termux",
-      "version": "23",
-      "versionCode": 23,
-      "author": "Der_Googler",
-      "description": "A lightweight utility designed to provide a controlled root-like shell environment on Termux for Android.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/h6ysMxFbsTUf/README.md",
-      "license": "MIT",
-      "categories": [
-        "system"
-      ],
-      "verified": false,
-      "added": 1777543380.58,
-      "timestamp": 1777507200,
-      "permissions": [],
-      "features": {},
-      "stars": 109,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1777543380.58,
-        "source": "https://github.com/DerGoogler/psh",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1777543380.58,
-          "version": "23",
-          "versionCode": 23,
-          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/23/psh-arm64-v8a",
-          "changelog": "## Installation on Termux\n\nYou can install `psh` easily on Termux using the provided install script, which downloads the appropriate binary for your device architecture, sets permissions, and configures ownership:\n\nRun this command directly in Termux (curl or wget):\n\n```bash\ncurl -fsSL https://psh.dergoogler.com/install.sh | bash\n```\n\nOr with wget:\n\n```bash\nwget -qO- https://psh.dergoogler.com/install.sh | bash\n```\n\nBy default, it installs the latest stable release. You can specify a version like so:\n\n```bash\nVERSION=23 curl -fsSL https://psh.dergoogler.com/install.sh | bash\n```\nVersion: 23"
-        },
-        {
-          "timestamp": 1777543405.187,
-          "version": "21",
-          "versionCode": 21,
-          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/21/psh-arm64-v8a",
-          "changelog": "Automated release based on commit count.\nVersion: 21"
-        },
-        {
-          "timestamp": 1777543405.193,
-          "version": "20",
-          "versionCode": 20,
-          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/20/psh-arm64-v8a",
-          "changelog": "Automated release based on commit count.\nVersion: 20"
-        },
-        {
-          "timestamp": 1777543405.198,
-          "version": "1.0.0",
-          "versionCode": 100,
-          "zipUrl": "https://github.com/DerGoogler/psh/releases/download/1.0.0/psh-arm64-v8a",
-          "changelog": ""
-        }
-      ]
-    },
-    {
-      "id": "qb1C2dlVBWgn",
-      "name": "Play Integrity Fix [INJECT]",
-      "version": "19.2",
-      "versionCode": 192,
-      "author": "chiteroman and KOWX712",
-      "description": "This module tries to fix Play Integrity verdicts to get a valid attestation.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/qb1C2dlVBWgn/README.md",
-      "support": "https://xdaforums.com/t/module-play-integrity-fix-safetynet-fix.4607985/",
-      "license": "GPL-3.0",
-      "categories": [
-        "security"
-      ],
-      "verified": true,
-      "added": 1772285340.189,
-      "timestamp": 1772236800,
-      "permissions": [],
-      "features": {},
-      "stars": 811,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1772285340.189,
-        "source": "https://github.com/KOWX712/PlayIntegrityFix",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1772285340.189,
-          "version": "4.4-inject-s",
-          "versionCode": 44,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.4-inject-s/PlayIntegrityFix_v4.4-inject-s.zip",
-          "changelog": "- New WebUI interface, built-in help menu, rewrite with [Material Web Component](https://material-web.dev).\r\n- New Fetch pif.prop via GitHub feature, exclusive for WebUI, not relying on curl/wget but using fetch api from browser.\r\n- WebUI localization support, view [GUIDE.md](https://github.com/KOWX712/PlayIntegrityFix/blob/inject_s/webui/public/locales/GUIDE.md).\r\n- Proper fix for zygisk cxa_atexit detection via [GitHub@5ec1cff/local_cxa_atexit_finalize_impl](https://github.com/5ec1cff/local_cxa_atexit_finalize_impl)."
-        },
-        {
-          "timestamp": 1772285340.196,
-          "version": "4.3-inject-s",
-          "versionCode": 43,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.3-inject-s/PlayIntegrityFix_v4.3-inject-s.zip",
-          "changelog": "- Drop preview option\r\n- Hide debug option in WebUI\r\n- New script only mode, zygisk is still loaded but no injection to GMS/Play Store, no need reboot to take effect.\r\n- New spoofVendingBuild option, enable to spoof fingerprint field to Play Store.\r\n- WebUI: view option - view current pif.prop\r\n- WebUI: select device option - choose model that will be fetched\r\n- WebUI: update color scheme, improved UI"
-        },
-        {
-          "timestamp": 1772285340.208,
-          "version": "19.2",
-          "versionCode": 192,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v19.2/PlayIntegrityFix_v19.2.zip",
-          "changelog": "## General update from main branch\r\n\r\n- Update fingerprint.\r\n- Android 16 support.\r\n- WebUI improvement.\r\n- ReZygisk new modId support.\r\n\r\n> [!NOTE]\r\n> This version is different with inject version, no spoofVendingSdk and no manual configuration."
-        },
-        {
-          "timestamp": 1772285340.212,
-          "version": "4.2-inject-s",
-          "versionCode": 42,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.2-inject-s/PlayIntegrityFix_v4.2-inject-s.zip",
-          "changelog": "- Fixed crash."
-        },
-        {
-          "timestamp": 1772285340.223,
-          "version": "4.1-inject-s",
-          "versionCode": 41,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.1-inject-s/PlayIntegrityFix_v4.1-inject-s.zip",
-          "changelog": "- Update fingerprint.\r\n- Migrate from json to prop (pif.json -> pif.prop) for more optimized binary size.\r\n- Added spoofBuild option.\r\n- Auto reset pif.prop when the format is incorrect.\r\n- Improved WebUI, fixed false error log.\r\n- Added back module update.\r\n\r\n### Additional notes\r\n\r\n- pixel_beta fingerprint can no longer get device verdict even on legacy check, so enabling *spoofVendingSdk* won't help you to get device verdict. You can disable *spoofBuild* to stop spoofing as pixel beta to droidguard, but some device might require *spoofBuild* to use GPay/GWallet even with device/strong verdict.\r\n- Currently enabling *spoofProvider* can help you to get strong verdict in A13+ check with revoked keybox, but it will break google wallet. This exploit might be fixed in future."
-        },
-        {
-          "timestamp": 1772285340.227,
-          "version": "3.3-inject-vending",
-          "versionCode": 33,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v3.3-inject-vending/PlayIntegrityFix_v3.3-inject-manual.zip",
-          "changelog": "## Diff with previous version\r\n- OTA update support for fp fetching script, now it can be updated without reboot, module's update will be less needed. (Thanks to @backslashxx)\r\n- Magisk action redirect WebUI support, removed action button in KernelSU and APatch.\r\n- Improved WebUI , better WebUI X support.\r\n\r\n> [!WARNING]\r\n> What is vending and manual? Read [previous release note](https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v3-inject-release) if you haven't done it before.\r\n> When sharing this module to others, kindly use this release link instead of the zip file to avoid unnecessary issues."
-        },
-        {
-          "timestamp": 1772285340.231,
-          "version": "3.2-inject-release",
-          "versionCode": 32,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v3.2-inject-release/PlayIntegrityFix_v3.2-inject-manual.zip",
-          "changelog": "## Diff with previous version\r\n- update fingerprint.\r\n- fix action failed to fetch `pif.json`.\r\n\r\n> [!WARNING]\r\n> Read [previous release note](https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v3-inject-release) if you haven't done it before."
-        },
-        {
-          "timestamp": 1772285340.24,
-          "version": "3.1-inject-release",
-          "versionCode": 31,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v3.1-inject-release/PlayIntegrityFix_v3.1-inject-manual.zip",
-          "changelog": "## Diff with previous version\r\n- update fingerprint.\r\n- add new ReZygisk directory on installation zygisk check.\r\n\r\n> [!WARNING]\r\n> Read [previous release note](https://github.com/KOWX712/PlayIntegrityFix/releases/tag/v3-inject-release) if you haven't done it before."
-        },
-        {
-          "timestamp": 1772285340.243,
-          "version": "3-inject-release",
-          "versionCode": 3,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v3-inject-release/PlayIntegrityFix_v3-inject-manual.zip",
-          "changelog": "## Diff with official inject v3\r\n\r\n### v3-inject-vending\r\n- based on official inject v3, no auto update\r\n- added spoofVendingSdk\r\n- added monet theme support in WebUI X\r\n\r\n### v3-inject-manual\r\n- based on `v3-inject-vending`\r\n- removed auto config (tricky store and rom signature check)\r\n- added manual conifg\r\n\r\n---\r\n\r\n## Known Issues\r\n\r\n### Devices will experience degraded functionality in Play Store when spoofVendingSdk is enabled:\r\n\r\n- Back gesture/nav button from within the Play Store exits directly to homescreen for all\r\n- Blank account sign-in status and broken app updates for ROMs A14+\r\n- Incorrect app variants may be served for all\r\n- Full Play Store crashes for some setups\r\n"
-        },
-        {
-          "timestamp": 1774696856.179,
-          "version": "4.5-inject-s",
-          "versionCode": 45,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.5-inject-s/PlayIntegrityFix_v4.5-inject-s.zip",
-          "changelog": "- Inline inject logic and stream payload over companion to avoid detection.\r\n- Support resetprop compact.\r\n- WebUI new language: Traditional Chinese (@mattchengg, #3), Turkish (@DogancanYr, #4), Indonesian (@yourbestregard, #5), Arabic (@ZG089, #6).\r\n- Minor overall optimization."
-        },
-        {
-          "timestamp": 1782041627.667,
-          "version": "4.6-inject-s",
-          "versionCode": 46,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.6-inject-s/PlayIntegrityFix_v4.6-inject-s.zip",
-          "changelog": "- Android 17 support.\r\n- Improve method to find Zygisk provider module.\r\n- WebUI new language: Polish (@marcinmajsc, #12)\r\n"
-        },
-        {
-          "timestamp": 1783769629.288,
-          "version": "4.7-inject-s",
-          "versionCode": 47,
-          "zipUrl": "https://github.com/KOWX712/PlayIntegrityFix/releases/download/v4.7-inject-s/PlayIntegrityFix_v4.7-inject-s.zip",
-          "changelog": "- Fix resetprop command for KernelSU.\r\n- Rework WebUI, use cdn approach to fetch GitHub resource to avoid `429 too many request`."
-        }
-      ]
-    },
-    {
-      "id": "qgcP03aUu-Rq",
-      "name": "WiFi Password Viewer for MMRL",
-      "version": "7.0.0",
-      "versionCode": 700,
-      "author": "Der_Googler",
-      "description": "An inspired project from veez21's wpd gist, ported to MMRL.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/qgcP03aUu-Rq/README.md",
-      "support": "https://t.me/DerGoogler",
-      "license": "MIT",
-      "categories": [
-        "security"
-      ],
-      "verified": false,
-      "added": 1771108173.19,
-      "timestamp": 1791590400,
-      "permissions": [],
-      "features": {},
-      "stars": 108,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1771108173.19,
-        "source": "https://github.com/Googlers-Repo/wpd",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1771108173.19,
-          "version": "5.7.7",
-          "versionCode": 577,
-          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v5.7.7/module.zip",
-          "changelog": "Requires MMRL [`33162`](https://t.me/MMRLCI/20)"
-        },
-        {
-          "timestamp": 1771108268.333,
-          "version": "2.4.3",
-          "versionCode": 243,
-          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.4.3/module.zip",
-          "changelog": "- Fixed bluetooth tab\r\n- Fixed imports"
-        },
-        {
-          "timestamp": 1771108268.346,
-          "version": "2.3.2",
-          "versionCode": 232,
-          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.3.2/module.zip",
-          "changelog": "- Removed toolbar coloring\r\n- Added ability to view saved bluetooth devices"
-        },
-        {
-          "timestamp": 1771108268.351,
-          "version": "2.2.2",
-          "versionCode": 222,
-          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.2.2/module.zip",
-          "changelog": "- Fixed missing components"
-        },
-        {
-          "timestamp": 1771108268.365,
-          "version": "2.2.1",
-          "versionCode": 221,
-          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.2.1/module.zip",
-          "changelog": "- Added CLI tool\r\n- Design re-worked\r\n- Added closing dialog"
-        },
-        {
-          "timestamp": 1771108268.378,
-          "version": "2.1.1",
-          "versionCode": 211,
-          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.1.1/module.zip",
-          "changelog": "- import fix"
-        },
-        {
-          "timestamp": 1771108268.383,
-          "version": "2.1.0",
-          "versionCode": 210,
-          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v2.1.0/module.zip",
-          "changelog": "- added hiding passwords\r\n- now without shell\r\n- requires mmrl above 2.14.10"
-        },
-        {
-          "timestamp": 1791646593.319,
-          "version": "7.0.0",
-          "versionCode": 700,
-          "zipUrl": "https://github.com/Googlers-Repo/wpd/releases/download/v7.0.0/mmrl_wpd-7.0.0.zip",
-          "changelog": "**Full Changelog**: https://github.com/Googlers-Repo/wpd/commits/v7.0.0"
-        }
-      ]
-    },
-    {
-      "id": "system_app_nuker",
-      "name": "System App Nuker",
-      "version": "2.2.6",
-      "versionCode": 226,
-      "author": "ChiseWaguri",
-      "description": "A systemless debloater for Magisk, KernelSU, and APatch. Pick the apps. Nuke them.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/xcsucIQLQeQR/README.md",
-      "license": "GPL-3.0",
-      "categories": [
-        "system"
-      ],
-      "verified": false,
-      "added": 1790678362.071,
-      "timestamp": 1790985600,
-      "permissions": [],
-      "features": {},
-      "stars": 17,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1790678362.071,
-        "source": "https://github.com/chisewaguri/systemapp_nuker",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1790678362.071,
-          "version": "2.2.2",
-          "versionCode": 222,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.2/SAN_v2.2.2.zip",
-          "changelog": "> v2.2.1 users should update. Package-manager calls can miss APK paths while processing the nuke list, leaving apps not whiteouted on reboot.\r\n\r\n#### Scripts\r\n- keep package-manager commands from inheriting the nuke list as stdin (thanks, @smbdspk) \r\n- rebuild missing APK paths and whiteouts during module update (thanks, @smbdspk)"
-        },
-        {
-          "timestamp": 1790678402.175,
-          "version": "2.2.1",
-          "versionCode": 221,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.1/SAN_v2.2.1.zip",
-          "changelog": "> v2.2.0 users must update. v2.2.0 can fail to nuke apps with package-manager errors or installed system updates.\n\n#### Scripts\n- filter pm path errors before creating whiteouts\n- cache factory apk paths before removing system updates\n- fall back to uninstall for user 0 when no system apk path is available\n\n#### WebUI\n- move pending nukes to Restore and pending restores to Home before reboot"
-        },
-        {
-          "timestamp": 1790678402.18,
-          "version": "2.1.1",
-          "versionCode": 211,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.1.1/SAN_v2.1.1.zip",
-          "changelog": "#### Scripts\n- fix last nuked app never being processed (missing trailing newline)\n- migrate pre-2.1.0 nuke lists by recovering paths from module tree (fix #59)"
-        },
-        {
-          "timestamp": 1790678402.183,
-          "version": "2.1.0",
-          "versionCode": 210,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.1.0/SAN_v2.1.0.zip",
-          "changelog": "#### Scripts\n- keep apk path in nuke_list.txt so update whiteouts without pm (fix #58)\n"
-        },
-        {
-          "timestamp": 1790678402.187,
-          "version": "2.0.0",
-          "versionCode": 200,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.0.0/SAN_v2.0.0.zip",
-          "changelog": "Breaking changes: require KernelSU 22082+, APatch 11159+, Magisk user need to switch to [KsuWebUIStandalone fork](https://github.com/KOWX712/KsuWebUIStandalone/releases). No backward compatibility.\r\n\r\n#### WebUI\r\n- rewrite with vite + react (@KOWX712)\r\n- use KSU API for app list (@KOWX712)\r\n\r\n\r\n#### Scripts\r\n- reflect new webui changes (@KOWX712)\r\n- add current manager for reliable module installation (@KOWX712)\r\n- improve uninstall logic\r\n- improve metamodule support\r\n- uninstall for user 0 instead of disable\r\n\r\n#### Workflows\r\n- build webui (@KOWX712)\r\n\r\n#### Docs\r\n- update guide for new codebase (@KOWX712)"
-        },
-        {
-          "timestamp": 1790678402.19,
-          "version": "1.2.1",
-          "versionCode": 121,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.2.1/SAN_v1.2.1.zip",
-          "changelog": "### v1.2.1\r\n\r\n#### Scripts\r\n- create_applist: prevent trailing comma bug in JSON output (fix app list generation #55)\r\n"
-        },
-        {
-          "timestamp": 1790678402.193,
-          "version": "1.2.0",
-          "versionCode": 120,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.2.0/SAN_v1.2.0.zip",
-          "changelog": "### v1.2.0\r\nfeels like i owe u guys this, no changes since the last commit on jan 3 tho \r\n\r\n#### Scripts\r\n- sync mountify to 019a216\r\n- search additional partition if mounted by mountify\r\n- make whiteouts optional and validate mounting\r\n- treat KSU >22098 the same as magic mount (should fix meta module mounting, use mountify mode/default)\r\n- fix mountify\r\n- better default mode check\r\n- fix error description\r\n\r\n#### WebUI\r\n- force redo link (fix #49, thanks @kowx712)"
-        },
-        {
-          "timestamp": 1790678402.196,
-          "version": "1.1.9",
-          "versionCode": 119,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.1.9/SAN_v1.1.9.zip",
-          "changelog": "### v1.1.9\r\n\r\n- minor module metadata fix\r\n\r\n#### WebUI\r\n- better UI feedback on app list loading\r\n- tell user if there are no nuked apps yet\r\n\r\n#### Scripts\r\n- show app list loading status"
-        },
-        {
-          "timestamp": 1790678402.199,
-          "version": "1.1.8",
-          "versionCode": 118,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v1.1.8/SAN_v1.1.8.zip",
-          "changelog": "### v1.1.8\r\n\r\n#### WebUI\r\n- update WebUI-X css import address (@KOWX712)\r\n- support canta preset import\r\n\r\n#### Scripts\r\n- properly support mountify\r\n- add more vendor-related partitions\r\n- revert useless app list generation on installation"
-        },
-        {
-          "timestamp": 1790794341.404,
-          "version": "2.2.3",
-          "versionCode": 223,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.3/SAN_v2.2.3.zip",
-          "changelog": "> Magisk and Magisk Alpha users should update. The WebUI could not save any change there and showed \"Failed to save changes\" (#62).\n\n#### Scripts\n- restore apps removed in uninstall-only mode when bootloop protection triggers, and retry until it works\n- restore every uninstalled app when the module is removed\n- only show apps as nuked once they are actually hidden\n- report failed mountify mounts in the module description instead of showing apps as nuked\n\n#### WebUI\n- save changes without busybox, which Magisk does not put on the WebUI's PATH\n- reload the app lists after a failed nuke or a backup restore, so rejected changes are not sent again\n- keep the original file when a save fails partway\n- stop hanging when the manager cannot start the nuke script\n- add empty states, a retry button, screen reader labels, and back navigation between tabs\n- confirm before deleting whiteouts\n\n#### Workflows\n- run lint and tests before building, and pin actions to commits"
-        },
-        {
-          "timestamp": 1790859145.789,
-          "version": "2.2.4",
-          "versionCode": 224,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.4/SAN_v2.2.4.zip",
-          "changelog": "> v2.0.x users should update. Updating from 2.0 could fail with \"cant find system apk\" when a nuked app had a Play Store update (#63).\n\n#### Scripts\n- keep updating when a nuked app only shows its Play Store copy, and uninstall that copy for user 0\n- recover the APK path of apps nuked before 2.1, so they can be restored one at a time\n- uninstall an app for user 0 when its old path cannot be recovered, so it stays hidden"
-        },
-        {
-          "timestamp": 1790988755.087,
-          "version": "2.2.5",
-          "versionCode": 225,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.5/SAN_v2.2.5.zip",
-          "changelog": "> Adds app descriptions and removal levels from UAD-ng (#60).\n\n#### WebUI\n- show what each app is and how risky it is to remove, from a UAD-ng list bundled with every release\n- update that list from Settings. Nothing is downloaded unless you tap it\n- filter apps by removal level from a button in the search bar\n- keep icons for nuked apps on the Restore page\n- add a Credits dialog under About\n\n#### Workflows\n- bundle the latest UAD-ng list into each build"
-        },
-        {
-          "timestamp": 1791010356.577,
-          "version": "2.2.6",
-          "versionCode": 226,
-          "zipUrl": "https://github.com/chisewaguri/systemapp_nuker/releases/download/v2.2.6/SAN_v2.2.6.zip",
-          "changelog": "> You no longer need to reboot before opening the WebUI. Installing or updating the module refreshes the WebUI right away, and nuked apps still disappear after the next reboot.\n\n#### Scripts\n- install the new WebUI and scripts into the running module, and leave its whiteouts for the reboot\n- keep the running module as it was if that copy fails\n- remove the update flag after an install or a nuke, so KernelSU opens the WebUI before the reboot\n\n#### WebUI\n- soft reboot when KernelSU was loaded after boot, so root survives the reboot\n"
-        }
-      ]
-    },
-    {
-      "id": "TLQUMPPonjOV",
-      "name": "AZenith",
-      "version": "ThermalCoreStandalone",
-      "versionCode": 15,
-      "author": "liliya2727",
-      "description": "Universal auto Performance module to enhance gaming experience while preserving daily usability.",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/TLQUMPPonjOV/README.md",
-      "support": "https://t.me/ArchHavenDisc",
-      "license": "Apache-2.0",
-      "categories": [
-        "system"
-      ],
-      "verified": false,
-      "added": 1772607080.237,
-      "timestamp": 1788393600,
-      "permissions": [],
-      "features": {},
-      "stars": 211,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1772607080.237,
-        "source": "https://github.com/Liliya2727/AZenith",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1772607080.237,
-          "version": "AZenith-4.5",
-          "versionCode": 45,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-4.5/AZenith-4.5-1213-57ff2ab-release.zip",
-          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/05268454-2874-4901-895c-e9f7097db5f4\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v4.5! There's so many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n## New Contributors\r\n* @Gustyx-Power made their first contribution in https://github.com/Liliya2727/AZenith/pull/5\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-4.3...AZenith-4.5"
-        },
-        {
-          "timestamp": 1772609689.473,
-          "version": "AZenith-4.3",
-          "versionCode": 43,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-4.3/AZenith-4.3-1070-b60aaa9-release.zip",
-          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/05268454-2874-4901-895c-e9f7097db5f4\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v4.3! There's so many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/Antares/compare/AZenith-4.2...AZenith-4.3"
-        },
-        {
-          "timestamp": 1772609689.48,
-          "version": "AZenith-4.2",
-          "versionCode": 42,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-4.2/AZenith-4.2-760-87ce132-release.zip",
-          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/05268454-2874-4901-895c-e9f7097db5f4\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v4.2! There's so many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
-        },
-        {
-          "timestamp": 1772609689.499,
-          "version": "AZenith-4.0",
-          "versionCode": 40,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-4.0/AZenith-4.0-704-055ccb4-release.zip",
-          "changelog": "<img width=\"4096\" height=\"2048\" alt=\"20251014_232534\" src=\"https://github.com/user-attachments/assets/6ceae2e6-5418-4517-9ae4-67aec61c9a21\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v4.0! There's so many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
-        },
-        {
-          "timestamp": 1772609689.503,
-          "version": "AZenith-3.8",
-          "versionCode": 38,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.8/AZenith-3.8-622-777236c-release.zip",
-          "changelog": "![photo_6266958026690907566_w](https://github.com/user-attachments/assets/2f193bb4-aa29-4835-a39e-45de63cf1b67)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.8! There's many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
-        },
-        {
-          "timestamp": 1772609689.507,
-          "version": "AZenith-3.6",
-          "versionCode": 36,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.6/AZenith-3.6-576-8e38b9c-release.zip",
-          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.6! There's many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
-        },
-        {
-          "timestamp": 1772609689.516,
-          "version": "AZenith-3.4",
-          "versionCode": 34,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.4/AZenith-Tweaks-3.4-3cb12df-Release.zip",
-          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.4! There's many big changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/Antares/compare/AZenith-3.3...AZenith-3.4"
-        },
-        {
-          "timestamp": 1772609689.519,
-          "version": "AZenith-3.3",
-          "versionCode": 33,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.3/AZenith-Tweaks-3.3-e607498-Release.zip",
-          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.3! There's a few changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/Antares/compare/AZenith-3.1...AZenith-3.3"
-        },
-        {
-          "timestamp": 1772609689.523,
-          "version": "AZenith-3.1",
-          "versionCode": 31,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.1/AZenith-3.1-3b0d742-Release.zip",
-          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.1! There's a few changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/Antares/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/Antares/compare/AZenith-3.0...AZenith-3.1"
-        },
-        {
-          "timestamp": 1781091204.052,
-          "version": "AZenith-3.0",
-          "versionCode": 30,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-3.0/AZenith.-3.0-df56e84-Release.zip",
-          "changelog": "![20250706_183541](https://github.com/user-attachments/assets/1ad9d0af-ed2e-4eab-be8a-78787d1562db)\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v3.0! There's a few changes from previous version!\r\n**Read full changelog here** https://github.com/Liliya2727/Antares/blob/main/changelog.md"
-        },
-        {
-          "timestamp": 1782063211.571,
-          "version": "AZenith-5.0",
-          "versionCode": 50,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.0/AZenith-5.0.3-1665-4084f84-Andromeda.zip",
-          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/a3ac7f35-ff7e-4d73-8952-0fcd985a6f26\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v5.0! Major changes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/AZenith/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-4.5...AZenith-5.0"
-        },
-        {
-          "timestamp": 1782322401.901,
-          "version": "AZenith-5.0.4",
-          "versionCode": 504,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.0.4/AZenith-5.0.4-1702-ae37801-Andromeda.zip",
-          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/a3ac7f35-ff7e-4d73-8952-0fcd985a6f26\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v5.0.4! Minor changes and some bug fixes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/AZenith/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-5.0...AZenith-5.0.4"
-        },
-        {
-          "timestamp": 1783251208.785,
-          "version": "AZenith-5.1",
-          "versionCode": 51,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.1/AZenith-5.1-1735-d249817-Bluerose.zip",
-          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/a3ac7f35-ff7e-4d73-8952-0fcd985a6f26\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v5.1 Minor changes and some bug fixes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/AZenith/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-5.0.4...AZenith-5.1"
-        },
-        {
-          "timestamp": 1787157657.389,
-          "version": "AZenith-5.2",
-          "versionCode": 52,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/AZenith-5.2/AZenith-5.2-1823-bf02195-Dazzling.zip",
-          "changelog": "<img width=\"1280\" height=\"640\" alt=\"20251102_135027\" src=\"https://github.com/user-attachments/assets/a3ac7f35-ff7e-4d73-8952-0fcd985a6f26\" />\r\n\r\n**One, Two, Three! AZenith has Arrived!**\r\nAZenith has updated to v5.2 Minor changes and some bug fixes from previous version!\r\n**Changelog:** https://github.com/Liliya2727/AZenith/blob/main/changelog.md\r\n\r\n**Full Changelog**: https://github.com/Liliya2727/AZenith/compare/AZenith-5.1...AZenith-5.2"
-        },
-        {
-          "timestamp": 1788453655.519,
-          "version": "ThermalCoreStandalone",
-          "versionCode": 15,
-          "zipUrl": "https://github.com/Liliya2727/AZenith/releases/download/ThermalCoreStandalone/XiaThermalCore.zip",
-          "changelog": "Standalone Implementation of Xia ThermalCore Service"
-        }
-      ]
-    },
-    {
-      "id": "xhhttp",
-      "name": "XH for Android",
-      "version": "0.25.3",
-      "versionCode": 253,
-      "author": "ducaale and Der_Googler",
-      "description": "Friendly and fast tool for sending HTTP requests as Magisk module",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/HkLpjrW5-REH/README.md",
-      "support": "https://github.com/ducaale/xh",
-      "license": "MIT",
-      "categories": [
-        "system"
-      ],
-      "verified": true,
-      "added": 1771229811.017,
-      "timestamp": 1771200000,
-      "permissions": [],
-      "features": {},
-      "stars": 384,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1771229811.017,
-        "source": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1771229811.017,
-          "version": "0.22.0",
-          "versionCode": 220,
-          "zipUrl": "https://api.github.com/repos/Magisk-Modules-Alt-Repo/xhhttp/zipball/v0.22.0",
-          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.22.1 for changes."
-        },
-        {
-          "timestamp": 1771229879.528,
-          "version": "0.18.0",
-          "versionCode": 180,
-          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.18.0/xh_0.18.0.zip",
-          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.18.0 for changes."
-        },
-        {
-          "timestamp": 1771229879.547,
-          "version": "0.17.0",
-          "versionCode": 170,
-          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.17.0/xh_0.17.0.zip",
-          "changelog": "See https://github.com/ducaale/xh/releases/tag/v0.17.0 for changes."
-        },
-        {
-          "timestamp": 1771232881.846,
-          "version": "0.25.3",
-          "versionCode": 253,
-          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.25.3/xh-magisk-module.zip",
-          "changelog": "### Features\r\n\r\n* Add colors to `--help`/`-h`, see #432 (@starsep)\r\n\r\n### Bug fixes\r\n\r\n* Don't fail on error code 416 if resuming download, see #434 (@simonomi)\r\n\r\n### Other\r\n\r\n* Upgrade brotli to latest version, see #438 (@ducaale)\r\n\r\n### Contributors\r\n\r\n* starsep\r\n* ducaale\r\n* simonomi"
-        },
-        {
-          "timestamp": 1771232881.851,
-          "version": "0.24.0",
-          "versionCode": 240,
-          "zipUrl": "https://github.com/Magisk-Modules-Alt-Repo/xhhttp/releases/download/v0.24.0/xh-magisk-module.zip",
-          "changelog": ""
-        }
-      ]
-    },
-    {
-      "id": "z9xid8Mt87d_",
-      "name": "Encore Tweaks",
-      "version": "5.2.1",
-      "versionCode": 521,
-      "author": "Rem01Gaming",
-      "description": "Special performance module for your device",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/z9xid8Mt87d_/README.md",
-      "support": "https://t.me/rem01schannel",
-      "license": "Apache-2.0",
-      "categories": [
-        "gaming"
-      ],
-      "verified": false,
-      "added": 1772399589.764,
-      "timestamp": 1783641600,
-      "permissions": [],
-      "features": {},
-      "stars": 148,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1772399589.764,
-        "source": "https://github.com/Rem01Gaming/encore",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1772399589.764,
-          "version": "5.0",
-          "versionCode": 50,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.0/encore-5.0-1294-667f35e-release.zip",
-          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\nWhile this release may appear minor on the surface, the entire codebase has undergone significant refactoring and migration. The previously C-based daemon has been completely rewritten in C++ to leverage abstraction and object-oriented programming. Similarly, the WebUI has been fully rebuilt in VueJS, enabling a native-like single-page application experience.\r\n\r\n- Massive internal refactoring and code migration\r\n- UI/UX improvements in WebUI\r\n- Drop support for logging system interface to other processes/module\r\n- Fix performance profile stuck when exiting games\r\n- Other misc changes and optimizations"
-        },
-        {
-          "timestamp": 1772399589.773,
-          "version": "4.6",
-          "versionCode": 46,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.6/encore-4.6-1080-2fa4940-release.zip",
-          "changelog": "###  Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Refactor and design changes on the WebUI\r\n- Implement WebUI X API for file read/write\r\n- WebUI translation updates\r\n- Exposes Encore's logging system to other processes/module\r\n- Add sanity check for dumpsys\r\n- Other misc changes and optimizations"
-        },
-        {
-          "timestamp": 1772399589.784,
-          "version": "4.5",
-          "versionCode": 45,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.5/encore-4.5-1004-f8bf8f8-release.zip",
-          "changelog": "###  Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Fix root detection issue on module files\r\n- Mitigate buggy thermal throttling on post-startup in old MediaTek devices\r\n- Fix random reboot and performance dip on some devices\r\n- Add module banner for KernelSU Next\r\n- Add option to create WebUI shortcut\r\n- Add back DDR tweaks for Exynos and Tensor devices\r\n- Remove MMRL from action redirect WebUI\r\n- Shrink module size even more\r\n\r\n### Notes\r\n\r\nIn order to mitigate root detection, all configurations such as gamelists and preferences will be wiped. After the update, please set up the module again using the WebUI.\r\n\r\nThe Encore Addon API also changed on this update, please refer to the docs on the website.\r\n\r\n### Contributors\r\n\r\n- @e5u - Mandarin WebUI translation\r\n- @al4uu - WebUI translation"
-        },
-        {
-          "timestamp": 1772399589.788,
-          "version": "4.4",
-          "versionCode": 44,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.4/encore-4.4-972-620057d-release.zip",
-          "changelog": "###  Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Fix UI lags in normal mode on certain older MediaTek devices\r\n- Revert startup tweak (post-fs-data) to mitigate bootloops on some devices\r\n- Introduced Device Mitigation to fix certain device specific bugs\r\n- Better and more accurate SoC recognition\r\n- Update Mandarin WebUI translation\r\n- Reduces module size to ~190kB\r\n- Disable Oplus CPU limit\r\n- Refactor and de-spaghetti the profiler code\r\n- Other misc changes and optimizations\r\n\r\n### Contributors\r\n\r\n- @e5u - Mandarin WebUI translation\r\n- @fukiame - Vietnamese WebUI translation\r\n- @al4uu - WebUI translation\r\n- @mingzun09 - Mandarin readme translation\r\n\r\n---\r\n\r\n**MD5**: `13de2fef84d3776cc3ea82b2cec4863d`"
-        },
-        {
-          "timestamp": 1772399589.807,
-          "version": "4.3",
-          "versionCode": 43,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.3/encore-4.3-933-36f8bbc-release.zip",
-          "changelog": "###  Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Introducing Lite Mode\r\n- Improve SoC recognition logic\r\n- Revert MTK PBM implement due random reboot issue\r\n- Fix system instability in some Snapdragon devices\r\n- Fix SoC recognition on some Google Tensor devices\r\n- Fix Monet color theme in the latest MMRL build\r\n- Update default WebUI color theme to \"purpleish\"\r\n- Disable GED KPI on performance profile\r\n- Drop kill logger feature\r\n- Other misc changes and optimizations\r\n\r\n---\r\n**MD5**: `b6113253c79bf311f6d75bbc8a35dcf3`"
-        },
-        {
-          "timestamp": 1772399589.813,
-          "version": "4.2",
-          "versionCode": 42,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.2/encore-4.2-899-84bbcb5-release.zip",
-          "changelog": "### Changelog\r\n\r\n- Disable MTK PBM on performance profile\r\n- Update Vietnamese and Polish WebUI translation\r\n- Use `energy_step` for default CPU governor candidate\r\n- Remove unnecessary file creation on late_start service\r\n- Workaround for game freezes in Xiaomi peridot\r\n- Globally disable `iostats` and `add_random`\r\n- Reduce `nr_requests` to 32 on performance profile\r\n- Other misc changes and optimizations\r\n\r\n---\r\n**MD5**: `225bfb58140bd53dad537e8390198209`\r\n"
-        },
-        {
-          "timestamp": 1772399589.824,
-          "version": "4.1",
-          "versionCode": 41,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/4.1/encore-4.1-862-cc92fbc-release.zip",
-          "changelog": "### Changelog\r\n\r\n- Fix CPU governor defaulted as performance\r\n- Fix overheating after startup\r\n- Expose game information through `/dev/encore_game_info`\r\n- Reintroduce `cpu_dcvs` tweaks (LLCC, L3 and DDR)\r\n- Add more TCP congestion algo to use\r\n- Other misc changes and optimizations\r\n\r\n---\r\n**SHA256**: `44cbe2de95afb16dd9ac596a743583279ee64da56fe0669c22774021b1986066`\r\n"
-        },
-        {
-          "timestamp": 1774588862.718,
-          "version": "5.1",
-          "versionCode": 51,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.1/encore-5.1-1431-f347713-release.zip",
-          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Implement Java companion daemon for system info fetching, replacing `dumpsys` use\r\n- Fix performance regression caused by incorrect Inotify implementation\r\n- Implement event-driven architecture on native daemon\r\n- Any tweaks now will be applied instantly without any delay\r\n- Performance profile will no longer lock GPU frequency at highest frequency to prevent overheating and rapid battery drain\r\n- Adjust tweak for Snapdragon CPU Bus and DDR to prevent overheating and rapid battery drain\r\n- Update WebUI translation\r\n- Other misc changes and optimizations\r\n\r\n**Full Changelog**: https://github.com/Rem01Gaming/encore/compare/5.0...5.1"
-        },
-        {
-          "timestamp": 1775833410.843,
-          "version": "5.1.1",
-          "versionCode": 511,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.1.1/encore-5.1.1-1444-9ef7449-release.zip",
-          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Fix daemon status reported incorrectly as stopped\r\n- Fix issue where module will not start service daemon due Mountify issue on Magisk\r\n- Fix race condition on DND setting causing incorrect value applied\r\n- Other misc changes and optimizations\r\n\r\n**Full Changelog**: https://github.com/Rem01Gaming/encore/compare/5.1...5.1.1"
-        },
-        {
-          "timestamp": 1783186399.048,
-          "version": "5.2",
-          "versionCode": 52,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.2/encore-5.2-1523-15eb446-main.zip",
-          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Implement binder monitor for system monitoring\r\n- Fix daemon crash due java companion issue on certain devices\r\n- Fix frequency locking on Adreno GPU\r\n- Fix `module.prop` corruption issue\r\n- GPU frequency now will be locked at high frequency on performance profile, reverting previous change on v5.1.1\r\n- [Add disable tweaks setting](https://t.me/rem01schannel/784)\r\n- DND setting now will reset if the focused window was changed\r\n- Various UI/UX optimization and translation update on WebUI\r\n- Other misc changes and optimizations\r\n\r\n**Full Changelog**: https://github.com/Rem01Gaming/encore/compare/5.1.1...5.2"
-        },
-        {
-          "timestamp": 1783661602.214,
-          "version": "5.2.1",
-          "versionCode": 521,
-          "zipUrl": "https://github.com/Rem01Gaming/encore/releases/download/5.2.1/encore-5.2.1-1533-361ab0e-main.zip",
-          "changelog": "### Thanks for using Encore Tweaks!\r\n\r\nYour continued support keeps this project going. If you enjoy the improvements and want to see more features in the future, [consider supporting the developer with a small donation](https://t.me/rem01schannel/670). Every bit helps!\r\n\r\n### Changelog\r\n\r\n- Fix addon modules doesn't working when disable tweaks is enabled\r\n- Fix DND mode did not reset after exiting the game\r\n\r\n**Full Changelog**: https://github.com/Rem01Gaming/encore/compare/5.2...5.2.1"
-        }
-      ]
-    },
-    {
-      "id": "zA1Fz1gjQyBn",
-      "name": "Magisk",
-      "version": "31.0",
-      "versionCode": 310,
-      "author": "topjohnwu",
-      "description": "The Magic Mask for Android",
-      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/zA1Fz1gjQyBn/README.md",
-      "license": "GPL-3.0",
-      "categories": [
-        "system"
-      ],
-      "verified": false,
-      "added": 1773659774.307,
-      "timestamp": 1788480000,
-      "permissions": [],
-      "features": {},
-      "stars": 206,
-      "track": {
-        "type": "ONLINE_JSON",
-        "added": 1773659774.307,
-        "source": "https://github.com/topjohnwu/Magisk",
-        "antifeatures": null,
-        "build_metadata": null
-      },
-      "versions": [
-        {
-          "timestamp": 1773659774.307,
-          "version": "30.7",
-          "versionCode": 307,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.7/app-debug.apk",
-          "changelog": "- [MagiskInit] Support Android 16 QPR2 sepolicy format\r\n- [MagiskInit] Support using klogdump partition as pre-init storage\r\n- [Zygisk] Support Android 16 QPR2 and higher\r\n- [Zygisk] Support Android XR and some Nubia devices\r\n- [MagiskSU] Do not drop capabilities by default, even when switching to non-root UIDs. Explicitly use the `--drop-cap` argument to drop capabilities.\r\n- [MagiskBoot] Better lzma format detection\r\n- [MagiskBoot] Fix various commandline argument parsing bugs\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
-        },
-        {
-          "timestamp": 1773659774.319,
-          "version": "30.6",
-          "versionCode": 306,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.6/app-debug.apk",
-          "changelog": "### Hotfix\r\n\r\n- [MagiskInit] Revert a change that could result in bootloops\r\n\r\n### v30.5 Changelog\r\n\r\n- [General] Migrate a significant portion of the codebase to Rust\r\n- [General] Various minor bug fixes\r\n- [General] Support installing Magisk into vendor_boot partition\r\n- [Core] Improve Magisk specific files injection logic\r\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\r\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\r\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\r\n- [resetprop] Reduce property modification traces\r\n- [resetprop] Properly support Android versions with property overrides\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
-        },
-        {
-          "timestamp": 1773659774.322,
-          "version": "30.5",
-          "versionCode": 305,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.5/app-debug.apk",
-          "changelog": "- [General] Migrate a significant portion of the codebase to Rust\r\n- [General] Various minor bug fixes\r\n- [General] Support installing Magisk into vendor_boot partition\r\n- [Core] Improve Magisk specific files injection logic\r\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\r\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\r\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\r\n- [resetprop] Reduce property modification traces\r\n- [resetprop] Properly support Android versions with property overrides\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
-        },
-        {
-          "timestamp": 1773659774.334,
-          "version": "30.4",
-          "versionCode": 304,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.4/app-debug.apk",
-          "changelog": "- [MagiskSU] Fix several implementation bugs\n\n## Diffs to v29.0\n\n- [General] Various minor bug fixes\n- [General] Support installing Magisk into vendor_boot partition\n- [General] Migrate a significant portion of the codebase to Rust\n- [Core] Improve Magisk specific files injection logic\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\n- [resetprop] Reduce property modification traces\n\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\n"
-        },
-        {
-          "timestamp": 1773659774.338,
-          "version": "30.3",
-          "versionCode": 303,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.3/app-debug.apk",
-          "changelog": "- [General] Support installing Magisk into vendor_boot partition\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\n- [Core] Migrate much more code into Rust\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\n\n## Diffs to v29.0\n\n- [General] Various minor bug fixes\n- [General] Support installing Magisk into vendor_boot partition\n- [General] Migrate a significant portion of the codebase to Rust\n- [Core] Improve Magisk specific files injection logic\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs\n- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2\n- [resetprop] Reduce property modification traces\n\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\n"
-        },
-        {
-          "timestamp": 1773659774.35,
-          "version": "30.2",
-          "versionCode": 302,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.2/app-debug.apk",
-          "changelog": "- [Core] Fix an edge case breaking modules when overlayfs is involved\n- [Core] Fix module `.replace` functionality in certain situations\n- [resetprop] Reduce property modification traces\n\n## Diffs to v29.0\n\n- [General] Various minor bug fixes\n- [Core] Migrate module implementation to Rust\n- [Core] Improve Magisk specific files injection logic\n- [MagiskBoot] Migrate compression code to Rust\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n- [resetprop] Reduce property modification traces\n\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\n"
-        },
-        {
-          "timestamp": 1773659774.354,
-          "version": "30.1",
-          "versionCode": 301,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.1/app-debug.apk",
-          "changelog": "- [Core] Fix bug in module mounting implementation\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n\n## Diffs to v29.0\n\n- [General] Various minor bug fixes\n- [Core] Migrate module implementation to Rust\n- [Core] Improve Magisk specific files injection logic\n- [MagiskBoot] Migrate compression code to Rust\n- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)\n\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\n"
-        },
-        {
-          "timestamp": 1773659774.357,
-          "version": "30.0",
-          "versionCode": 300,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v30.0/app-debug.apk",
-          "changelog": "- [General] Various minor bug fixes\r\n- [Core] Migrate module implementation to Rust\r\n- [Core] Improve Magisk specific files injection logic\r\n- [MagiskBoot] Migrate compression code to Rust\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)"
-        },
-        {
-          "timestamp": 1773659774.368,
-          "version": "29.0",
-          "versionCode": 290,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v29.0/Magisk-v29.0.apk",
-          "changelog": "This release looks minor at the surface, however, the entire codebase has gone through significant refactoring and migration. The native code in Magisk used to be mainly C++, but several contributors and I have been steadily rewriting parts of the code in Rust since April 2022. After years of effort, the Rust-ification of the project slowly began picking up steam, and at the moment of this release, over 40% of the native code has been rewritten in Rust, with several major subsystem rewrites in the PR queue, planned to be merged for the next release.\r\n\r\nMany might wonder, why introduce a new language to the project? My reason is actually not to reduce memory safety issues (although it is a nice side benefit), but to be able to develop Magisk using a more modern programming language. After using Rust for a while, it's clear to me that using Rust allows me to write more correct code and makes me happier compared to dealing with C++. People share the [same sentiment as I do](https://threadreaderapp.com/thread/1577667445719912450.html).\r\n\r\n## Changelog\r\n\r\n- [General] Massive internal refactoring and code migration\r\n- [App] Support downloading module zip files with XZ compression\r\n- [App] Disable app animations when system animations are disabled\r\n- [MagiskMount] Support systemlessly deleting files with modules using blank file nodes\r\n- [MagiskInit] Redesign sepolicy patching and injection logic\r\n- [MagiskSU] Better TTY/PTY support\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
-        },
-        {
-          "timestamp": 1773659774.371,
-          "version": "canary-29001",
-          "versionCode": 29001,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/canary-29001/app-debug.apk",
-          "changelog": "- Sync with public release\r\n\r\n## Diffs to v29.0\r\n\r\nN/A\r\n"
-        },
-        {
-          "timestamp": 1788561667.31,
-          "version": "31.0",
-          "versionCode": 310,
-          "zipUrl": "https://github.com/topjohnwu/Magisk/releases/download/v31.0/app-debug.apk",
-          "changelog": "The highlight of this release is a complete, ground-up rewrite of the **Magisk app UI**.\r\n\r\nOver the years, the Android application codebase had accumulated significant technical debt—spanning legacy XML layouts, Databinding, and KAPT. In this release, the entire UI layer has been rebuilt from scratch with modern **Jetpack Compose** and **Material 3**.\r\n\r\nThis rewrite allowed us to modernize the architecture and introduce substantial UI/UX improvements, with additional new features:\r\n\r\n- A new **built-in terminal emulator** with full TTY and ANSI support for module flashing and action scripts.\r\n- Direct support for **streaming and extracting boot images from remote OTA URLs** on-the-fly.\r\n\r\n### Legacy App Still Available\r\n\r\nThis kind of full rewrite can sometimes introduce unexpected edge cases or bugs. If you encounter issues with the new app, the legacy View-based version will still be built and uploaded for a couple of releases, available for download [here](https://github.com/topjohnwu/magisk-files/releases/download/files/Magisk-v31.0-legacy.apk).\r\n\r\n## Changelog\r\n\r\n- [App] Complete UI overhaul with Jetpack Compose and Material 3, completely removing the legacy View and Fragment architecture\r\n- [App] Add new built-in terminal emulator with full TTY and ANSI support for module flashing and action scripts\r\n- [App] Support downloading and streaming boot image extraction directly from remote OTA URLs\r\n- [MagiskBoot] Support dynamic zImage payload sizes without requiring exact size padding during repack\r\n- [MagiskBoot] Update AVB hash descriptor image size to match unpacked image size\r\n- [MagiskBoot] Lower default compression preset for XZ and LZMA to reduce memory usage during repacking\r\n- [Zygisk] Support Android 17 (API 37)\r\n- [Zygisk] Support Meta Quest (Horizon OS) lazy partition zygotes\r\n- [MagiskPolicy] Fix identifier parsing for names containing hyphens\r\n- [resetprop] Add `--compact` (`-c`) flag to compact property storage areas\r\n- [MagiskInit] Properly prioritize charger mode detection before `force_normal_boot`\r\n- [DenyList] Add `webview_zygote` as an unmount target\r\n\r\n### Full Changelog: [here](https://topjohnwu.github.io/Magisk/changes.html)\r\n"
         }
       ]
     },
