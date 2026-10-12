@@ -1,0 +1,151 @@
+## Tools
+
+- **Tricky Store manager**: a complete port of KOWX712's
+  [Tricky Addon: Update Target List](https://github.com/KOWX712/Tricky-Addon-Update-Target-List),
+  for whichever keystore module is active:
+  - **Tricky Store**: `config.ini` with per-app modes (`pkg`, `pkg!`, `pkg?`) and per-app
+    policy, and the legacy `target.txt` + `security_patch.txt` layout.
+  - **TEESimulator**: `config.json` profiles (mode, patch levels, identity, auto-include).
+  - **OhMyKeymint**: `injector.toml` scoop and every `config.toml` `[trust]` key.
+
+  It has the same features as upstream:
+  - Target list with search, select all, deselect all and refresh.
+  - Mode sheet on long press, and per-app policy.
+  - Actions: select from DenyList (Magisk), deselect unnecessary apps (online list plus
+    Xposed modules), add system apps, auto-add new apps.
+  - Keyboxes from AOSP, generated "unknown", a local file, the keybox repository (the same
+    iframe protocol) or custom providers (add, edit, remove, reset, import, export).
+  - Prop handler and Verified Boot hash, schema-driven default policy with *Today*, help.
+  - Keyboard shortcuts (Ctrl+A/D/F/S, Esc), the back gesture closing dialogs, and upstream's
+    23 translations, including right-to-left languages.
+  - Optionally, a WebUI entry on the keystore module itself, and the TSupport-Advance
+    auto-target stop flag.
+- **RKP Workbench**: Remote Key Provisioning.
+  - Builds `AuthenticatedRequest` CSRs (DICE + COSE, per the AOSP
+    `IRemotelyProvisionedComponent` HAL) and talks to the RKP server.
+  - Verifies CSRs offline and exports `keybox.xml`, which the Tricky Store manager can
+    install directly.
+  - Device values are read from AOSP build properties.
+- **Device ID Provisioner**: writes attestation device IDs into the Qualcomm Keymaster
+  trusted app through `libQSEEComAPI.so`, with a dry-run mode.
+- **Module & updates**: version and device summary, stable and canary updates with
+  changelog, output files, command history, uninstall and reboot.
+
+Every tool is translated into 14 languages: English, Simplified and Traditional Chinese,
+Japanese, Korean, Spanish, French, German, Italian, Brazilian Portuguese, Russian, Arabic,
+Vietnamese and Indonesian. Tricky Addon's other translations cover the strings the Tricky
+Store manager shares with it.
+
+## Architecture
+
+```txt
+crates/
+  duck-core/          Shared runtime: paths, JSON envelope, Feature trait, command log,
+                      and a Sysroot so every feature is testable off-device.
+  duck-platform/      Device adapters: props/resetprop, pm, modules, root managers, HTTP.
+  duck-rkp/           RKP workbench.            duck-device-ids/  Device ID provisioning.
+  duck-tricky-store/  Keystore module manager.  duck-system/      Module lifecycle, updates.
+  duckd/              The binary: builds its CLI from the compiled-in features.
+xtask/                Repository checks (`cargo xtask line-limit`).
+ui/src/
+  app/                Shell: router, app bar, home and settings; discovers features.
+  core/               Bridge to the root manager, validated duckd client, i18n, theme,
+                      extension points and shared components.
+  features/<id>/      One folder per tool: index.ts, api.ts (zod), locales/, pages, mock.ts.
+  components/ui/      shadcn-vue components, restyled for Material 3 Expressive on phones.
+module/               Module payload: scripts, then the built WebUI and backend binary.
+```
+
+What keeps it modular and resistant to breaking changes:
+
+- **Features never import each other.** Backend feature crates depend only on `duck-core`
+  and `duck-platform`. WebUI features depend only on `core/`; ESLint (`eslint-plugin-boundaries`)
+  rejects anything else, and only `core/bridge` may touch the KernelSU JavaScript API.
+- **Extension points instead of imports.** A feature contributes to others through
+  `contributes`: `keyboxTargets` (RKP installs its keybox through the Tricky Store manager),
+  `settingsSections` and `homeWidgets`.
+- **Versioned contracts.** Every command prints `{ ok, api, command, data, error, ts }`.
+  `duckd features` lists the compiled-in features and their contract versions; the WebUI
+  disables a tool whose backend is missing or on another contract. It validates every
+  response with zod, so a changed shape fails loudly as `contract_mismatch`.
+- **Keystore modules are adapters.** Each backend implements `ConfigAdapter` and describes
+  its editable policy as a schema; the WebUI renders whatever the schema declares.
+- **Mature tools, no home-grown frameworks.**
+  - Backend: clap, serde, tokio, reqwest, the RustCrypto crates, rcgen and `toml_edit`
+    (which keeps comments).
+  - WebUI: Vue 3, vue-router, Pinia, TanStack Query, vue-i18n, zod, Tailwind CSS 4 and
+    shadcn-vue on reka-ui, with VueUse.
+- **No source file over 600 lines.** `cargo xtask line-limit` fails CI for any source file
+  in any language, including scripts without an extension; ESLint's `max-lines` flags it
+  while editing.
+- **Dependency updates are reviewable.** Dependabot groups minor and patch updates; every
+  major update gets its own pull request and a full CI run.
+
+### Adding a tool
+
+1. **Backend:** create `crates/duck-<name>` with a `clap` subcommand enum and a
+   `pub static FEATURE: ClapFeature<Command>` (see `duck-system`). Add it to `duckd` as an
+   optional dependency and cargo feature, and one entry in the `FEATURES` array in
+   `crates/duckd/src/main.rs`.
+2. **WebUI:** create `ui/src/features/<id>/` with an `index.ts` exporting
+   `defineFeature({ id, namespace, icon, order, routes, messages })`, an `api.ts` that calls
+   `duckd()` with zod schemas, a `locales/<language>.json` for each of the 14 languages
+   (`src/locales.test.ts` fails on a missing key), and optionally a `mock.ts`. The home page,
+   router, i18n, availability check and dev mock pick it up automatically.
+
+## Module lifecycle
+
+| Stage | What runs |
+| --- | --- |
+| `customize.sh` | Checks the root manager, ABI and API level; prepares `/data/adb/duck-toolbox`; normalizes the boot hash; drops `action.sh` where the manager has a WebUI button; requests hot install from metamodules that support it. |
+| `post-fs-data.sh` / `late-load.sh` | Early pass of the sensitive-prop handler (`resetprop -n`, never `setprop`). KernelSU's late-load mode runs `late-load.sh` instead of `post-fs-data.sh`. |
+| `service.sh` | Repairs the runtime directory. On Magisk, which has no boot-completed stage, it waits for boot and runs `boot-completed.sh`. |
+| `boot-completed.sh` | Late prop pass, keystore-module entry links, auto-add of new apps, the module description (KernelSU temporary `override.description`), and the TSupport-Advance flag. |
+| `action.sh` (Magisk) | Opens the WebUI in KSUWebUIStandalone or WebUI X, installing KSUWebUIStandalone if neither is present. |
+| `uninstall.sh` | Removes entry links, flags, the boot hash and `/data/adb/duck-toolbox`. |
+
+Saved data lives in `/data/adb/duck-toolbox/var`, outside the module directory, so updates
+keep it.
+
+**Updates.** The stable channel follows `updateJson` in `module.prop`. The canary channel
+reads the newest CI artifact through nightly.link: CI uploads the module directory as
+`duck-toolbox-<version>-<commit count>-canary`, and the commit count is its `versionCode`.
+Each successful package on a `main` push or manual CI run also publishes the module ZIP
+as a GitHub prerelease. Tags use `nightly-<8-character commit hash>-<UTC timestamp>`
+(for example, `nightly-1234abcd-20261011T120000123456Z`). These releases do not replace
+the latest stable release; Telegram uploads continue on push builds.
+The manual **Stable** workflow reuses the CI checks and builds, preserves `version`
+and `versionCode` from `module/module.prop`, publishes `v<version>` as the latest
+non-prerelease release, and sends the same ZIP to Telegram with a `stable` label.
+Before running it on `main`, increase `versionCode` beyond all accepted releases and
+update `update.json` to match the version and `duck-toolbox-<version>.zip` asset.
+
+**KernelSU Modules repository.** The root `module.yaml` supplies the module listing
+metadata and selects `duck-toolbox-*.zip` release assets. Published ZIPs contain
+`module.prop` at their root; the current builds target Android API 26+ on arm64-v8a.
+The repository must enable release immutability and be registered through the
+[KernelSU Modules developer portal](https://developers.kernelsu.org/).
+Nightly prereleases are checked and recorded but are not displayed as stable versions.
+Every new version must have a `versionCode` greater than all previously accepted
+stable and prerelease versions; nightly CI uses the commit count. Rebuilding the same commit
+creates another nightly release with the same `versionCode`, which is treated as the
+same prerelease version. A stable release needs a higher `versionCode`, or an accepted
+prerelease can be promoted by clearing its prerelease flag.
+
+## JSON CLI
+
+```txt
+duckd features | describe
+duckd rkp profile show|save|clear|detect
+duckd rkp info | provision | keybox | verify <file>
+duckd device-ids defaults | provision
+duckd tricky-store status | save | props | auto-apply
+duckd tricky-store keybox install <file> | import | set-aosp | generate | fetch --url <u> [--decode <steps>]
+duckd tricky-store keybox providers list | save | reset | import <file> | import-content | export [--path <file>]
+duckd tricky-store apps xposed | denylist | unnecessary [--refresh]
+duckd tricky-store entry status | enable | disable | apply | remove
+duckd system info | update check|install [--channel stable|canary] | artifacts | files --path <dir> --extension <ext>
+duckd system log [--limit <n>] | open-url <url> | uninstall | reboot
+```
+
+Commands that take input read JSON from stdin with `--stdin-json`.

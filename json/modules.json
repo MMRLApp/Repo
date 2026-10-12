@@ -7,7 +7,7 @@
   "description": "A decentralized ecosystem for sharing, distributing, and discovering Magisk modules.",
   "metadata": {
     "version": 1,
-    "timestamp": 1791800762.947
+    "timestamp": 1791812561.924
   },
   "modules": [
     {
@@ -665,6 +665,55 @@
       ]
     },
     {
+      "id": "duck-toolbox",
+      "name": "Duck ToolBox",
+      "version": "0.1.2-stable",
+      "versionCode": 12,
+      "author": "Eltavine",
+      "description": "Toolbox: Tricky Store / TEESimulator / OhMyKeymint manager (a full Tricky Addon port), RKP workbench and Qualcomm device ID provisioning",
+      "readme": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/WAJ4J0T9E3IU/README.md",
+      "license": "MIT",
+      "categories": [
+        "system"
+      ],
+      "verified": false,
+      "added": 1791802080.695,
+      "timestamp": 1791763200,
+      "permissions": [],
+      "features": {},
+      "stars": 0,
+      "track": {
+        "type": "ONLINE_JSON",
+        "added": 1791802080.695,
+        "source": "https://github.com/eltavine/Duck-ToolBox",
+        "antifeatures": null,
+        "build_metadata": null
+      },
+      "versions": [
+        {
+          "timestamp": 1791802080.695,
+          "version": "0.1.2-stable",
+          "versionCode": 12,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.1.2-stable/duck-toolbox-0.1.2-stable.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/0.1.2-stable_2.md"
+        },
+        {
+          "timestamp": 1791802100.796,
+          "version": "0.1.2-stable",
+          "versionCode": 12,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/v0.1.2-stable/duck-toolbox-0.1.2-stable.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/0.1.2-stable.md"
+        },
+        {
+          "timestamp": 1791802100.801,
+          "version": "nightly-ea38b083-20261011T070347249885Z",
+          "versionCode": 380832026,
+          "zipUrl": "https://github.com/eltavine/Duck-ToolBox/releases/download/nightly-ea38b083-20261011T070347249885Z/duck-toolbox-v0.0.1-beta-57-canary.zip",
+          "changelog": "https://raw.githubusercontent.com/MMRLApp/Repo/refs/heads/master/modules/WAJ4J0T9E3IU/changelogs/nightly-ea38b083-20261011T070347249885Z.md"
+        }
+      ]
+    },
+    {
       "id": "encore",
       "name": "Encore Tweaks",
       "version": "5.2.1",
@@ -1214,7 +1263,7 @@
       "timestamp": 1787875200,
       "permissions": [],
       "features": {},
-      "stars": 301,
+      "stars": 304,
       "track": {
         "type": "ONLINE_JSON",
         "added": 1773660272.738,
