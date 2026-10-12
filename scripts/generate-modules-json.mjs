@@ -9,6 +9,10 @@
  * Each module's full `description` is saved to modules/<id>/README.md and the
  * raw link to that file is used for the `readme` prop.
  *
+ * Each release's `changelog` is saved to modules/<id>/changelogs/<version>.md
+ * and the raw link to that file is used for the `changelog` prop of the
+ * matching versions[] entry.
+ *
  * Required env vars:
  *   MMRL_API_BASE_URL   e.g. https://mmrl.dergoogler.com/api
  *   MMRL_API_KEY        API key with "read" scope (sent as X-API-Key header)
@@ -21,7 +25,7 @@
  *                        (default: ./repo.meta.json)
  *   MMRL_CONCURRENCY    how many modules to fetch in parallel (default: 8)
  *
- * Usage (run from the repo root so modules/<id>/README.md lands in the repo):
+ * Usage (run from the repo root so modules/<id>/ files land in the repo):
  *   MMRL_API_BASE_URL=https://example.com/api \
  *   MMRL_API_KEY=xxxx \
  *   MMRL_RAW_BASE_URL=https://raw.githubusercontent.com/you/repo/main \
@@ -144,6 +148,11 @@ function assertSafeId(id) {
   }
 }
 
+/** Makes a version string safe to use as a filename (e.g. "2.1.1 (7790)" -> "2.1.1_7790_"). */
+function safeFileName(name) {
+  return String(name).replace(/[^A-Za-z0-9._-]/g, "_");
+}
+
 /**
  * Saves module.description to modules/<id>/README.md and returns the raw URL,
  * or undefined if the module has no description.
@@ -160,20 +169,50 @@ async function writeModuleReadme(module) {
   return `${RAW_BASE_URL}/${MODULES_PATH}/${encodeURIComponent(module.id)}/README.md`;
 }
 
+/**
+ * Saves each release's changelog to modules/<id>/changelogs/<version>.md.
+ * Returns a Map<release, rawUrl> (releases without a changelog are omitted).
+ */
+async function writeReleaseChangelogs(module, releases) {
+  assertSafeId(module.id);
+  const dir = join(MODULES_PATH, module.id, "changelogs");
+  const urls = new Map();
+  const usedNames = new Set();
+
+  for (const [index, release] of releases.entries()) {
+    const changelog = release.changelog?.trim();
+    if (!changelog) continue;
+
+    // Sanitizing can make two versions collide; disambiguate with the index.
+    let fileName = safeFileName(release.version);
+    if (usedNames.has(fileName)) fileName = `${fileName}_${index}`;
+    usedNames.add(fileName);
+
+    await mkdir(dir, { recursive: true });
+    await writeFile(join(dir, `${fileName}.md`), changelog + "\n", "utf8");
+
+    urls.set(
+      release,
+      `${RAW_BASE_URL}/${MODULES_PATH}/${encodeURIComponent(module.id)}/changelogs/${encodeURIComponent(fileName)}.md`
+    );
+  }
+  return urls;
+}
+
 /** Maps one release (ReleaseResponseSchema) to the legacy `versions[]` entry shape. */
-function adaptRelease(release, fallbackIndex) {
+function adaptRelease(release, fallbackIndex, changelogUrl) {
   return {
     timestamp: toEpochSeconds(release.createdAt),
     version: release.version,
     versionCode: deriveVersionCode(release.version, fallbackIndex),
     zipUrl: release.downloadUrl,
-    changelog: release.changelog || "",
+    changelog: changelogUrl || "",
     size: normalizeSize(release.size),
   };
 }
 
 /** Maps one module + its releases (ModuleResponseSchema + ReleaseResponseSchema[]) to a legacy module entry. */
-function adaptModule(module, releases, readmeUrl) {
+function adaptModule(module, releases, readmeUrl, changelogUrls = new Map()) {
   const sortedReleases = [...releases].sort(
     (a, b) => toEpochSeconds(a.createdAt) - toEpochSeconds(b.createdAt)
   );
@@ -181,8 +220,10 @@ function adaptModule(module, releases, readmeUrl) {
     sortedReleases.find((r) => r.isLatest) ??
     sortedReleases[sortedReleases.length - 1];
 
+  // changelogUrls is keyed by release object; sortedReleases is a shallow copy,
+  // so the object references are identical and the lookup works.
   const versions = sortedReleases.map((release, index) =>
-    adaptRelease(release, index + 1)
+    adaptRelease(release, index + 1, changelogUrls.get(release))
   );
 
   const adapted = {
@@ -265,7 +306,8 @@ async function main() {
     try {
       const { module, releases } = await fetchModuleWithReleases(summary.id);
       const readmeUrl = await writeModuleReadme(module);
-      return adaptModule(module, releases, readmeUrl);
+      const changelogUrls = await writeReleaseChangelogs(module, releases);
+      return adaptModule(module, releases, readmeUrl, changelogUrls);
     } catch (err) {
       console.error(`  ! Skipping module "${summary.id}": ${err.message}`);
       return null;
